@@ -1,0 +1,12 @@
+:root {
+    --text: #111;
+    --theme: #678;
+    --background: #F1F3F5;
+    --purple-foreground-gradient: linear-gradient(15deg,#745fb5,#9a6dbb);
+    --purple-hover: #5F4AA1;
+    --green-foreground-gradient: linear-gradient(15deg,#14af83,#15b89a);
+    --green-hover: #108B68;
+    --grey-foreground-gradient: linear-gradient(15deg,#678,#6f8793);
+    --grey-hover: #556371;
+    --live: #77DAB2;
+}
