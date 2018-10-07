@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/index.js"],"names":["console","log","window","innerWidth"],"mappings":";AAAAA,QAAQC,IAAIC,OAAOC","file":"js.095f8b37.map","sourceRoot":"..\\src","sourcesContent":["console.log(window.innerWidth);"]}
