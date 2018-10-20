@@ -1,77 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <title>Resource Book - The ultimate collection for sprouting Devs</title>
-    <link rel="stylesheet" href="css/index.css">
-  </head>
-  <body>
-    <div id="app">
-      
-      <nav id="nav">
-        <div id="container">
-          <div id="left">
-            <a href="." id="back-button">  
-              <svg xmlns="http://www.w3.org/2000/svg" id="back" width="26" height="26" viewBox="0 0 408 408"><path d="M408 178.5H96.9L239.7 35.7 204 0 0 204l204 204 35.7-35.7L96.9 229.5H408V178.5z"/></svg>
-            </a>
-          </div>
-          <div id="right">
-            <a href="https://github.com/dipakkr/A-to-Z-Resources-for-Students" target="_blank"><img src="assets/images/github.png" alt="Contribute"></a>
-          </div>
-        </div>
-      </nav>
 
-      <div id="contents">
-        <div id="header" role="banner">
-          <h1>Resource Book</h1>
-          <p>A collection of Learning Resources, Live Events, Hackathons and Meetups for Developers.</p>
-          <div id="search">
-            <label for="search">
-              <span id="cool">rsbook.io</span>
-              <span id="slash">/</span>
-            </label>
-            <input name="search" type="text" spellcheck="false" placeholder="Search...">
-          </div>
-          <div class="separator"></div>
-        </div>
-        <div id="list" role="main">
-          <div id="trending">
-            <h2>Trending</h2>
-            <div id="trends">
-              <a href="."><div><code class="event">PyCon</code><span class="live"></span><span class="info">Delhi NCR</span></div></a>
-              <a href="."><div><code class="event">React Meetup</code><span class="live"></span><span class="info">Delhi NCR</span></div></a>
-              <a href="."><div><code class="event">World Business Dialogue</code><span class="live"></span><span class="info">Hyderabad</span></div></a>
-              <a href="."><div><code class="event">Smart India</code><span class="live"></span><span class="info">Odhisha</span></div></a>
-              <a href="."><div><code class="event">Capgemini</code><span class="live"></span><span class="info">Online</span></div></a>
-              <a href="."><div><code class="event">CodeChef Long Challenge</code><span class="live"></span><span class="info">Online</span></div></a>
-            </div>
-          </div>
-          <div id="sections">
-            <h2>Explore</h2>
-            <div id="links">
-              <a href="."><div><code class="link">Coding Resources</code></div></a>
-              <a href="."><div><code class="link">Hackathons</code></div></a>
-              <a href="."><div><code class="link">Benefit Programs</code></div></a>
-              <a href="."><div><code class="link">Open Source</code></div></a>
-              <a href="."><div><code class="link">Startup Programs</code></div></a>
-              <a href="."><div><code class="link">Intership Portals</code></div></a>
-              <a href="."><div><code class="link">Conferences</code></div></a>
-              <a href="."><div><code class="link">Top charts</code></div></a>
-              <a href="."><div><code class="link">Others</code></div></a>
-            </div>
-          </div>
-        </div>
-        <div class="separator"></div>
+<head>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+  <title>Resource Book - The ultimate collection for sprouting Devs</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+  <div id="app">
+
+    <header>
+      <div id="left-head">
+        <h2>A<span style="color: var(--theme)"><sub>2</sub></span>Z</h2>
       </div>
+      <nav>
+        <ul style="list-style: none;">
+          <li><a href="index.html" title="Explorer">Explorer</a></li>
+          <li><a href="." title="Roadmaps">Roadmaps</a></li>
+          <li><a href="." title="Resource Finder">Resource Finder</a></li>
+          <li>|</li>
+          <li><a href="." title="SignUp">SignUp</a></li>
+          <li><a class="button-link" data-color="#02ccba" href=".">Login</a></li>
+        </ul>
+      </nav>
+    </header>
 
-      <footer>
-        <h2>Want to contribute?</h2>
-        <a href="https://github.com/dipakkr/A-to-Z-Resources-for-Students">Get Started</a>
-        <h2>Join our Gitter channel for latest updates</h2>
-        <a href="https://gitter.im/a2z-resources" style="background: var(--theme)">Gitter Chat</a>
-      </footer>
+    <main>
+      <h1 class="heading">Explore the ultimate collection</h1>
+      <p class="sub-heading">What's on your mind today? Want to do self-study? Explore new peers?</p>
+      <section id="main-list">
+        <div class="box" style="background-color: #34C2E9;"><a href=".">Coding Resources</a></div>
+        <div class="box" style="background-color: #2CD0C2;"><a href=".">Hackathons<br>&<br>Events</a></div>
+        <div class="box" style="background-color: #A062E5"><a href=".">Student Benfits<br>&<br>Programs</a></div>
+        <div class="box" style="background-color: #829DB4"><a href=".">Open Source<br>Programs</a></div>
+        <div class="box" style="background-color: #E2953B"><a href=".">Startup Programs<br>&<br>Incubators</a></div>
+        <div class="box" style="background-color: #CC4368"><a href=".">Internship Portals</a></div>
+        <div class="box" style="background-color: #05AA9B"><a href=".">Developer Clubs<br>&<br>Meetups</a></div>
+        <div class="box" style="background-color: #AD66E3"><a href=".">Conferences<br>for<br>Students</a></div>
+        <div class="box" style="background-color: #7B95A6"><a href=".">Top People<br>to follow</a></div>
+        <div class="box" style="background-color: #02B3E4"><a href=".">Top Websites<br>to follow</a></div>
+        <div class="box" style="background-color: #111"><a href=".">Surprise<br>Me!</a></div>
+      </section>
+    </main>
 
-    </div>
-    <script src="js/index.js"></script>
-  </body>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+
 </html>

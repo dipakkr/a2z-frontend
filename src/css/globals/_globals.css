@@ -9,7 +9,6 @@ html, body {
 }
 
 body {
-    background: var(--background);
     display: block;
     user-select: none;
 }
