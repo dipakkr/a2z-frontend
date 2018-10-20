@@ -26,7 +26,7 @@ nav > ul > li > a, nav > ul > li > a:visited  {
     text-decoration: none;
 }
 
-nav > ul > li:last-child > a {
+nav > ul > li:last-child > a, .button-link {
     box-sizing: border-box;
     padding: 8px 30px;
     background-color: #02ccba;
@@ -36,16 +36,16 @@ nav > ul > li:last-child > a {
     transition: all 0.4s;
 }
 
-nav > ul > li:last-child > a:hover {
+nav > ul > li:last-child > a:hover, .button-link:hover {
     box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
     color: var(--background);
     text-decoration: none;
 }
 
 
-main {
+main, #footer-container {
     min-width: 480px;
-    width: 70%; 
+    width: 85%; 
     margin: 0 auto;
     text-align: center;
     box-sizing: border-box;
@@ -95,3 +95,50 @@ main {
     font-weight: 600;
     font-size: 17px;
 }
+
+footer {
+    height: 40vh;
+    width: 100%;
+    background-color: #eee;
+}
+
+#footer-container {
+    padding: 50px 0 0 0;
+    position: relative;
+}
+
+#footer-left, #footer-right {
+    display: inline-block;
+}
+
+#footer-left {
+    float: left;
+}
+
+#footer-right {
+    float: right;
+}
+
+#claim {
+    margin-top: 25vh;
+    font-size: 10px;
+}
+
+.support-links {
+    margin-bottom: 15px;
+}
+
+.support-links > p {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.support-links > a {
+    display: inline-block;
+    height: 40px;
+    width: 100px;
+    padding: 0;
+    padding-top: 10px;
+    text-decoration: none;
+}
+
