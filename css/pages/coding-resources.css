@@ -1,4 +1,4 @@
-@import "./helpers/_imports.css";
+@import "../helpers/_imports.css";
 
 header {
     width: 100%;
@@ -49,25 +49,23 @@ main, #footer-container {
     margin: 0 auto;
     text-align: center;
     box-sizing: border-box;
-    padding: 10vh 0;
+    padding: 10vh 0 0 0 ;
 }
 
 .heading {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     color: var(--text);
+    font-weight: 400;
 }
 
-.sub-heading {
-    color: var(--theme);
-    font-size: 18px;
-    margin-bottom: 50px;
-}
 
 #main-list {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-bottom: 15vh;
 }
 
 .box {
@@ -76,9 +74,6 @@ main, #footer-container {
     height: 200px;
     width: 200px;
     background-color: var(--live);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 5%;
     box-shadow: 8px 10px 20px 0 rgba(46,61,73,.32);
     transition: all 0.4s;
@@ -91,9 +86,67 @@ main, #footer-container {
 
 .box > a {
     color: white;
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     font-weight: 600;
     font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#separator {
+    width: 100%;
+    background-color: #2E3D49;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#separator h1 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 4vh;
+    color: #fff;
+}
+
+#email {
+    border: none;
+    padding: 0.95rem 1.5rem;
+    width: 15rem;
+    border-top-left-radius: .375rem;
+    border-bottom-left-radius: .375rem;
+    outline: none;
+    text-align: start;
+    font-size: small;
+    box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+
+}
+
+#send-nudes {
+    left: -4.5px;
+    position: relative;
+    border-radius: 0 .25rem .25rem 0;
+    outline: none;
+    color: #fff;
+    border-color: transparent;
+    background-color: #34C2E9;
+    box-shadow: 2px 4px 8px 0 rgba(46,61,73,.2);
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    text-decoration: none;
+    padding: 0 0.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .812rem;
+    height: 46px;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: .125rem;
 }
 
 footer {
@@ -105,6 +158,7 @@ footer {
 #footer-container {
     padding: 50px 0 0 0;
     position: relative;
+    width: 80%;
 }
 
 #footer-left, #footer-right {
@@ -142,3 +196,8 @@ footer {
     text-decoration: none;
 }
 
+@media screen and (max-width: 1100px) {
+    main {
+        width: 100%;
+    }
+}
