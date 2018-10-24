@@ -22,3 +22,5 @@ node_modules
 
 # Apple stuff
 .DS_Store
+/.vs/slnx.sqlite
+/.vs/config

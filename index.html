@@ -2,72 +2,100 @@
 <html>
 
 <head>
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-  <title>Resource Book - The ultimate collection for sprouting Devs</title>
-  <link rel="stylesheet" href="css/index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <title>Resource Book - The ultimate collection for sprouting Devs</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-  <div id="app">
-
-    <header>
-      <div id="left-head">
-        <h2>A<span style="color: var(--theme)"><sub>2</sub></span>Z</h2>
-      </div>
-      <nav>
-        <ul style="list-style: none;">
-          <li><a href="index.html" title="Explorer">Explorer</a></li>
-          <li><a href="." title="Roadmaps">Roadmaps</a></li>
-          <li><a href="." title="Resource Finder">Resource Finder</a></li>
-          <li>|</li>
-          <li><a href="." title="SignUp">SignUp</a></li>
-          <li><a class="button-link" data-color="#02ccba" href=".">Login</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <h1 class="heading">Explore the ultimate collection</h1>
-      <p class="sub-heading">What's on your mind today? Want to do self-study? Explore new peers?</p>
-      <section id="main-list">
-        <div class="box" style="background-color: #34C2E9;"><a href="pages/coding-resources.html">Coding Resources</a></div>
-        <div class="box" style="background-color: #2CD0C2;"><a href=".">Hackathons<br>&<br>Events</a></div>
-        <div class="box" style="background-color: #A062E5"><a href=".">Student Benfits<br>&<br>Programs</a></div>
-        <div class="box" style="background-color: #2E3D49"><a href=".">Open Source<br>Programs</a></div>
-        <div class="box" style="background-color: #E2953B"><a href=".">Startup Programs<br>&<br>Incubators</a></div>
-        <div class="box" style="background-color: #CC4368"><a href=".">Internship Portals</a></div>
-        <div class="box" style="background-color: #05AA9B"><a href=".">Developer Clubs<br>&<br>Meetups</a></div>
-        <div class="box" style="background-color: #AD66E3"><a href=".">Conferences<br>for<br>Students</a></div>
-        <div class="box" style="background-color: #2E3D49"><a href=".">Top People<br>to follow</a></div>
-      </section>
-    </main>
-
-    <footer>
-      <div id="footer-container">
-        <div id="footer-left">
-          <h1>A<span style="color: var(--theme)"><sub>2</sub></span>Z</h1>
+    <div class="container-fluid" id="app">
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div id="left-head">
+                    <h2>A<span style="color: var(--theme)"><sub>2</sub></span>Z</h2>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" style="list-style: none; margin-right: 30px; margin-top:7px;">
+                    <li><a href="index.html" title="Explorer">Explorer</a></li>
+                    <li><a href="." title="Roadmaps">Roadmaps</a></li>
+                    <li><a href="." title="Resource Finder">Resource Finder</a></li>
+                    <li style="top:13px">|</li>
+                    <li><a href="." title="SignUp">SignUp</a></li>
+                    <li><a class="button-link" data-color="#02ccba" href=".">Login</a></li>
+                </ul>
+            </div>
         </div>
 
-        <div id="footer-right">
-          <div class="support-links">
-            <p>Willing to contribute?</p>
-            <a class="button-link" style="background-color: #111" href="https://github.com/dipakkr/A-to-Z-Resources-for-Students">GitHub</a>
-          </div>
-          <div class="support-links">
-            <p>Join our Gitter Lobby</p>
-            <a class="button-link" style="background-color: #CC4368">Gitter</a>
-          </div>
-        </div>
+        <div class="container-fluid">
+            <div class="container-responsive">
+                <div class="container-fluid">
+                    <div class="row">
+                        <main class="col-md-12">
+                            <h1 class="heading">Explore the ultimate collection</h1>
+                            <p class="sub-heading">What's on your mind today? Want to do self-study? Explore new peers?</p>
+                            <section id="main-list" class="col-xs-12">
+                                <div class="box" style="background-color: #34C2E9;"><a href="pages/coding-resources.html">Coding Resources</a></div>
+                                <div class="box" style="background-color: #2CD0C2;"><a href=".">Hackathons<br>&<br>Events</a></div>
+                                <div class="box" style="background-color: #A062E5"><a href=".">Student Benfits<br>&<br>Programs</a></div>
+                                <div class="box" style="background-color: #2E3D49"><a href=".">Open Source<br>Programs</a></div>
+                                <div class="box" style="background-color: #E2953B"><a href=".">Startup Programs<br>&<br>Incubators</a></div>
+                                <div class="box" style="background-color: #CC4368"><a href=".">Internship Portals</a></div>
+                                <div class="box" style="background-color: #05AA9B"><a href=".">Developer Clubs<br>&<br>Meetups</a></div>
+                                <div class="box" style="background-color: #AD66E3"><a href=".">Conferences<br>for<br>Students</a></div>
+                                <div class="box" style="background-color: #2E3D49"><a href=".">Top People<br>to follow</a></div>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+            </div>
 
-        <div id="claim">
-          <p>This project was initiated in 2018 by Deepak Kumar</p>
-          <p>Made with <span style="color: #CC4368;">&#10084;</span> by the Open Source</p>
-        </div>
-      </div>
-    </footer>
+            <div class="navbar navbar-default">
+                <div class="row">
+                    <footer class="col-xs-12">
+                        <div id="footer-container">
+                            <div id="footer-left">
+                                <h1>A<span style="color: var(--theme)"><sub>2</sub></span>Z</h1>
+                            </div>
 
-  </div>
-  <script src="js/index.js"></script>
+                            <div id="footer-right">
+                                <div class="support-links">
+                                    <p>Willing to contribute?</p>
+                                    <a class="button-link" style="background-color: #111" href="https://github.com/dipakkr/A-to-Z-Resources-for-Students">GitHub</a>
+                                </div>
+                                <div class="support-links">
+                                    <p>Join our Gitter Lobby</p>
+                                    <a class="button-link" style="background-color: #CC4368">Gitter</a>
+                                </div>
+                            </div>
+
+                            <div id="claim">
+                                <p>This project was initiated in 2018 by Deepak Kumar</p>
+                                <p>Made with <span style="color: #CC4368;">&#10084;</span> by the Open Source</p>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 
 </html>
