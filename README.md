@@ -12,3 +12,6 @@ TBD
 - **Roadmap:** - Roadmaps will be created for some sections like Frontend Developer, Backend Developer, Data Science, Data 
                  Analyst, Mobile Developer etc. The exact functionality is yet TBD.
 - **To-do**
+
+## Prototypes
+- [Home page mobile layout](https://www.figma.com/proto/VfVtvA8BzVXmDcCGCgj2kR2k/MockUp-Page-1-Mobile-v1.0?node-id=3%3A2&scaling=scale-down)
