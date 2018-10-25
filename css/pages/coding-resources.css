@@ -11,9 +11,14 @@ header {
     align-items: center;
 }
 
+#left-head {
+    margin-left: 35px;
+}
+
 #left-head > h2 {
-    font-size: 2rem;
-    color: var(--text);
+   font-size: 2rem;
+   color: var(--text);
+   font-weight: bold;
 }
 
 nav > ul > li {
