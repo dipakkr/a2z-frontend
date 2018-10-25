@@ -3,7 +3,9 @@
 #### Webiste Live at : https://a2z-hq.github.io/a2z-frontend/
 
 ## Tech Stack 
-TBD
+- React
+- Router v4
+- CSS3
 
 ## Features
 - **Home Page** - Area where user can view the different sections. 
