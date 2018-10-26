@@ -1,0 +1,6 @@
+#home-page-container {
+    padding: 7vh 0;
+    text-align: center;
+    color: var(--red);
+    border: 1px solid var(--red);
+}

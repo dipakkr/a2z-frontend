@@ -1,0 +1,14 @@
+.link-button, .link-button:visited {
+    cursor: pointer;
+    position: relative;
+    padding: 8px 30px;
+    border-radius: 5px;
+    box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+    transition: all 0.4s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.link-button:hover, .link-button:focus {
+    box-shadow: 2px 4px 8px 0 rgba(46,61,73,.25);
+}
