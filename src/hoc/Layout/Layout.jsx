@@ -30,7 +30,11 @@ const Layout = (props) => {
             
             <footer>
                 <div id="footer-container">
-                    <Logo />
+                    <div id="claim">
+                        <Logo />
+                        <small>This project was initiated by Deepak Kumar in 2018</small><br/>
+                        <small>Made with <span style={{ color: "red" }}>♥</span> by the Open Source</small>
+                    </div>
                     <div id="footer-links-container">
                         <div className="footer-link">
                             <p>Want to Contribute?</p>
@@ -49,10 +53,7 @@ const Layout = (props) => {
                             >Gitter</LinkButton>
                         </div>
                     </div>
-                    <div id="claim">
-                        <small>This project was initiated by Deepak Kumar in 2018</small><br/>
-                        <small>Made with <span style={{ color: "red" }}>♥</span> by the Open Source</small>
-                    </div>
+                    
                 </div>
             </footer>
         </React.Fragment>
