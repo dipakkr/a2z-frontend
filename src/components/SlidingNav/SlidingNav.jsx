@@ -2,7 +2,7 @@ import React from 'react';
 import './SlidingNav.css';
 import { Consumer } from '../Context/Context';
 
-const SlidingNav = () => {
+const SlidingNav = (props) => {
     return (
         <Consumer>
             {({ navIsOpen, navHandler }) => {
