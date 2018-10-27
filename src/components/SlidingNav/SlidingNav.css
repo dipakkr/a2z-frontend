@@ -10,6 +10,21 @@
     transition: transform 0.2s;
 }
 
+#sliding-nav-header {
+    width: 80%;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#back-button {
+    width: 0; 
+    height: 0; 
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent; 
+    border-right:12px solid #fff;
+}
+
 @media only screen and (min-width: 1024px) {
     .sliding-nav-container {
         display: none;

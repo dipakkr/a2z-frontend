@@ -9,6 +9,12 @@ class App extends Component {
 
   state = {
     navIsOpen: false,
+    navLinks: [
+      ["Login", "/login"],
+      ["SignUp", "/signup"],
+      ["Roadmaps", "/roadmaps"],
+      ["Explorer", "/explorer"],
+    ]
   }
 
   navHandler = () => {
@@ -23,7 +29,8 @@ class App extends Component {
       <BrowserRouter basename={process.env.PUBLIC_URL}>  
         <div className="App">
           <Provider value={{
-            navIsOpen: this.state.navIsOpen, 
+            navIsOpen: this.state.navIsOpen,
+            navLinks: this.state.navLinks, 
             navHandler: this.navHandler
             }}>
             <Layout>
