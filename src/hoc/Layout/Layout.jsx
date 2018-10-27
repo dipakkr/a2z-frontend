@@ -2,6 +2,7 @@ import React from 'react';
 import './Layout.css';
 import LinkButton from '../../components/LinkButton/LinkButton';
 import Logo from '../../components/Logo/Logo';
+import Hamburger from '../../components/Hamburger/Hamburger';
 
 const Layout = (props) => {
     return (
@@ -20,6 +21,7 @@ const Layout = (props) => {
                                 <li><LinkButton href="/login">Login</LinkButton></li>
                             </ul>
                         </nav>
+                        <Hamburger />
                     </div>
                 </div>
             </header>
