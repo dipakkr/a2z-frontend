@@ -1,0 +1,17 @@
+.sliding-nav-container {
+    height: 100%;
+    width: 70%;
+    position: absolute;
+    z-index: 13;
+    background-color: var(--bg-black);
+    box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+    top: 0;
+    left: 0;
+    transition: transform 0.2s;
+}
+
+@media only screen and (min-width: 1024px) {
+    .sliding-nav-container {
+        display: none;
+    }
+}
