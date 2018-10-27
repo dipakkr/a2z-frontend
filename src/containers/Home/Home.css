@@ -1,8 +1,6 @@
 #home-page-container {
     padding: 7vh 0;
     text-align: center;
-    color: var(--red);
-    border: 1px solid var(--red);
 }
 
 .heading {
@@ -13,9 +11,9 @@
 
 .sub-heading {
     color: var(--theme);
-    font-size: 1.5vw;
-    margin-bottom: 50px;
-    margin-top: 0px;
+    font-size: 1.12vw;
+    max-width: 75vw;
+    margin: 17px auto;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -26,9 +24,6 @@
     }
 
     .sub-heading {
-        color: var(--theme);
-        font-size: 4vw;
-        margin-bottom: 50px;
-        margin-top: 0px;
+        font-size: 3vw;
     }
 }
