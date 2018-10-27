@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/a2z-frontend/static/js/runtime~main.25ee61c9.js"
   },
   {
-    "revision": "baaee81763525d9c04a9",
-    "url": "/a2z-frontend/static/js/main.baaee817.chunk.js"
+    "revision": "2b720e8ff10a01ad535e",
+    "url": "/a2z-frontend/static/js/main.2b720e8f.chunk.js"
   },
   {
     "revision": "60e3982c98948e51e393",
     "url": "/a2z-frontend/static/js/1.60e3982c.chunk.js"
   },
   {
-    "revision": "baaee81763525d9c04a9",
-    "url": "/a2z-frontend/static/css/main.fb37334f.chunk.css"
+    "revision": "2b720e8ff10a01ad535e",
+    "url": "/a2z-frontend/static/css/main.c221d7f7.chunk.css"
   },
   {
-    "revision": "5b58ef802d283c9a35bf723333ff3f40",
+    "revision": "b369b78c9ac0d296c68cc37239f3bb60",
     "url": "/a2z-frontend/index.html"
   }
 ];
