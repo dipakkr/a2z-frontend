@@ -1,0 +1,31 @@
+#hamburger-menu {
+    position: relative;
+    min-width: 32px;
+    min-height: 20px;
+}
+
+.bar {
+    width: 100%;
+    height: 4px;
+    background-color: var(--black);
+    position: absolute;
+}
+
+.bar:first-child {
+    top: 0;
+}
+
+.bar:nth-child(1) {
+    top: 50%;
+    margin-top: -2px;
+}
+
+.bar:last-child {
+    bottom: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    #hamburger-menu {
+        display: none;
+    }
+}
