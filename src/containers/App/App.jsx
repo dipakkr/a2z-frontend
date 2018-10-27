@@ -3,28 +3,33 @@ import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Layout from '../../hoc/Layout/Layout';
 import Home from '../Home/Home';
+import { Provider } from '../../components/Context/Context';
 
 class App extends Component {
 
   state = {
-    openNav: false,
+    navIsOpen: false,
   }
 
-  navbarHandler = () => {
-    let current = this.state.openNav;
+  navHandler = () => {
+    let current = this.state.navIsOpen;
     this.setState({
-      openNav: !current
+      navIsOpen: !current
     });
-    console.log(this.state.openNav);
   }
 
   render() {
     return (
       <BrowserRouter>  
         <div className="App">
+          <Provider value={{
+            navIsOpen: this.state.navIsOpen, 
+            navHandler: this.navHandler
+            }}>
             <Layout>
               <Route path="/" exact component={Home} />
             </Layout>
+          </Provider>
         </div>
       </BrowserRouter>
     );
