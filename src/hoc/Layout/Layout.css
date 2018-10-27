@@ -19,6 +19,7 @@ header {
     list-style: none;
 }
 
+
 #header-right li {
     display: inline-block;
     margin-left: 3.5vw;
@@ -39,7 +40,7 @@ footer {
     height: 15vh;
     bottom: 0;
     background: #eee;
-    padding: 25px 0;
+    padding: 25px 0 0 0;
 }
 
 #footer-container {
@@ -48,6 +49,7 @@ footer {
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 #footer-container > * {
@@ -56,6 +58,7 @@ footer {
 
 .footer-link {
     text-align: right;
+    margin: 10px 0;
 }
 
 .footer-link > *{
@@ -75,4 +78,24 @@ footer {
 
 #claim small {
     font-size: 11px;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #header-container {
+        width: 80%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    footer {
+        padding: 25px 0 25px 0;
+    }
+
+    .footer-link p {
+        display: none;
+    }
+
 }
