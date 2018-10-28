@@ -44,7 +44,11 @@
 
 @media only screen and (max-width: 768px) {
     .background-svg-1{
-        display: none;
+        width: 70vw;
+        height: auto;
+        top: 50vh;
+        left: 50%;
+        margin-left: -35vw;
     }
 
     .background-svg-2 {
