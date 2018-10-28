@@ -1,16 +1,13 @@
 import React from 'react';
 import './LinkButton.css';
+import { Link } from 'react-router-dom';
 
 const LinkButton = (props) => {
 
-    const variableStyles = {
-        color: props.color || 'white',
-        fontSize: props.fontSize || 'var(--font-size)',
-        backgroundColor: props.bgColor || 'var(--light-green)'
-    }
+    const variableStyles = props.styles;
 
     return (
-        <a href={props.href} style={variableStyles} className="link-button">{props.children}</a>
+        <Link to={props.href} style={variableStyles} className="link-button">{props.children}</Link>
     );
 }
 

@@ -6,16 +6,26 @@ import Hamburger from '../../components/Hamburger/Hamburger';
 import Backdrop from '../../components/Backdrop/Backdrop';
 import SlidingNav from '../../components/SlidingNav/SlidingNav';
 import { Consumer } from '../../components/Context/Context';
-
+import { Link } from 'react-router-dom';
 
 const Layout = (props) => {
     return (
         <Consumer>
-            {({ navIsOpen }) => (
-                <React.Fragment>
+            {({ navIsOpen, isLanding }) => {
+
+                const landingStyles ={
+                    header: {
+                        background: 'transparent'
+                    },
+                    footer: {
+                        display: 'none'
+                    }
+                };
+
+                return <React.Fragment>
                     {(navIsOpen) ? <Backdrop /> : null}
                     <SlidingNav />
-                    <header>
+                    <header style={isLanding ? landingStyles.header : null}>
                         <div id="header-container">
                             <div id="header-left">
                                 <Logo />
@@ -23,10 +33,20 @@ const Layout = (props) => {
                             <div id="header-right">
                                 <nav>
                                     <ul>
-                                        <li><a href="/explorer">Explorer</a></li>
-                                        <li><a href="/roadmaps">Roadmaps</a></li>
-                                        <li><a href="/signup">SignUp</a></li>
-                                        <li><LinkButton href="/login">Login</LinkButton></li>
+                                        <li>
+                                            <Link to="/explorer">Explorer</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/roadmaps">Roadmaps</Link>
+                                        </li>
+                                        <li>
+                                            <Link to="/signup">SignUp</Link>
+                                        </li>
+                                        <li>
+                                            <LinkButton
+                                                href="/login"
+                                                styles={{ background: "linear-gradient(#8eb7f5,#40e1dc)", color: 'white' }}>Login</LinkButton>
+                                        </li>
                                     </ul>
                                 </nav>
                                 <Hamburger />
@@ -34,11 +54,11 @@ const Layout = (props) => {
                         </div>
                     </header>
 
-                    <main>
+                    <main style={isLanding ? landingStyles.main : null}>
                         {props.children}
                     </main>
                     
-                    <footer>
+                    <footer  style={isLanding ? landingStyles.footer : null}>
                         <div id="footer-container">
                             <div id="claim">
                                 <Logo />
@@ -47,19 +67,15 @@ const Layout = (props) => {
                             </div>
                             <div id="footer-links-container">
                                 <div className="footer-link">
-                                    <p>Want to Contribute?</p>
                                     <LinkButton
                                         href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
-                                        bgColor="var(--bg-black)"
-                                        fontSize="12px"
+                                        styles={{ background: "var(--black)" }}
                                     >GitHub</LinkButton>
                                 </div>
                                 <div className="footer-link">
-                                    <p>Join our Gitter Lobby</p>
                                     <LinkButton
                                         href="https://gitter.im/a2z-resources"
-                                        bgColor="var(--red)"
-                                        fontSize="12px"
+                                        styles={{ background: "var(--red)" }}
                                     >Gitter</LinkButton>
                                 </div>
                             </div>
@@ -67,7 +83,7 @@ const Layout = (props) => {
                         </div>
                     </footer>
                 </React.Fragment>
-            )}
+            }}
         </Consumer>
     )
 }
