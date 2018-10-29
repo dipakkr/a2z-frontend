@@ -7,7 +7,9 @@ import SlidingNav from '../../components/SlidingNav/SlidingNav';
 import { Consumer } from '../../components/Context/Context';
 import { Link } from 'react-router-dom';
 import ellipse from '../../assets/images/ellipse.svg';
-import footer from '../../assets/images/footer.svg';
+import github from '../../assets/images/github.png';
+import gitter from '../../assets/images/gitter.png';
+
 
 const Layout = (props) => {
     return (
@@ -19,6 +21,9 @@ const Layout = (props) => {
                         background: 'transparent'
                     },
                     footer: {
+                        display: 'none'
+                    },
+                    extra: {
                         display: 'none'
                     }
                 };
@@ -58,7 +63,7 @@ const Layout = (props) => {
                         {props.children}
                     </main>
                     
-                    <footer  style={isLanding ? landingStyles.footer : null}>
+                    <footer style={isLanding ? landingStyles.footer : null}>
                         <div id="footer-container">
                             <Logo />
                             <div id="claim">
@@ -66,11 +71,42 @@ const Layout = (props) => {
                                 <p>Made with <span style={{ color: "red" }}>♥</span> by the Open Source</p>
                             </div>
                             <div id="footer-links-container">
-
+                                    <a
+                                        href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="footer-link">
+                                        Github
+                                    </a>
+                                    <a
+                                        href="https://gitter.im/a2z-resources"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="footer-link">
+                                        Gitter
+                                    </a>
                             </div>
                             
                         </div>
                     </footer>
+                    <div className="side-links-container" style={isLanding ? landingStyles.extra : null}>
+                        <div className="side-link">
+                            <a
+                                href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <img src={github} alt=""/>
+                            </a>
+                        </div>
+                        <div className="side-link">
+                            <a
+                                href="https://gitter.im/a2z-resources"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <img src={gitter} alt=""/>
+                            </a>
+                        </div>
+                    </div>
                 </React.Fragment>
             }}
         </Consumer>
