@@ -1,0 +1,104 @@
+.card-link {
+    margin: 5vh;
+    height: 33vh;
+    display: inline-block;
+}
+
+
+.card-link-button, .card-link-button:visited {
+    cursor: pointer;
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+    transition: all 0.4s;
+    text-decoration: none;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.4vw;
+    width: 22vw;
+    float: left;
+}
+
+.card-link-button p {
+    margin-top: 20px;
+    max-width: 70%;
+}
+
+
+.card-link-button:hover, .card-link-button:focus {
+    box-shadow: 2px 4px 8px 0 rgba(46,61,73,.25);
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .card-link-button {
+        border-radius: 8px;
+    }
+
+    .card-link-button p {
+        margin-top: 0;
+    }
+
+    .card-link-button img {
+        transform: scale(0.5);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .card-link {
+        height: 21vw;
+        margin: 2vw;
+    }
+
+    .card-link-button {
+        font-size: 1.4vh;
+        border-radius: 8px;
+    }
+
+    .card-link-button p {
+        margin-top: 0;
+    }
+
+    .card-link-button img {
+        transform: scale(0.6);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    
+    .card-link {
+        height: 18vw;
+        margin: 3.5vw;
+    }
+    
+    .card-link-button {
+        width: 75vw;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: 0 0 0 25px;
+        box-sizing: border-box;
+        font-size: 1.8vh;
+        text-align: left;
+        border-radius: 6px;
+    }
+
+    .card-link-button p {
+        max-width: 70%;
+    }
+
+    .card-link-button img {
+        transform: scale(0.3);
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 768px) {
+    .card-link-button {
+        font-size: 1.5vw;
+    }
+}

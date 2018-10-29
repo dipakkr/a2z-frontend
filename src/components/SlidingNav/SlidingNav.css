@@ -30,3 +30,9 @@
         display: none;
     }
 }
+
+@media screen and (orientation: landscape) and (max-width: 768px)  {
+    .sliding-nav-container {
+        width: 30%;
+    }
+}

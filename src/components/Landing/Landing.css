@@ -20,7 +20,7 @@
 }
 
 #special-container {
-    margin-top: 35vh;
+    margin-top: 17vh;
     margin-left: 10vw;
 }
 
@@ -31,14 +31,28 @@
 #special-container p {
     font-size: 1.5vw;
     margin-top: 2vh;
+    font-weight: 500;
     color: var(--theme);
 }
 
 #special-container div {
-    margin-top: 6vh;
-    font-size: 1vw;
+    margin-top: 4vh;
+    font-size: 1.4vw;
     font-weight: bold;
     z-index: 10;
+    max-width: 13vw;
+}
+
+#special-container div a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#fca15a,#f587b0);
+    height: 4vw;
+    border-radius: 10vw;
+    box-shadow: 2px 8px 22px rgba(0, 0, 0, 0.16);
 }
 
 
@@ -61,7 +75,7 @@
     }
 
     #special-container {
-        margin-top: 23vh;
+        margin-top: 14vh;
         margin-left: 0;
     }
     
@@ -75,6 +89,41 @@
 
     #special-container div {
         font-size: 1.7vh;
-        font-weight: 400;
+        margin: 4vh auto;
+        max-width: 15vh;
+    }
+
+    #special-container div a {
+        height: 5vh;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+    .background-svg-1 {
+        display: none;
+    }
+
+    .background-svg-2 {
+        width: 100vw;
+        height: auto;
+    }
+
+    #special-container h1 {
+        font-size: 2.5vw;
+    }
+
+    #special-container p {
+        font-size: 1.5vw;
+        color: black;
+    }
+
+    #special-container div {
+        font-size: 1.4vw;
+        margin: 4vh auto;
+        max-width: 12vw;
+    }
+
+    #special-container div a {
+        height: 4vw;
     }
 }

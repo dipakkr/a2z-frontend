@@ -1,12 +1,13 @@
 import React from 'react';
 import './Layout.css';
-import LinkButton from '../../components/LinkButton/LinkButton';
 import Logo from '../../components/Logo/Logo';
 import Hamburger from '../../components/Hamburger/Hamburger';
 import Backdrop from '../../components/Backdrop/Backdrop';
 import SlidingNav from '../../components/SlidingNav/SlidingNav';
 import { Consumer } from '../../components/Context/Context';
 import { Link } from 'react-router-dom';
+import ellipse from '../../assets/images/ellipse.svg';
+import footer from '../../assets/images/footer.svg';
 
 const Layout = (props) => {
     return (
@@ -26,6 +27,7 @@ const Layout = (props) => {
                     {(navIsOpen) ? <Backdrop /> : null}
                     <SlidingNav />
                     <header style={isLanding ? landingStyles.header : null}>
+                    <img src={ellipse} alt="" className="ellipse" />
                         <div id="header-container">
                             <div id="header-left">
                                 <Logo />
@@ -43,9 +45,7 @@ const Layout = (props) => {
                                             <Link to="/signup">SignUp</Link>
                                         </li>
                                         <li>
-                                            <LinkButton
-                                                href="/login"
-                                                styles={{ background: "linear-gradient(#8eb7f5,#40e1dc)", color: 'white' }}>Login</LinkButton>
+                                            <Link to="/login">Login</Link>
                                         </li>
                                     </ul>
                                 </nav>
@@ -60,24 +60,13 @@ const Layout = (props) => {
                     
                     <footer  style={isLanding ? landingStyles.footer : null}>
                         <div id="footer-container">
+                            <Logo />
                             <div id="claim">
-                                <Logo />
-                                <small>This project was initiated by Deepak Kumar in 2018</small><br/>
-                                <small>Made with <span style={{ color: "red" }}>♥</span> by the Open Source</small>
+                                <p>This project was initiated by Deepak Kumar in 2018</p>
+                                <p>Made with <span style={{ color: "red" }}>♥</span> by the Open Source</p>
                             </div>
                             <div id="footer-links-container">
-                                <div className="footer-link">
-                                    <LinkButton
-                                        href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
-                                        styles={{ background: "var(--black)" }}
-                                    >GitHub</LinkButton>
-                                </div>
-                                <div className="footer-link">
-                                    <LinkButton
-                                        href="https://gitter.im/a2z-resources"
-                                        styles={{ background: "var(--red)" }}
-                                    >Gitter</LinkButton>
-                                </div>
+
                             </div>
                             
                         </div>

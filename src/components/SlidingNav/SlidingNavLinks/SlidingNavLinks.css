@@ -1,6 +1,12 @@
 .sliding-nav-link-container {
-    line-height: 7vh;
+    line-height: 10vh;
     padding-left: 8vw;
     color: #fff;
     border-bottom: 0.5px solid #678;
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+    .sliding-nav-link-container {
+        padding-left: 2vw;
+    }
 }
