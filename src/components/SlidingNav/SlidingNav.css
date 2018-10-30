@@ -4,17 +4,26 @@
     position: absolute;
     z-index: 13;
     background-color: var(--bg-black);
-    box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+    -webkit-box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+            box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
     top: 0;
     left: 0;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    -o-transition: transform 0.2s;
     transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 #sliding-nav-header {
     width: 80%;
     margin: 5vh auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #back-button {

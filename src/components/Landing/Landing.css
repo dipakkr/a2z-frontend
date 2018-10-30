@@ -46,13 +46,23 @@
 #special-container div a {
     text-decoration: none;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: -webkit-gradient(linear,left top, left bottom,from(#fca15a),to(#f587b0));
+    background: -webkit-linear-gradient(#fca15a,#f587b0);
+    background: -o-linear-gradient(#fca15a,#f587b0);
     background: linear-gradient(#fca15a,#f587b0);
     height: 4vw;
     border-radius: 10vw;
-    box-shadow: 2px 8px 22px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 2px 8px 22px rgba(0, 0, 0, 0.16);
+            box-shadow: 2px 8px 22px rgba(0, 0, 0, 0.16);
 }
 
 

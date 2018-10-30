@@ -9,15 +9,27 @@
     cursor: pointer;
     position: relative;
     border-radius: 15px;
-    box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+    -webkit-box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+            box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
     transition: all 0.4s;
     text-decoration: none;
     height: 100%;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-weight: 500;
     font-size: 1.4vw;
     width: 22vw;
@@ -31,7 +43,8 @@
 
 
 .card-link-button:hover, .card-link-button:focus {
-    box-shadow: 2px 4px 8px 0 rgba(46,61,73,.25);
+    -webkit-box-shadow: 2px 4px 8px 0 rgba(46,61,73,.25);
+            box-shadow: 2px 4px 8px 0 rgba(46,61,73,.25);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -45,7 +58,9 @@
     }
 
     .card-link-button img {
-        transform: scale(0.5);
+        -webkit-transform: scale(0.5);
+            -ms-transform: scale(0.5);
+                transform: scale(0.5);
     }
 }
 
@@ -66,7 +81,9 @@
     }
 
     .card-link-button img {
-        transform: scale(0.6);
+        -webkit-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+                transform: scale(0.6);
     }
 }
 
@@ -79,10 +96,16 @@
     
     .card-link-button {
         width: 75vw;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 0 0 0 25px;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         font-size: 1.8vh;
         text-align: left;
         border-radius: 6px;
@@ -93,7 +116,9 @@
     }
 
     .card-link-button img {
-        transform: scale(0.3);
+        -webkit-transform: scale(0.3);
+            -ms-transform: scale(0.3);
+                transform: scale(0.3);
     }
 }
 

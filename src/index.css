@@ -24,9 +24,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  user-select: none;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -moz-user-select: -moz-none;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -moz-box-sizing: border-box;
   color: var(--black);
 }

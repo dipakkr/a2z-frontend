@@ -10,9 +10,15 @@ header {
     width: 87%;
     height: 100%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .ellipse {
@@ -33,11 +39,15 @@ header {
 }
 
 #header-right li:last-child {
+    background: -webkit-gradient(linear,left top, left bottom,from(#8eb7f5),to(#40e1dc));
+    background: -webkit-linear-gradient(#8eb7f5,#40e1dc);
+    background: -o-linear-gradient(#8eb7f5,#40e1dc);
     background: linear-gradient(#8eb7f5,#40e1dc);
     padding: 1vw 3vw;
     border-radius: 5vw;
     color: white;
-    box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.16);
+            box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.16);
     font-weight: 600;
 }
 
@@ -65,7 +75,8 @@ footer {
     width: 75%;
     margin: 0 auto;
     height: 100%;
-    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+            box-sizing: border-box !important;
     padding-top: 7vh;
     position: relative;
 }
@@ -77,10 +88,17 @@ footer {
 }
 
 .footer-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 2px 8px 18px rgba(0, 0, 0, 0.16);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 2px 8px 18px rgba(0, 0, 0, 0.16);
+            box-shadow: 2px 8px 18px rgba(0, 0, 0, 0.16);
     margin: 10px;
     height: 2.3vw;
     width: 7vw;
@@ -114,15 +132,24 @@ footer {
 
 
 .side-link {
-    transform: translateX(-40px);
+    -webkit-transform: translateX(-40px);
+        -ms-transform: translateX(-40px);
+            transform: translateX(-40px);
     margin-top: 25px;
     background: var(--black);
-    box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.16);
+    -webkit-box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.16);
+            box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.16);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    -o-transition: transform 0.2s;
     transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .side-link:hover {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
 }
 
 .side-link a {
@@ -154,12 +181,16 @@ footer {
     }
 
     .side-links-container {
-        transform: scale(0.4) translateX(-90px);
+        -webkit-transform: scale(0.4) translateX(-90px);
+            -ms-transform: scale(0.4) translateX(-90px);
+                transform: scale(0.4) translateX(-90px);
         top: 25%;
     }
 
     .side-link:hover {
-        transform: translateX(-50px);
+        -webkit-transform: translateX(-50px);
+            -ms-transform: translateX(-50px);
+                transform: translateX(-50px);
     }
 }
 
@@ -194,12 +225,16 @@ footer {
     }
 
     .side-links-container {
-        transform: scale(0.3) translateX(-160px);
+        -webkit-transform: scale(0.3) translateX(-160px);
+            -ms-transform: scale(0.3) translateX(-160px);
+                transform: scale(0.3) translateX(-160px);
         top: 25%;
     }
 
     .side-link:hover {
-        transform: translateX(-40px);
+        -webkit-transform: translateX(-40px);
+            -ms-transform: translateX(-40px);
+                transform: translateX(-40px);
     }
 
 }
@@ -279,11 +314,15 @@ footer {
     }
 
     .side-links-container {
-        transform: scale(0.3) translateX(-160px);
+        -webkit-transform: scale(0.3) translateX(-160px);
+            -ms-transform: scale(0.3) translateX(-160px);
+                transform: scale(0.3) translateX(-160px);
         top: 15%;
     }
 
     .side-link:hover {
-        transform: translateX(-40px);
+        -webkit-transform: translateX(-40px);
+            -ms-transform: translateX(-40px);
+                transform: translateX(-40px);
     }
 }
