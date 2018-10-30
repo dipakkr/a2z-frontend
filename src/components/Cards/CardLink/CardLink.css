@@ -1,7 +1,8 @@
 .card-link {
-    margin: 5vh;
+    margin: 1%;
     height: 33vh;
     display: inline-block;
+    text-align: center;
 }
 
 
@@ -31,9 +32,10 @@
         -ms-flex-align: center;
             align-items: center;
     font-weight: 500;
+    width: 21vw;
     font-size: 1.4vw;
-    width: 22vw;
     float: left;
+    transform: scale(0.9);
 }
 
 .card-link-button p {
@@ -41,6 +43,9 @@
     max-width: 70%;
 }
 
+.card-link img {
+    width: 20%;
+}
 
 .card-link-button:hover, .card-link-button:focus {
     -webkit-box-shadow: 2px 4px 8px 0 rgba(46,61,73,.25);
@@ -51,6 +56,7 @@
 
     .card-link-button {
         border-radius: 8px;
+        transform: scale(1);
     }
 
     .card-link-button p {

@@ -8,6 +8,7 @@ const Cards = (props) => {
             {props.cards.map((card) => {
                 return (
                     <CardLink
+                        key={card.title}
                         title={card.title}
                         href={card.link}
                         png={card.png}

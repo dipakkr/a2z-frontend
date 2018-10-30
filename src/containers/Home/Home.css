@@ -1,17 +1,17 @@
 #home-page-container {
-    padding: 10vh 0 25vh 0;
+    padding: 5vh 0 25vh 0;
     text-align: center;
 }
 
 .heading {
     margin-bottom: 5px;
     color: var(--black);
-    font-size: 2.5vw;
+    font-size: 2em;
 }
 
 .sub-heading {
     color: var(--theme);
-    font-size: 1.5vw;
+    font-size: 1em;
     max-width: 75vw;
     margin: 17px auto;
 }

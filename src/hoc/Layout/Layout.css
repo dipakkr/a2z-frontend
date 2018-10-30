@@ -99,14 +99,14 @@ footer {
             align-items: center;
     -webkit-box-shadow: 2px 8px 18px rgba(0, 0, 0, 0.16);
             box-shadow: 2px 8px 18px rgba(0, 0, 0, 0.16);
-    margin: 10px;
+    margin: 7px;
     height: 2.3vw;
     width: 7vw;
     background: var(--black);
     border-radius: 7px;
     text-decoration: none;
     color: white;
-    font-size: 0.8vw;
+    font-size: 1.5em;
     font-weight: bold;
     letter-spacing: 1px;
 }
@@ -121,7 +121,7 @@ footer {
 }
 
 #claim p {
-    font-size: 0.9vw;
+    font-size: 1.2em;
 }
 
 .side-links-container {
@@ -164,11 +164,18 @@ footer {
 @media only screen and (min-width: 2000px) {
 
     #header-right li {
-        font-size: 1.2vw;
+        font-size: 2rem;
+    }
+
+    .side-links-container {
+        -webkit-transform: scale(0.4) translateX(-90px);
+            -ms-transform: scale(0.4) translateX(-90px);
+                transform: scale(0.4) translateX(-90px);
+        top: 25%;
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1940px) {
 
     #footer-links-container {
         margin-top: -10px;
@@ -176,8 +183,12 @@ footer {
 
     .footer-link {
         border-radius: 4px;
-        font-size: 1vw;
+        font-size: 0.8em;
         letter-spacing: 0px;
+    }
+
+    #claim p {
+        font-size: 0.7em;
     }
 
     .side-links-container {
@@ -222,6 +233,14 @@ footer {
 
     #footer-container {
         padding-top: 4%;
+    }
+
+    #claim {
+        left: 35%;
+    }
+
+    #claim p {
+        font-size: 0.5em;
     }
 
     .side-links-container {
@@ -273,7 +292,7 @@ footer {
     .footer-link {
         margin-top: 0px;
         border-radius: 4px;
-        font-size: 1vh;
+        font-size: 0.5em;
         height: 2.5vh;
         width: 8vh;
         letter-spacing: 0px;
@@ -285,7 +304,7 @@ footer {
     }
 
     #claim p {
-        font-size: 1.5vh;
+        font-size: 0.7em;
     }
 
 }
