@@ -106,7 +106,7 @@
         padding: 0 0 0 25px;
         -webkit-box-sizing: border-box;
                 box-sizing: border-box;
-        font-size: 1.8vh;
+        font-size: 3.8vw !important;
         text-align: left;
         border-radius: 6px;
     }

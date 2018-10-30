@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+
+.loader-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+    width: 100vw;
+    height: 100vh;
+}
+
+.loader {
+    font-family: 'Paytone One', 'Segoe UI', sans-serif;
+    font-weight: 900;
+    font-size: 4vw;
+    letter-spacing: 1vw;
+}
+
+.loader-a {
+    color: #f67676;
+}
+
+.loader-b {
+    color: #595a5b;
+}
+
+.loader-z {
+    color: #257281;
+    transform: translateY(50px);
+}

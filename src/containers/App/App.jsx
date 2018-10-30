@@ -5,6 +5,7 @@ import Layout from '../../hoc/Layout/Layout';
 import Home from '../Home/Home';
 import Landing from '../../components/Landing/Landing';
 import { Provider } from '../../components/Context/Context';
+import Loader from '../../components/Loader/Loader';
 
 class App extends Component {
 
@@ -43,6 +44,7 @@ class App extends Component {
             navLinks: this.state.navLinks, 
             navHandler: this.navHandler
             }}>
+            {/* <Loader /> */}
             <Layout>
               <Route path="/" exact render={() => (
                 <Landing toggleLanding={this.toggleLanding} />
