@@ -98,10 +98,12 @@
     .card-link {
         height: 18vw;
         margin: 3.5vw;
+        margin: 0;
+        margin-bottom: 7%;
     }
     
     .card-link-button {
-        width: 75vw;
+        width: 70vw;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: reverse;
             -ms-flex-direction: row-reverse;

@@ -8,6 +8,7 @@
 @media only screen and (max-width: 768px) {
     .cards-container {
         margin: 4vh auto;
-        padding-left: 10%;
+        padding-left: 0;
+        width: 70vw;
     }
 }
