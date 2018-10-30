@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
+
 @media only screen and (min-width: 1024px) {
     .logo {
         font-size: 2vw;
+        text-shadow: 6px 6px 11px rgba(0, 0, 0, 0.16);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
     }
 }
 

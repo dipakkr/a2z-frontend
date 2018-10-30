@@ -1,137 +1,81 @@
 .card-link {
-    margin: 1%;
-    height: 33vh;
-    display: inline-block;
-    text-align: center;
+    height: 18vw;
+    line-height: 18vw;
+    text-align: left;
+    margin-bottom: 7vw;
+    box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
 }
 
-
-.card-link-button, .card-link-button:visited {
-    cursor: pointer;
-    position: relative;
-    border-radius: 15px;
-    -webkit-box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
-            box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
+.card-link a {
     text-decoration: none;
-    height: 100%;
+    display: block;
     color: white;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    font-size: 0.9em;
     font-weight: 500;
-    width: 21vw;
-    font-size: 1.4vw;
-    float: left;
-    transform: scale(0.9);
+    width: 100%;
+    height: 100%;
 }
 
-.card-link-button p {
-    margin-top: 20px;
-    max-width: 70%;
-}
 
 .card-link img {
-    width: 20%;
+    width: 10%;
+    margin-top: -4px;
+    margin-right: 5%;
+    margin-left: 5%;
+    vertical-align: middle;
 }
 
-.card-link-button:hover, .card-link-button:focus {
-    -webkit-box-shadow: 2px 4px 8px 0 rgba(46,61,73,.25);
-            box-shadow: 2px 4px 8px 0 rgba(46,61,73,.25);
-}
-
-@media only screen and (max-width: 1024px) {
-
-    .card-link-button {
-        border-radius: 8px;
-        transform: scale(1);
-    }
-
-    .card-link-button p {
-        margin-top: 0;
-    }
-
-    .card-link-button img {
-        -webkit-transform: scale(0.5);
-            -ms-transform: scale(0.5);
-                transform: scale(0.5);
+@media only screen and (max-width: 400px) {
+    .card-link a {
+        font-size: 0.7em;
     }
 }
+ 
 
-@media only screen and (max-width: 768px) {
-
+@media only screen and (min-width: 481px) {
     .card-link {
-        height: 21vw;
-        margin: 2vw;
-    }
-
-    .card-link-button {
-        font-size: 1.4vh;
-        border-radius: 8px;
-    }
-
-    .card-link-button p {
+        line-height: 2.5vw;
+        text-align: center;
+        margin: 0 2vw;
         margin-top: 0;
+        margin-bottom: 3.5vw;
+        border-radius: 7px;
     }
 
-    .card-link-button img {
-        -webkit-transform: scale(0.6);
-            -ms-transform: scale(0.6);
-                transform: scale(0.6);
+    .card-link a {
+        box-sizing: border-box;
+        padding: 25% 10%;
+        font-size: 0.7em;
+    }
+
+    .card-link span {
+        display: block;
+    }
+
+    .card-link img {
+        width: 30%;
+        margin-bottom: 10px;
     }
 }
 
-@media only screen and (max-width: 480px) {
-    
+@media only screen and (min-width: 769px) {
     .card-link {
-        height: 18vw;
-        margin: 3.5vw;
-        margin: 0;
-        margin-bottom: 7%;
-    }
-    
-    .card-link-button {
-        width: 70vw;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: reverse;
-            -ms-flex-direction: row-reverse;
-                flex-direction: row-reverse;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        padding: 0 0 0 25px;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        font-size: 3.8vw !important;
-        text-align: left;
-        border-radius: 6px;
+        height: 16vw;
+        line-height: 1.6vw;
+        margin-top: 0;
+        margin-bottom: 3vw;
+        border-radius: 15px;
     }
 
-    .card-link-button p {
-        max-width: 70%;
-    }
-
-    .card-link-button img {
-        -webkit-transform: scale(0.3);
-            -ms-transform: scale(0.3);
-                transform: scale(0.3);
+    .card-link a {
+        padding: 27% 10%;
+        font-size: .9em;
     }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 768px) {
-    .card-link-button {
-        font-size: 1.5vw;
+@media only screen and (min-width: 1400px) {
+    .card-link a {
+        font-size: 1.2vw;
     }
 }

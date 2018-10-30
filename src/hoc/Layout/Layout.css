@@ -34,7 +34,7 @@ header {
 
 #header-right li {
     display: inline-block;
-    margin-left: 3.5vw;
+    margin-left: 1vw;
     color: var(--black);
 }
 
@@ -43,7 +43,6 @@ header {
     background: -webkit-linear-gradient(#8eb7f5,#40e1dc);
     background: -o-linear-gradient(#8eb7f5,#40e1dc);
     background: linear-gradient(#8eb7f5,#40e1dc);
-    padding: 1vw 3vw;
     border-radius: 5vw;
     color: white;
     -webkit-box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.16);
@@ -51,9 +50,11 @@ header {
     font-weight: 600;
 }
 
-#header-right a {
+#header-right a:last-child {
     text-decoration: none;
     color: inherit;
+    display: block;
+    padding: 1vw 2vw;
 }
 
 main {
@@ -111,6 +112,11 @@ footer {
     letter-spacing: 1px;
 }
 
+.footer-link img {
+    width: 60%;
+    margin-right: 5px;
+}
+
 
 #claim {
     text-align: center;
@@ -158,13 +164,18 @@ footer {
 }
 
 .side-link img {
-    height: 32px;
+    width: 32px;
 }
 
 @media only screen and (min-width: 2000px) {
 
     #header-right li {
         font-size: 2rem;
+    }
+
+    .footer-link img {
+        width: 70%;
+        margin-right: 20px;
     }
 
     .side-links-container {
@@ -185,6 +196,12 @@ footer {
         border-radius: 4px;
         font-size: 0.8em;
         letter-spacing: 0px;
+        font-size: 0.6em;
+    }
+
+    .footer-link img {
+        width: 50%;
+        margin-right: 0;
     }
 
     #claim p {
@@ -205,7 +222,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) {
 
     header {
         height: 12vh;
@@ -213,10 +230,6 @@ footer {
 
     #header-container {
         width: 90%;
-    }
-
-    .ellipse {
-        height: 20vw;
     }
 
     .footer-link {
@@ -230,7 +243,7 @@ footer {
     footer {
         height: 125px;
     }
-
+    
     #footer-container {
         padding-top: 4%;
     }
@@ -291,11 +304,17 @@ footer {
 
     .footer-link {
         margin-top: 0px;
-        border-radius: 4px;
+        border-radius: 2px;
         font-size: 0.5em;
-        height: 2.5vh;
-        width: 8vh;
+        height: 3vh;
+        width: 9vh;
+        text-align: center;
         letter-spacing: 0px;
+        padding-right: 5px;
+    }
+
+    .footer-link img {
+        width: 30%;
     }
 
     #claim {
@@ -309,18 +328,18 @@ footer {
 
 }
 
-@media screen and (orientation: landscape) and (max-width: 1024px) {
+@media screen and (orientation: landscape) and (max-width: 812px) {
     
     header {
         height: 17vh;
     }
 
-    .ellipse {
-        height: 18vw;
-    }
-
     nav {
         display: none;
+    }
+
+    #footer-links-container {
+        bottom: 0px;
     }
 
     .footer-link {
@@ -330,6 +349,15 @@ footer {
         height: 2vw;
         width: 7.5vw;
         letter-spacing: 0px;
+    }
+
+    .footer-link img {
+        width: 40%;
+        margin-right: 0;
+    }
+
+    #claim p {
+        font-size: 0.5em;
     }
 
     .side-links-container {

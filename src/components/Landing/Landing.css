@@ -6,14 +6,14 @@
 
 .background-svg-1 {
     height: 60vh;
-    position: absolute;
+    position: fixed;
     top: 20%;
     right: 7%;
 }
 
 .background-svg-2 {
     height: 75vh;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     bottom: 0;
     right: 0;

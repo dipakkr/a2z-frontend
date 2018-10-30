@@ -6,7 +6,6 @@ import Backdrop from '../../components/Backdrop/Backdrop';
 import SlidingNav from '../../components/SlidingNav/SlidingNav';
 import { Consumer } from '../../components/Context/Context';
 import { Link } from 'react-router-dom';
-import ellipse from '../../assets/images/ellipse.svg';
 import github from '../../assets/images/github.png';
 import gitter from '../../assets/images/gitter.png';
 
@@ -32,7 +31,6 @@ const Layout = (props) => {
                     {(navIsOpen) ? <Backdrop /> : null}
                     <SlidingNav />
                     <header style={isLanding ? landingStyles.header : null}>
-                    <img src={ellipse} alt="" className="ellipse" />
                         <div id="header-container">
                             <div id="header-left">
                                 <Logo />
@@ -76,14 +74,14 @@ const Layout = (props) => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="footer-link">
-                                        Github
+                                        <span><img src={github} alt=""/></span>Github
                                     </a>
                                     <a
                                         href="https://gitter.im/a2z-resources"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="footer-link">
-                                        Gitter
+                                        <span><img src={gitter} alt=""/></span>Gitter
                                     </a>
                             </div>
                             

@@ -1,14 +1,20 @@
 .cards-container {
-    width: 95%;
+    width: 75%;
     margin: 7vh auto;
-    text-align: left;
-    padding-left: 2%;
+    display: grid;
+    grid-template-columns: 100%;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1023px) and (min-width: 481px) {
     .cards-container {
+        grid-template-columns: 33% 33% 33%;
         margin: 4vh auto;
-        padding-left: 0;
-        width: 70vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cards-container {
+        width: 90%;
+        grid-template-columns: 25% 25% 25% 25%;
     }
 }

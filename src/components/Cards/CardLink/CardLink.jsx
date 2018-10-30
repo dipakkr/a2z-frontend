@@ -8,13 +8,12 @@ const CardLink = (props) => {
     }
 
     return (
-        <div className="card-link">
+        <div className="card-link" style={variableStyles}>
             <Link
                 to={props.href}
-                style={variableStyles}
                 className="card-link-button">
-                <img src={props.png} alt=""/>
-                <p>{props.title}</p>
+                <span><img src={props.png} alt=""/></span>
+                {props.title}
             </Link>
         </div>
 
