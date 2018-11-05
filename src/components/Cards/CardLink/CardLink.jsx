@@ -16,6 +16,7 @@ const CardLink = (props) => {
                 {props.title}
             </Link>
         </div>
+
     );
 }
 

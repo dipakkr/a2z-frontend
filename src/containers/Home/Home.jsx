@@ -16,49 +16,49 @@ export default class Home extends React.Component {
         cards: [
             {
                 title:"Coding Resources",
-                link: "/coding-resources",
+                link: "/home/coding-resources",
                 png: code,
                 color: "#99cffe"
             },
             {
                 title:"Hackathons & Events",
-                link: "/hackathons",
+                link: "/home/hackathons",
                 png: event,
                 color: "#49dbbd"
             },
             {
                 title:"Student Benefits",
-                link: "/student-benefits",
+                link: "/home/student-benefits",
                 png: classroom,
                 color: "#dbc224"
             },
             {
                 title:"Open Source Programs",
-                link: "/open-source", 
+                link: "/home/open-source", 
                 png: idea,
                 color: "#f67676"
             },
             {
                 title:"Startup Programs & Incubators",
-                link: "/startup-programs",
+                link: "/home/startup-programs",
                 png: laptop,
                 color: "#6fbb2d"
             },
             {
                 title:"Developer clubs & Meetups",
-                link: "/meetups",
+                link: "/home/meetups",
                 png: group,
                 color: "#257281"
             },
             {
                 title:"Conferences",
-                link: "/conferences",
+                link: "/home/conferences",
                 png: conference,
                 color: "#8465ac"
             },
             {
                 title:"Top Charts",
-                link: "/top-charts",
+                link: "/home/top-charts",
                 png: chart,
                 color: "#595a5b"
             },

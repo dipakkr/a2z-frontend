@@ -1,9 +1,14 @@
 import React from 'react';
 import './Backdrop.css';
+import { Consumer } from '../Context/Context';
 
-const Backdrop = (props) => {
+const Backdrop = () => {
     return (
-        <div className="backdrop-container" onClick={props.clicked}></div>
+        <Consumer>
+            {({ navHandler }) => (
+                <div className="backdrop-container" onClick={navHandler}></div>
+            )}
+        </Consumer>
     );
 }
 

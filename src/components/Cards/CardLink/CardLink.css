@@ -40,13 +40,13 @@
         margin: 0 2vw;
         margin-top: 0;
         margin-bottom: 3.5vw;
-        border-radius: 3px;
+        border-radius: 7px;
     }
 
     .card-link a {
         box-sizing: border-box;
         padding: 25% 10%;
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
 
     .card-link span {
@@ -65,12 +65,12 @@
         line-height: 1.6vw;
         margin-top: 0;
         margin-bottom: 3vw;
-        border-radius: 7px;
+        border-radius: 15px;
     }
 
     .card-link a {
         padding: 27% 10%;
-        font-size: 1em;
+        font-size: .9em;
     }
 }
 

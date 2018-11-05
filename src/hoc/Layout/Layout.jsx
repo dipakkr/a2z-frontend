@@ -13,7 +13,7 @@ import gitter from '../../assets/images/gitter.png';
 const Layout = (props) => {
     return (
         <Consumer>
-            {({ navIsOpen, navHandler, isLanding }) => {
+            {({ navIsOpen, isLanding }) => {
 
                 const landingStyles ={
                     header: {
@@ -27,8 +27,8 @@ const Layout = (props) => {
                     }
                 };
 
-                return <>
-                    {(navIsOpen) ? <Backdrop clicked={navHandler} /> : null}
+                return <React.Fragment>
+                    {(navIsOpen) ? <Backdrop /> : null}
                     <SlidingNav />
                     <header style={isLanding ? landingStyles.header : null}>
                         <div id="header-container">
@@ -57,8 +57,9 @@ const Layout = (props) => {
                         </div>
                     </header>
 
-                    {props.children}
-                    
+                    <main style={isLanding ? landingStyles.main : null}>
+                        {props.children}
+                    </main>
                     
                     <footer style={isLanding ? landingStyles.footer : null}>
                         <div id="footer-container">
@@ -104,7 +105,7 @@ const Layout = (props) => {
                             </a>
                         </div>
                     </div>
-                </>
+                </React.Fragment>
             }}
         </Consumer>
     )
