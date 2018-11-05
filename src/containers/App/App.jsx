@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { Router, Route, Switch, Redirect } from 'react-router-dom';
 import Layout from '../../hoc/Layout/Layout';
 import Home from '../Home/Home';
 import Landing from '../../components/Landing/Landing';
@@ -37,7 +37,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>  
+      <Router basename={process.env.PUBLIC_URL}>  
         <div className="App">
           <Provider value={{
             isLanding: this.state.isLanding,
@@ -61,7 +61,7 @@ class App extends Component {
             </Layout>
           </Provider>
         </div>
-      </BrowserRouter>
+      </Router>
     );
   }
 }
