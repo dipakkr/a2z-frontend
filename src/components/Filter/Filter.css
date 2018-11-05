@@ -1,0 +1,28 @@
+.filter-desktop-container select {
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+    font-family: inherit;
+    padding: 4px 7px;
+    margin-top: 10px;
+}
+
+select:focus {
+    outline: none;
+}
+
+@media only screen and (min-width: 1024px) {
+    .filter-desktop-container select {
+        padding: 8px 15px;
+        max-width: 20vw;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .filter-desktop-container select {
+        padding: 1vw 1.5vw;
+        max-width: 25vw;
+        font-size: 1vw;
+    }
+}
