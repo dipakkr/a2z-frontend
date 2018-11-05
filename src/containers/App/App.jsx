@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Layout from '../../hoc/Layout/Layout';
 import Home from '../Home/Home';
 import Landing from '../../components/Landing/Landing';
 import { Provider } from '../../components/Context/Context';
-
+import ResourcesPage from '../ResourcesPage/ResourcesPage';
+import Lost from '../../components/Lost/Lost';
 
 class App extends Component {
 
@@ -17,7 +18,7 @@ class App extends Component {
       ["SignUp", "/signup"],
       ["Roadmaps", "/roadmaps"],
       ["Explorer", "/explorer"],
-    ]
+    ],
   }
 
   navHandler = () => {
@@ -36,20 +37,27 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>  
+      <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>  
         <div className="App">
           <Provider value={{
             isLanding: this.state.isLanding,
             navIsOpen: this.state.navIsOpen,
             navLinks: this.state.navLinks, 
-            navHandler: this.navHandler
+            navHandler: this.navHandler,
             }}>
             {/* <Loader /> */}
             <Layout>
-              <Route path="/" exact render={() => (
-                <Landing toggleLanding={this.toggleLanding} />
-              )} />
-              <Route path="/home" exact component={Home} />
+               <Switch> 
+                <Route path="/" exact render={() => (
+                  <Landing toggleLanding={this.toggleLanding} />
+                )} />
+                <Route path="/home" exact component={Home} />
+                <Route path="/coding-resources" render={() => (
+                  <ResourcesPage title="Coding Resources" color="#99cffe" />
+                )} />
+                <Route path="/lost" component={Lost} />
+                <Redirect to="/lost" />
+              </Switch>
             </Layout>
           </Provider>
         </div>
