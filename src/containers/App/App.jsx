@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { HashRouter, Route, Switch, Redirect } from 'react-router-dom';
 import Layout from '../../hoc/Layout/Layout';
 import Home from '../Home/Home';
 import Landing from '../../components/Landing/Landing';
@@ -37,7 +37,7 @@ class App extends Component {
 
   render() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>  
+      <HashRouter basename={process.env.PUBLIC_URL}>  
         <div className="App">
           <Provider value={{
             isLanding: this.state.isLanding,
@@ -48,20 +48,20 @@ class App extends Component {
             {/* <Loader /> */}
             <Layout>
                <Switch> 
-                <Route path={process.env.PUBLIC_URL + "/"} exact render={() => (
+                <Route path="/" exact render={() => (
                   <Landing toggleLanding={this.toggleLanding} />
                 )} />
-                <Route path={process.env.PUBLIC_URL + "/home"} exact component={Home} />
-                <Route path={process.env.PUBLIC_URL + "/coding-resources"} render={() => (
+                <Route path="/home" exact component={Home} />
+                <Route path="/coding-resources" render={() => (
                   <ResourcesPage title="Coding Resources" color="#99cffe" />
                 )} />
-                <Route path={process.env.PUBLIC_URL + "/lost"} component={Lost} />
-                <Redirect to={process.env.PUBLIC_URL + "/lost"} />
+                <Route path="/lost" component={Lost} />
+                <Redirect to="/lost" />
               </Switch>
             </Layout>
           </Provider>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     );
   }
 }
