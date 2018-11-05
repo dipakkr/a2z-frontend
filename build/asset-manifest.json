@@ -1,7 +1,7 @@
 {
   "main.css": "/a2z-frontend/static/css/main.393a2177.chunk.css",
-  "main.js": "/a2z-frontend/static/js/main.fe5bf916.chunk.js",
-  "main.js.map": "/a2z-frontend/static/js/main.fe5bf916.chunk.js.map",
+  "main.js": "/a2z-frontend/static/js/main.1ea137a8.chunk.js",
+  "main.js.map": "/a2z-frontend/static/js/main.1ea137a8.chunk.js.map",
   "static/js/1.9641160c.chunk.js": "/a2z-frontend/static/js/1.9641160c.chunk.js",
   "static/js/1.9641160c.chunk.js.map": "/a2z-frontend/static/js/1.9641160c.chunk.js.map",
   "runtime~main.js": "/a2z-frontend/static/js/runtime~main.25ee61c9.js",
@@ -11,6 +11,6 @@
   "static/media/Layout.css": "/a2z-frontend/static/media/footer.7f435832.svg",
   "static/media/stylish.svg": "/a2z-frontend/static/media/stylish.a0ef6242.svg",
   "index.html": "/a2z-frontend/index.html",
-  "precache-manifest.33ddf411512da91f848a32874a8f2787.js": "/a2z-frontend/precache-manifest.33ddf411512da91f848a32874a8f2787.js",
+  "precache-manifest.a1fa09ff17be0707d5d23c64a9b1b977.js": "/a2z-frontend/precache-manifest.a1fa09ff17be0707d5d23c64a9b1b977.js",
   "service-worker.js": "/a2z-frontend/service-worker.js"
 }
