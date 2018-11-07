@@ -79,3 +79,15 @@
         font-size: 1.2vw;
     }
 }
+
+@media screen and (orientation: landscape) and (max-width: 812px) {
+    .card-link {
+        border-radius: 3px;
+        line-height: 1.8vw;
+    }
+
+    .card-link a {
+        padding: 22% 10%;
+        font-size: 0.8em;
+    }
+}

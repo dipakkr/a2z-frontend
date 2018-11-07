@@ -18,7 +18,7 @@ export default class Home extends React.Component {
                 title:"Coding Resources",
                 link: "/coding-resources",
                 png: code,
-                color: "#99cffe"
+                color: "#06addb"
             },
             {
                 title:"Hackathons & Events",

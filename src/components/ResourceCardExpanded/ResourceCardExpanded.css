@@ -1,26 +1,18 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 .expanded-resource-card {
-    position: fixed;
     z-index: 16;
-    height: 60vh;
-    width: 90vw;
     background: #fff;
-    top: 50%;
-    left: 50%;
-    margin-left: -45vw;
-    margin-top: -30vh;
-    border-radius: 3px;
-    box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.16);
-    animation: slide-in 0.3s ease-out forwards;
-    transform: translateY(100%);
+    width: 90%;
+    margin: 4vh auto;
+    margin-bottom: 10vh;
+    min-height: 70vh;
 }
 
 .expanded-resource-card h2 {
-    padding: 15px 15px;
-    font-size: 0.76em;
-    background-color: #585658;
-    color: white;
+    font-size: 1.2em;
+    color: #262626;
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,43 +27,49 @@
 }
 
 .close {
-    margin-left: 10px;
+    margin-right: 10px;
     border-style: solid;
-    background-color: #f67676;
-    border-color: #f67676;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: transparent;
+    border-radius: 50%;
     color: white;
-    padding: 0 3px;
-    font-size: 1em;
-    border-radius: 1px;
+    padding: 0.1em 0.5em 0.3em 0.3em;
+    font-size: 0.7em;
     cursor: pointer;
     outline: none;
 }
 
-@keyframes slide-in {
-    from {
-        transform: translateY(100%);
-    }
-    to {
-        transform: translateY(0);
-    }
+.close:hover, .close:focus {
+    outline: none;
+    transform: scale(1.1);
+}
+
+.resource-links-container {
+    width: 90%;
+    box-sizing: border-box;
+    padding-top: 20px;
+    margin: 0 auto;
 }
 
 
 @media only screen and (min-width: 768px) {
-    .expanded-resource-card {
-        width: 70vw;
-        height: 80vh;
-        margin-left: -35vw;
-        margin-top: -40vh;
-    }
 
     .expanded-resource-card h2 {
-        font-size: 1.2vw;
+        font-size: 2vw;
         padding: 2vh;
     }
 
-    .close {
-        margin-left: 1vw;
-        padding: 0 0.4vw;
+    .resource-tags {
+        padding-left: 5vw;
+        font-size: 1.4em;
     }
+
+    .close {
+        font-size: 1.1vw;
+        margin-right: 2vw;
+        display: inline-block;
+        vertical-align: middle;
+        box-sizing: border-box;
+        padding: 0.1vw 0.5vw 0.2vw 0.3vw;
+    }   
 }

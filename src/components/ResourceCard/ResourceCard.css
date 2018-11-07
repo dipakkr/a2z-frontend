@@ -33,7 +33,11 @@
 .resource-card p {
     font-size: 0.6em;
     color: var(--theme);
-    padding: 15px;
+    padding: 15px 0 0 15px;
+}
+
+.resource-card-tags {
+    padding: 1px 0 10px 10px;
 }
 
 .resource-card button {
@@ -86,7 +90,11 @@
 
     .resource-card p {
         font-size: 0.8vw;
-        padding: 2vh;
+        padding: 2vh 0 0 2vh;
+    }
+
+    .resource-card-tags {
+        padding: 0.2vh 0 1.5vh 1.5vh;
     }
 
     .resource-card button {
@@ -112,7 +120,11 @@
 
     .resource-card p {
         font-size: 1vw;
-        padding: 2.5vh;
+        padding: 2.5vh 0 0 2.5vh;
+    }
+
+    .resource-card-tags {
+        padding: .3vh 0 1.7vh 1.7vh;
     }
 
     .resource-card button {

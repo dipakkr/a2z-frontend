@@ -1,13 +1,13 @@
 import React from 'react';
 import './Loader.css';
+import loader from '../../assets/images/loader.png'
 
 const Loader = (props) => {
     return (
         <div className="loader-container">
             <div className="loader">
-                <span className="loader-a">A</span>
-                <span className="loader-b">.</span>
-                <span className="loader-z">Z</span>
+                <img src={loader} alt="Loading..." />
+                <p>Fetching content..</p>
             </div>
         </div>
     );

@@ -5,10 +5,11 @@
 }
 
 .background-svg-1 {
-    height: 60vh;
+    width: 40vw;
     position: fixed;
-    top: 20%;
+    top: 27%;
     right: 7%;
+    z-index: -1;
 }
 
 .background-svg-2 {
@@ -135,5 +136,47 @@
 
     #special-container div a {
         height: 4vw;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 1024px) and (min-width: 812px) {
+    .background-svg-1{
+        width: 70vw;
+        height: auto;
+        top: 50vh;
+        left: 50%;
+        margin-left: -35vw;
+    }
+
+    .background-svg-2 {
+        width: 100vw;
+        height: auto;
+    }
+
+    #landing-page-container {
+        text-align: center;
+    }
+
+    #special-container {
+        margin-top: 14vh;
+        margin-left: 0;
+    }
+    
+    #special-container h1 {
+        font-size: 3.5vh;
+    }
+
+    #special-container p {
+        font-size: 2vh;
+    }
+
+    #special-container div {
+        font-size: 1.7vh;
+        margin: 4vh auto;
+        max-width: 15vh;
+    }
+
+    #special-container div a {
+        height: 5vh;
     }
 }

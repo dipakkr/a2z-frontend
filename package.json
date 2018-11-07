@@ -2,7 +2,7 @@
   "name": "a2z",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://a2zhq.github.io/a2z-frontend/",
+  "homepage": "http://a2zhq.github.io/a2z-frontend",
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",

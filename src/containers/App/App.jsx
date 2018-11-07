@@ -53,7 +53,7 @@ class App extends Component {
                 )} />
                 <Route path="/home" exact component={Home} />
                 <Route path="/coding-resources" render={() => (
-                  <ResourcesPage title="Coding Resources" color="#99cffe" />
+                  <ResourcesPage title="Coding Resources" color="#06addb" />
                 )} />
                 <Route path="/lost" component={Lost} />
                 <Redirect to="/lost" />
