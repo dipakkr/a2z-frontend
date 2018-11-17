@@ -25,3 +25,5 @@ node_modules
 /.vs/slnx.sqlite
 /.vs/config
 /.vs
+
+package-lock.json
