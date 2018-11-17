@@ -32,7 +32,7 @@ header {
     color: var(--black);
 }
 
-#header-right li:last-child {
+.login {
     background: -webkit-gradient(linear,left top, left bottom,from(#8eb7f5),to(#40e1dc));
     background: -webkit-linear-gradient(#8eb7f5,#40e1dc);
     background: -o-linear-gradient(#8eb7f5,#40e1dc);
@@ -42,6 +42,13 @@ header {
     -webkit-box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.16);
             box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.16);
     font-weight: 600;
+}
+
+.profile {
+    height: 4vw;
+    vertical-align: middle;
+    margin-top: -10px;
+    margin-left: 10px;
 }
 
 #header-right a:last-child {

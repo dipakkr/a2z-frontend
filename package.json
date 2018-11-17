@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://a2zhq.github.io/a2z-frontend",
   "dependencies": {
+    "firebase": "^5.5.8",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-router": "^4.3.1",
