@@ -8,6 +8,7 @@
     background: rgba(0, 0, 0, 0.5);
     animation: appear 0.3s forwards;
     opacity: 0;
+    cursor: pointer;
 }
 
 @keyframes appear {

@@ -15,11 +15,14 @@ class App extends Component {
     isLanding: false,
     navIsOpen: false,
     navLinks: [
-      ["Login", "/login"],
-      ["SignUp", "/signup"],
+      ["Home", "/home"],
       ["Roadmaps", "/roadmaps"],
-      ["Explorer", "/explorer"],
+      ["SignUp", "/signup"],
+      ["Login", "/login"],
     ],
+    isVerified: false,
+    loginModal: false,
+    signupModal: false,
   }
 
   navHandler = () => {
@@ -36,6 +39,33 @@ class App extends Component {
     });
   }
 
+  toggleModals = (e, name) => {
+    e.preventDefault();
+    if(name === "Login") {
+      let current = this.state.loginModal;
+      this.setState({
+        loginModal: !current
+      })
+    }
+    if(name === "SignUp") {
+      let current = this.state.signupModal;
+      this.setState({
+        signupModal: !current
+      })
+    }
+  }
+
+  loginHandler = (e) => {
+    this.setState({
+      isVerified: true,
+      navLinks: [
+        ["Home", "/home"],
+        ["Roadmaps", "/roadmaps"],
+        ["Pic", "/dashboard"]
+      ]
+    })
+  }
+
   render() {
     return (
       <BrowserRouter basename={process.env.PUBLIC_URL}>  
@@ -45,6 +75,10 @@ class App extends Component {
             navIsOpen: this.state.navIsOpen,
             navLinks: this.state.navLinks, 
             navHandler: this.navHandler,
+            toggleModals: this.toggleModals,
+            loginHandler: this.loginHandler,
+            loginModal: this.state.loginModal,
+            signupModal: this.state.signupModal,
             }}>
             {/* <Loader /> */}
             <Layout>
