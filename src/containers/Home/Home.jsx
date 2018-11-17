@@ -24,7 +24,7 @@ export default class Home extends React.Component {
                 title:"Hackathons & Events",
                 link: "/hackathons",
                 png: event,
-                color: "#49dbbd"
+                color: "#f67676"
             },
             {
                 title:"Student Benefits",
@@ -36,7 +36,7 @@ export default class Home extends React.Component {
                 title:"Open Source Programs",
                 link: "/open-source", 
                 png: idea,
-                color: "#f67676"
+                color: "#49dbbd"
             },
             {
                 title:"Startup Programs & Incubators",

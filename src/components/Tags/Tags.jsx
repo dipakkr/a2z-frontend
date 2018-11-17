@@ -7,6 +7,7 @@ const Tags = (props) => {
         backgroundColor: (props.isClicked) ? 'white' : (props.background || '#262626'),
         color: (props.isClicked) ? 'black' : 'white',
         borderColor: (props.isClicked) ? 'rgba(0, 0, 0, 0.5)' : (props.background || '#262626'),
+        cursor: 'pointer',
     }
 
     const stylesShow = {

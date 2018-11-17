@@ -6,9 +6,9 @@
     box-sizing: border-box;
     padding: 10px 15px;
     background: #fff;
-    border-radius: 1px;
+    border-radius: 2px;
     font-size: 0.7em;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 1), 2px 8px 20px rgba(0, 0, 0, 0.16);
+    box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.16);
 }
 
 .link-button > *:first-child {

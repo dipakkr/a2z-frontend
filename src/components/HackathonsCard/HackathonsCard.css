@@ -1,0 +1,101 @@
+.hackathons-card {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    box-sizing: border-box;
+    box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.16);
+    margin-top: 6vh;
+    margin-right: 6vh;
+    border-radius: 3px;
+    transition: all 0.2s;
+    background: #fff;
+    cursor: pointer;
+    float: left;
+}
+
+.hackathons-card:hover {
+    box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.26);
+}
+
+.hackathons-card h2 {
+    padding: 15px 15px 10px 15px;
+    font-size: 0.76em;
+}
+
+.hackathons-card p {
+    font-size: 0.6em;
+    color: var(--theme);
+    padding: 5px 0 0 15px;
+}
+
+.hackathons-card-tags {
+    padding: 15px 0 15px 15px;
+}
+
+.side-button {
+    float: right;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.view {
+    position: absolute;
+    padding: 15px 17px;
+    background: #f67676;
+    border: 1px solid #f67676;
+    border-radius: 50%;
+    bottom: -15px;
+    right: 8%;
+    color: #fff;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.16);
+    transform: rotate(-90deg);
+    transition: all 0.2s;
+}
+
+.view img {
+    max-width: 15px;
+}
+
+.view:hover {
+    transform: rotate(0deg);
+}
+
+.subscribe {
+    border-radius: 2px;
+    border: 1px solid #262626;
+    margin-top: -1%;
+    padding: 5px 10px;
+    background: #262626;
+    font-family: inherit;
+    font-size: 0.8em;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+.subscribe:hover {
+    border: 1px solid #262626;
+    color: #262626;
+    background: white;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1999px) {
+    .hackathons-card h2 {
+        font-size: 1.2vw;
+        padding: 2.5vh;
+    }
+
+    .hackathons-card p {
+        font-size: 1vw;
+        padding: .8vh 0 0 2.5vh;
+    }
+
+    .hackathons-card-tags {
+        padding: 1.7vh 0 2.5vh 1.7vh;
+    }
+
+    .view {
+        margin-top: -7%;
+    }
+}

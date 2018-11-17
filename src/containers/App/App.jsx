@@ -7,6 +7,7 @@ import Landing from '../../components/Landing/Landing';
 import { Provider } from '../../components/Context/Context';
 import ResourcesPage from '../ResourcesPage/ResourcesPage';
 import Lost from '../../components/Lost/Lost';
+import HackathonsPage from '../HackathonsPage/HackathonsPage';
 
 class App extends Component {
 
@@ -54,6 +55,9 @@ class App extends Component {
                 <Route path="/home" exact component={Home} />
                 <Route path="/coding-resources" render={() => (
                   <ResourcesPage title="Coding Resources" color="#06addb" />
+                )} />
+                <Route path="/hackathons" render={() => (
+                  <HackathonsPage title="Coding Resources" color="#06addb" />
                 )} />
                 <Route path="/lost" component={Lost} />
                 <Redirect to="/lost" />
