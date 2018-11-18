@@ -41,13 +41,13 @@ class App extends Component {
 
   toggleModals = (e, name) => {
     e.preventDefault();
-    if(name === "Login") {
+    if (name === "Login") {
       let current = this.state.loginModal;
       this.setState({
         loginModal: !current
       })
     }
-    if(name === "SignUp") {
+    if (name === "SignUp") {
       let current = this.state.signupModal;
       this.setState({
         signupModal: !current
@@ -61,28 +61,28 @@ class App extends Component {
       navLinks: [
         ["Home", "/home"],
         ["Roadmaps", "/roadmaps"],
-        ["Pic", "/dashboard"]
+        ["Dashboard", "/dashboard"]
       ]
     })
   }
 
   render() {
     return (
-      <BrowserRouter basename={process.env.PUBLIC_URL}>  
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className="App">
           <Provider value={{
             isLanding: this.state.isLanding,
             navIsOpen: this.state.navIsOpen,
-            navLinks: this.state.navLinks, 
+            navLinks: this.state.navLinks,
             navHandler: this.navHandler,
             toggleModals: this.toggleModals,
             loginHandler: this.loginHandler,
             loginModal: this.state.loginModal,
             signupModal: this.state.signupModal,
-            }}>
+          }}>
             {/* <Loader /> */}
             <Layout>
-               <Switch> 
+              <Switch>
                 <Route path="/" exact render={() => (
                   <Landing toggleLanding={this.toggleLanding} />
                 )} />

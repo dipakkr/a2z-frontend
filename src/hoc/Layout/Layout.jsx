@@ -15,7 +15,7 @@ import SignUp from '../../containers/SignUp/SignUp';
 const Layout = (props) => {
     return (
         <Consumer>
-            {({ 
+            {({
                 navIsOpen,
                 navLinks,
                 navHandler,
@@ -26,7 +26,7 @@ const Layout = (props) => {
                 loginHandler,
             }) => {
 
-                const landingStyles ={
+                const landingStyles = {
                     header: {
                         background: 'transparent'
                     },
@@ -52,21 +52,21 @@ const Layout = (props) => {
                                 <nav>
                                     <ul>
                                         {navLinks.map((link, i) => {
-                                            if(link[0] === "Login") {
+                                            if (link[0] === "Login") {
                                                 return (
-                                                    <li key={i} className="login" style={{color: "white"}}>
+                                                    <li key={i} className="login" style={{ color: "white" }}>
                                                         <Link onClick={(e) => toggleModals(e, "Login")} to={link[1]}>{link[0]}</Link>
-                                                    </li>    
+                                                    </li>
                                                 )
                                             }
-                                            if(link[0] === "SignUp") {
+                                            if (link[0] === "SignUp") {
                                                 return (
                                                     <li key={i}>
                                                         <Link onClick={(e) => toggleModals(e, "SignUp")} to={link[1]}>{link[0]}</Link>
-                                                    </li>    
+                                                    </li>
                                                 )
                                             }
-                                            if(link[0] === "Pic") {
+                                            if (link[0] === "Dashboard") {
                                                 return (
                                                     <li key={i}>
                                                         <Link to={link[1]}>
@@ -89,8 +89,8 @@ const Layout = (props) => {
                     </header>
 
                     {props.children}
-                    
-                    
+
+
                     <footer style={isLanding ? landingStyles.footer : null}>
                         <div id="footer-container">
                             <Logo />
@@ -99,22 +99,22 @@ const Layout = (props) => {
                                 <p>Made with <span style={{ color: "red" }}>♥</span> by the Open Source</p>
                             </div>
                             <div id="footer-links-container">
-                                    <a
-                                        href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="footer-link">
-                                        <span><img src={github} alt=""/></span>Github
+                                <a
+                                    href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="footer-link">
+                                    <span><img src={github} alt="" /></span>Github
                                     </a>
-                                    <a
-                                        href="https://gitter.im/a2z-resources"
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="footer-link">
-                                        <span><img src={gitter} alt=""/></span>Gitter
+                                <a
+                                    href="https://gitter.im/a2z-resources"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="footer-link">
+                                    <span><img src={gitter} alt="" /></span>Gitter
                                     </a>
                             </div>
-                            
+
                         </div>
                     </footer>
                     <div className="side-links-container" style={isLanding ? landingStyles.extra : null}>
@@ -123,7 +123,7 @@ const Layout = (props) => {
                                 href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                <img src={github} alt=""/>
+                                <img src={github} alt="" />
                             </a>
                         </div>
                         <div className="side-link">
@@ -131,7 +131,7 @@ const Layout = (props) => {
                                 href="https://gitter.im/a2z-resources"
                                 target="_blank"
                                 rel="noopener noreferrer">
-                                <img src={gitter} alt=""/>
+                                <img src={gitter} alt="" />
                             </a>
                         </div>
                     </div>

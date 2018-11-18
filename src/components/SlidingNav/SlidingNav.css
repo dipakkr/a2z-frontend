@@ -1,47 +1,47 @@
 .sliding-nav-container {
-    height: 100%;
-    width: 70%;
-    position: absolute;
-    z-index: 13;
-    background-color: var(--bg-black);
-    -webkit-box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
-            box-shadow: 8px 10px 20px 0 rgba(46,61,73,.15);
-    top: 0;
-    left: 0;
-    -webkit-transition: -webkit-transform 0.2s;
-    transition: -webkit-transform 0.2s;
-    -o-transition: transform 0.2s;
-    transition: transform 0.2s;
-    transition: transform 0.2s, -webkit-transform 0.2s;
+	height: 100%;
+	width: 70%;
+	position: absolute;
+	z-index: 13;
+	background-color: #262626;
+	-webkit-box-shadow: 8px 10px 20px 0 rgba(46, 61, 73, .15);
+	box-shadow: 8px 10px 20px 0 rgba(46, 61, 73, .15);
+	top: 0;
+	left: 0;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	-o-transition: transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 #sliding-nav-header {
-    width: 80%;
-    margin: 5vh auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+	width: 80%;
+	margin: 5vh auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
 }
 
 #back-button {
-    width: 0; 
-    height: 0; 
-    border-top: 12px solid transparent;
-    border-bottom: 12px solid transparent; 
-    border-right:12px solid #fff;
+	width: 0;
+	height: 0;
+	border-top: 12px solid transparent;
+	border-bottom: 12px solid transparent;
+	border-right: 12px solid #fff;
 }
 
 @media only screen and (min-width: 1024px) {
-    .sliding-nav-container {
-        display: none;
-    }
+	.sliding-nav-container {
+		display: none;
+	}
 }
 
-@media screen and (orientation: landscape) and (max-width: 1024px)  {
-    .sliding-nav-container {
-        width: 30%;
-    }
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+	.sliding-nav-container {
+		width: 30%;
+	}
 }

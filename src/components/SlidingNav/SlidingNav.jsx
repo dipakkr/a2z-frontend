@@ -8,7 +8,7 @@ const SlidingNav = () => {
     return (
         <Consumer>
             {({ navIsOpen, navLinks, navHandler }) => {
-                
+
                 const slideNav = {
                     transform: (navIsOpen) ? 'translateX(0)' : 'translateX(-110%)'
                 }
