@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "main.css": "/a2z-frontend/static/css/main.bf179221.chunk.css",
   "main.js": "/a2z-frontend/static/js/main.a7cc96a5.chunk.js",
   "main.js.map": "/a2z-frontend/static/js/main.a7cc96a5.chunk.js.map",
@@ -7,10 +8,24 @@
   "runtime~main.js": "/a2z-frontend/static/js/runtime~main.25ee61c9.js",
   "runtime~main.js.map": "/a2z-frontend/static/js/runtime~main.25ee61c9.js.map",
   "static/css/main.bf179221.chunk.css.map": "/a2z-frontend/static/css/main.bf179221.chunk.css.map",
+=======
+  "main.css": "/a2z-frontend/static/css/main.cace44c3.chunk.css",
+  "main.js": "/a2z-frontend/static/js/main.701bc413.chunk.js",
+  "main.js.map": "/a2z-frontend/static/js/main.701bc413.chunk.js.map",
+  "static/js/1.38b186f3.chunk.js": "/a2z-frontend/static/js/1.38b186f3.chunk.js",
+  "static/js/1.38b186f3.chunk.js.map": "/a2z-frontend/static/js/1.38b186f3.chunk.js.map",
+  "runtime~main.js": "/a2z-frontend/static/js/runtime~main.25ee61c9.js",
+  "runtime~main.js.map": "/a2z-frontend/static/js/runtime~main.25ee61c9.js.map",
+  "static/css/main.cace44c3.chunk.css.map": "/a2z-frontend/static/css/main.cace44c3.chunk.css.map",
+>>>>>>> other-pages
   "static/media/back.svg": "/a2z-frontend/static/media/back.a24a7714.svg",
   "static/media/Layout.css": "/a2z-frontend/static/media/footer.7f435832.svg",
   "static/media/stylish.svg": "/a2z-frontend/static/media/stylish.a0ef6242.svg",
   "index.html": "/a2z-frontend/index.html",
+<<<<<<< HEAD
   "precache-manifest.b5dce85a867018e5a493497228e35b2d.js": "/a2z-frontend/precache-manifest.b5dce85a867018e5a493497228e35b2d.js",
+=======
+  "precache-manifest.a28c8f2b8fe132d26b54a09f73d3e655.js": "/a2z-frontend/precache-manifest.a28c8f2b8fe132d26b54a09f73d3e655.js",
+>>>>>>> other-pages
   "service-worker.js": "/a2z-frontend/service-worker.js"
 }

@@ -9,6 +9,8 @@ import ResourcesPage from '../ResourcesPage/ResourcesPage';
 import Lost from '../../components/Lost/Lost';
 import HackathonsPage from '../HackathonsPage/HackathonsPage';
 import ProgramsPage from '../ProgramsPage/ProgramsPage';
+import TopCharts from '../TopCharts/TopCharts';
+import Dashboard from '../Dashboard/Dashboard';
 
 class App extends Component {
 
@@ -103,6 +105,18 @@ class App extends Component {
                 <Route path="/startup-programs" exact render={() => (
                   <ProgramsPage page="3" />
                 )} />
+                <Route path="/top-charts" exact render={() => (
+                  <TopCharts />
+                )} />
+                <Route path="/dashboard" exact render={() => {
+                  if (this.state.isVerified) {
+                    return <Dashboard />;
+                  } else {
+                    alert("You need to login")
+                    return <Redirect to="/home" />
+                  }
+
+                }} />
                 <Route path="/lost" component={Lost} />
                 <Redirect to="/lost" />
               </Switch>
