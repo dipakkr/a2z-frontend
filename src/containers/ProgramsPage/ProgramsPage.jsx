@@ -3,6 +3,7 @@ import './ProgramsPage.css';
 import StudentBenefits from '../../components/StudentBenefits/StudentBenefits';
 import Loader from '../../components/Loader/Loader';
 import OpenSource from '../../components/OpenSource/OpenSource';
+import StartupPrograms from '../../components/StartupPrograms/StartupPrograms';
 
 export default class ProgramsPage extends React.Component {
 
@@ -10,15 +11,16 @@ export default class ProgramsPage extends React.Component {
         loading: true,
         studentBenefits: {},
         openSource: [],
+        startupPrograms: [],
     }
 
     componentDidMount() {
-
         const studentBenefits = fetch("https://api.myjson.com/bins/143q9e");
         const openSource = fetch("https://api.myjson.com/bins/135foy");
+        const startupPrograms = fetch("https://api.myjson.com/bins/154dpe");
 
         Promise
-            .all([studentBenefits, openSource])
+            .all([studentBenefits, openSource, startupPrograms])
             .then(responses => {
                 return Promise.all(responses.map(res => res.json()))
             })
@@ -26,9 +28,11 @@ export default class ProgramsPage extends React.Component {
                 this.setState({
                     loading: false,
                     studentBenefits: responses[0],
-                    openSource: responses[1]
+                    openSource: responses[1],
+                    startupPrograms: responses[2],
                 })
             })
+        window.scrollTo(0, 0);
     }
 
     render() {
@@ -56,16 +60,33 @@ export default class ProgramsPage extends React.Component {
             </div>
         </div>
 
+        const startupPrograms = <div id="startup-programs" className="section">
+            <h1>Startup Programs and Incubators</h1>
+            {this.state.startupPrograms.map((el, i) => {
+                return (
+                    <StartupPrograms key={i} title={el.title} link={el.link} org={el.org} />
+                );
+            })}
+        </div>
+
         let view = null;
         if (this.props.page === "1") {
             view = <div className="programs-page-container">
                 {studentBenefits}
                 {openSource}
+                {startupPrograms}
             </div>
         } else if (this.props.page === "2") {
             view = <div className="programs-page-container">
                 {openSource}
                 {studentBenefits}
+                {startupPrograms}
+            </div>
+        } else if (this.props.page === "3") {
+            view = <div className="programs-page-container">
+                {startupPrograms}
+                {studentBenefits}
+                {openSource}
             </div>
         }
 
