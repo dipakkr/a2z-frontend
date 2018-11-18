@@ -15,49 +15,49 @@ export default class Home extends React.Component {
     state = {
         cards: [
             {
-                title:"Coding Resources",
+                title: "Coding Resources",
                 link: "/coding-resources",
                 png: code,
                 color: "#06addb"
             },
             {
-                title:"Hackathons & Events",
+                title: "Hackathons & Events",
                 link: "/hackathons",
                 png: event,
                 color: "#f67676"
             },
             {
-                title:"Student Benefits",
-                link: "/student-benefits",
+                title: "Student Benefits",
+                link: "/programs",
                 png: classroom,
-                color: "#dbc224"
+                color: "#ffc600"
             },
             {
-                title:"Open Source Programs",
-                link: "/open-source", 
+                title: "Open Source Programs",
+                link: "/programs",
                 png: idea,
                 color: "#49dbbd"
             },
             {
-                title:"Startup Programs & Incubators",
-                link: "/startup-programs",
+                title: "Startup Programs & Incubators",
+                link: "/programs",
                 png: laptop,
                 color: "#6fbb2d"
             },
             {
-                title:"Developer clubs & Meetups",
+                title: "Developer clubs & Meetups",
                 link: "/meetups",
                 png: group,
                 color: "#257281"
             },
             {
-                title:"Conferences",
+                title: "Conferences",
                 link: "/conferences",
                 png: conference,
                 color: "#8465ac"
             },
             {
-                title:"Top Charts",
+                title: "Top Charts",
                 link: "/top-charts",
                 png: chart,
                 color: "#595a5b"

@@ -8,6 +8,7 @@ import { Provider } from '../../components/Context/Context';
 import ResourcesPage from '../ResourcesPage/ResourcesPage';
 import Lost from '../../components/Lost/Lost';
 import HackathonsPage from '../HackathonsPage/HackathonsPage';
+import ProgramsPage from '../ProgramsPage/ProgramsPage';
 
 class App extends Component {
 
@@ -91,7 +92,16 @@ class App extends Component {
                   <ResourcesPage title="Coding Resources" color="#06addb" />
                 )} />
                 <Route path="/hackathons" render={() => (
-                  <HackathonsPage title="Coding Resources" color="#06addb" />
+                  <HackathonsPage title="Hackathons" color="#06addb" />
+                )} />
+                <Route path="/programs" render={() => (
+                  <ProgramsPage />
+                )} />
+                <Route path="/programs" render={() => (
+                  <ProgramsPage />
+                )} />
+                <Route path="/programs" render={() => (
+                  <ProgramsPage />
                 )} />
                 <Route path="/lost" component={Lost} />
                 <Redirect to="/lost" />

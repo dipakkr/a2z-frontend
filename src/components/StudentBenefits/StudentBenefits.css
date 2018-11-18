@@ -1,0 +1,43 @@
+.student-benefits-card {
+	background: #ffc600;
+	border-radius: 5px;
+	box-shadow: 2px 5px 16px rgba(0, 0, 0, 0.16);
+	padding: 30px 40px;
+	margin: 20px;
+	min-width: 350px;
+	color: #fff;
+}
+
+.student-benefits-card hr {
+	border: 1px solid white;
+	margin-top: 10px;
+}
+
+.student-benefits-card ul {
+	list-style: none;
+	margin-top: 10px;
+}
+
+.student-benefits-card li {
+	margin-top: 5px;
+}
+
+.student-benefits-card a {
+	color: #262626;
+	text-decoration: none;
+	font-weight: bold;
+	transition: all 0.2s;
+}
+
+.student-benefits-card a:hover {
+	color: blue;
+}
+
+@media only screen and (max-width: 480px) {
+	.student-benefits-card {
+		min-width: 0;
+		width: 75%;
+		margin: 20px auto;
+		padding: 20px;
+	}
+}

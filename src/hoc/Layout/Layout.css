@@ -29,6 +29,7 @@ header {
 #header-right li {
 	display: inline-block;
 	margin-left: 1vw;
+	font-weight: 500;
 	color: var(--black);
 }
 

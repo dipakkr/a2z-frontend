@@ -1,0 +1,39 @@
+.programs-page-container {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 7vh;
+	margin-bottom: 10%;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	min-height: 70vh;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column {
+	flex: 45%;
+}
+
+@media only screen and (max-width: 768px) {
+	.programs-page-container h1 {
+		font-size: 1.5em;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.programs-page-container {
+		width: 100%;
+	}
+
+	.programs-page-container h1 {
+		padding-left: 25px;
+	}
+
+	.column {
+		flex: 100%;
+	}
+}
