@@ -91,17 +91,17 @@ class App extends Component {
                 <Route path="/coding-resources" render={() => (
                   <ResourcesPage title="Coding Resources" color="#06addb" />
                 )} />
-                <Route path="/hackathons" render={() => (
+                <Route path="/hackathons" exact render={() => (
                   <HackathonsPage title="Hackathons" color="#06addb" />
                 )} />
-                <Route path="/programs" render={() => (
-                  <ProgramsPage />
+                <Route path="/student-benefits" exact render={() => (
+                  <ProgramsPage page="1" />
                 )} />
-                <Route path="/programs" render={() => (
-                  <ProgramsPage />
+                <Route path="/open-source" exact render={() => (
+                  <ProgramsPage page="2" />
                 )} />
-                <Route path="/programs" render={() => (
-                  <ProgramsPage />
+                <Route path="/startup-programs" exact render={() => (
+                  <ProgramsPage page="3" />
                 )} />
                 <Route path="/lost" component={Lost} />
                 <Redirect to="/lost" />

@@ -1,32 +1,25 @@
-{
-	"Campus Ambassador Programs": [
-		["Microsoft Student Partner", "https://studentpartners.microsoft.com/en-us"],
-		["GitHub Campus Experts", "https://githubcampus.expert/"],
-		["College Respresentative - E-Cell IITB", "https://www.ecell.in/cr/"]
-	],
-	"Student Benefits and Packs": [
-		["GitHub Student Developer Pack", "https://education.github.com/pack"],
-		["JetBrains Students Pack", "https://www.jetbrains.com/student/"],
-		["GitHub Student Developer Pack", "https://education.github.com/pack"],
-		["JetBrains Students Pack", "https://www.jetbrains.com/student/"],
-		["GitHub Student Developer Pack", "https://education.github.com/pack"],
-		["JetBrains Students Pack", "https://www.jetbrains.com/student/"],
-		["GitHub Student Developer Pack", "https://education.github.com/pack"],
-		["JetBrains Students Pack", "https://www.jetbrains.com/student/"],
-		["GitHub Student Developer Pack", "https://education.github.com/pack"],
-		["JetBrains Students Pack", "https://www.jetbrains.com/student/"]
-	],
-	"Student Fellowship Programs": [
-		["University Innovation Fellowship - Standford", "http://universityinnovationfellows.org/"],
-		["Teach for India Fellowship", "https://github.com/dipakkr/A-to-Z-Resources-for-Students/blob/master"],
-		["University Innovation Fellowship - Standford", "http://universityinnovationfellows.org/"],
-		["Teach for India Fellowship", "https://github.com/dipakkr/A-to-Z-Resources-for-Students/blob/master"],
-		["University Innovation Fellowship - Standford", "http://universityinnovationfellows.org/"],
-		["Teach for India Fellowship", "https://github.com/dipakkr/A-to-Z-Resources-for-Students/blob/master"]
-	],
-	"Scholarships": [
-		["PyTorch - Udacity", "https://blog.udacity.com/2018/10/introducing-the-pytorch-scholarship-challenge-from-facebook.html"],
-		["Grants, Awards and Opportunitues", "https://www.shastriinstitute.org/grants-awards-and-opportunities-for-indian-canadian-scholars"],
-		["Facebook Dev Circle Scholarship", "http://bit.ly/DevCTrainingInterest1"]
-	]
-}
+[{
+		"title": "Google Summer of Code",
+		"link": "https://summerofcode.withgoogle.com/",
+		"org": "Google",
+		"stipend": "Yes"
+	},
+	{
+		"title": "Rails Girls Summer of Code",
+		"link": "https://railsgirlssummerofcode.org/",
+		"org": "Global",
+		"stipend": "Yes"
+	},
+	{
+		"title": "Radare Summer of Code",
+		"link": "https://rada.re/rsoc/",
+		"org": "NA",
+		"stipend": "NA"
+	},
+	{
+		"title": "Outreachy",
+		"link": "https://www.outreachy.org/",
+		"org": "NA",
+		"stipend": "Yes"
+	}
+]

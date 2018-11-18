@@ -28,19 +28,19 @@ export default class Home extends React.Component {
             },
             {
                 title: "Student Benefits",
-                link: "/programs",
+                link: "/student-benefits",
                 png: classroom,
                 color: "#ffc600"
             },
             {
                 title: "Open Source Programs",
-                link: "/programs",
+                link: "/open-source",
                 png: idea,
                 color: "#49dbbd"
             },
             {
                 title: "Startup Programs & Incubators",
-                link: "/programs",
+                link: "/startup-programs",
                 png: laptop,
                 color: "#6fbb2d"
             },
