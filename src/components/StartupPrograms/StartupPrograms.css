@@ -1,6 +1,6 @@
-.open-source-card {
+.startup-programs-card {
 	min-width: 350px;
-	background: #49dbbd;
+	background: #6fbb2d;
 	padding: 20px 30px;
 	border-radius: 3px;
 	box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.2);
@@ -11,22 +11,22 @@
 	transition: all 0.2s;
 }
 
-.open-source-card:hover {
+.startup-programs-card:hover {
 	transform: scale(1.02);
 	box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-.open-source-card h3 {
+.startup-programs-card h3 {
 	color: #262626;
 	text-decoration: none;
 }
 
-.open-source-card hr {
+.startup-programs-card hr {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	margin-top: 5px;
 }
 
-.open-source-card .des {
+.startup-programs-card .des-sp {
 	display: inline-block;
 	font-weight: bold;
 	color: rgba(0, 0, 0, 0.4);
@@ -36,18 +36,18 @@ a {
 	text-decoration: none;
 }
 
-.open-source-card span {
+.startup-programs-card span {
 	display: block;
 	font-weight: 600;
 	text-decoration: none;
 }
 
-.open-source-card span:first-child {
+.startup-programs-card span:first-child {
 	margin-top: 7px;
 }
 
 @media only screen and (max-width: 480px) {
-	.open-source-card {
+	.startup-programs-card {
 		min-width: 0;
 		margin: 20px auto;
 		width: 75%;

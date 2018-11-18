@@ -1,25 +1,16 @@
 [{
-		"title": "Google Summer of Code",
-		"link": "https://summerofcode.withgoogle.com/",
-		"org": "Google",
-		"stipend": "Yes"
+		"title": "Amity Innovation Incubator",
+		"link": "http://www.amity.edu/",
+		"org": "Amity University"
 	},
 	{
-		"title": "Rails Girls Summer of Code",
-		"link": "https://railsgirlssummerofcode.org/",
-		"org": "Global",
-		"stipend": "Yes"
+		"title": "Atal Incubation Centre",
+		"link": "http://www.aim.gov.in/",
+		"org": "Indian Government"
 	},
 	{
-		"title": "Radare Summer of Code",
-		"link": "https://rada.re/rsoc/",
-		"org": "NA",
-		"stipend": "NA"
-	},
-	{
-		"title": "Outreachy",
-		"link": "https://www.outreachy.org/",
-		"org": "NA",
-		"stipend": "Yes"
+		"title": "Google LaunchPad Accelerator",
+		"link": "https://developers.google.com/programs/launchpad/accelerators/",
+		"org": "Google"
 	}
 ]
