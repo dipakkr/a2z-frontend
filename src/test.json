@@ -1,16 +1,28 @@
 [{
-		"title": "Amity Innovation Incubator",
-		"link": "http://www.amity.edu/",
-		"org": "Amity University"
+		"title": "PyCon US",
+		"link": "https://us.pycon.org/2019/",
+		"ti": "No",
+		"place": "USA",
+		"date": "May 1",
+		"deadline": "May 9",
+		"type": "Python"
 	},
 	{
-		"title": "Atal Incubation Centre",
-		"link": "http://www.aim.gov.in/",
-		"org": "Indian Government"
+		"title": "PyCon US",
+		"link": "https://us.pycon.org/2019/",
+		"ti": "No",
+		"place": "USA",
+		"date": "May 1",
+		"deadline": "May 9",
+		"type": "Python"
 	},
 	{
-		"title": "Google LaunchPad Accelerator",
-		"link": "https://developers.google.com/programs/launchpad/accelerators/",
-		"org": "Google"
+		"title": "PyCon US",
+		"link": "https://us.pycon.org/2019/",
+		"ti": "No",
+		"place": "USA",
+		"date": "May 1",
+		"deadline": "May 9",
+		"type": "Python"
 	}
 ]

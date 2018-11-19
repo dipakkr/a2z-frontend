@@ -43,6 +43,11 @@ header {
 	-webkit-box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.16);
 	box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.16);
 	font-weight: 600;
+	transition: all 0.2s;
+}
+
+.login:hover {
+	box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.25);
 }
 
 .profile {

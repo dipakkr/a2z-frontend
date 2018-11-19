@@ -11,6 +11,7 @@ import HackathonsPage from '../HackathonsPage/HackathonsPage';
 import ProgramsPage from '../ProgramsPage/ProgramsPage';
 import TopCharts from '../TopCharts/TopCharts';
 import Dashboard from '../Dashboard/Dashboard';
+import EventsPage from '../EventsPage/EventsPage';
 
 class App extends Component {
 
@@ -104,6 +105,9 @@ class App extends Component {
                 )} />
                 <Route path="/startup-programs" exact render={() => (
                   <ProgramsPage page="3" />
+                )} />
+                <Route path="/conferences" exact render={() => (
+                  <EventsPage page="1" />
                 )} />
                 <Route path="/top-charts" exact render={() => (
                   <TopCharts />

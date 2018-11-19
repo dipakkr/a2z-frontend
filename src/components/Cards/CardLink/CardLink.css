@@ -1,93 +1,99 @@
 .card-link {
-    height: 18vw;
-    line-height: 18vw;
-    text-align: left;
-    margin-bottom: 7vw;
-    box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.16);
-    border-radius: 4px;
+	height: 18vw;
+	line-height: 18vw;
+	text-align: left;
+	margin-bottom: 7vw;
+	box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.16);
+	border-radius: 4px;
+	transition: all 0.2s;
+}
+
+.card-link:hover {
+	transform: scale(1.04);
+	box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.25);
 }
 
 .card-link a {
-    text-decoration: none;
-    display: block;
-    color: white;
-    font-size: 0.9em;
-    font-weight: 500;
-    width: 100%;
-    height: 100%;
+	text-decoration: none;
+	display: block;
+	color: white;
+	font-size: 0.9em;
+	font-weight: 500;
+	width: 100%;
+	height: 100%;
 }
 
 
 .card-link img {
-    width: 10%;
-    margin-top: -4px;
-    margin-right: 5%;
-    margin-left: 5%;
-    vertical-align: middle;
+	width: 10%;
+	margin-top: -4px;
+	margin-right: 5%;
+	margin-left: 5%;
+	vertical-align: middle;
 }
 
 @media only screen and (max-width: 400px) {
-    .card-link a {
-        font-size: 0.7em;
-    }
+	.card-link a {
+		font-size: 0.7em;
+	}
 }
- 
+
 
 @media only screen and (min-width: 481px) {
-    .card-link {
-        line-height: 2.5vw;
-        text-align: center;
-        margin: 0 2vw;
-        margin-top: 0;
-        margin-bottom: 3.5vw;
-        border-radius: 3px;
-    }
+	.card-link {
+		line-height: 2.5vw;
+		text-align: center;
+		margin: 0 2vw;
+		margin-top: 0;
+		margin-bottom: 3.5vw;
+		border-radius: 3px;
+	}
 
-    .card-link a {
-        box-sizing: border-box;
-        padding: 25% 10%;
-        font-size: 0.6em;
-    }
+	.card-link a {
+		box-sizing: border-box;
+		padding: 25% 10%;
+		font-size: 0.6em;
+	}
 
-    .card-link span {
-        display: block;
-    }
+	.card-link span {
+		display: block;
+	}
 
-    .card-link img {
-        width: 30%;
-        margin-bottom: 10px;
-    }
+	.card-link img {
+		width: 30%;
+		margin-bottom: 10px;
+	}
 }
 
 @media only screen and (min-width: 769px) {
-    .card-link {
-        height: 16vw;
-        line-height: 1.6vw;
-        margin-top: 0;
-        margin-bottom: 3vw;
-        border-radius: 7px;
-    }
+	.card-link {
+		height: 16vw;
+		line-height: 1.6vw;
+		margin-top: 0;
+		margin-bottom: 3vw;
+		border-radius: 7px;
+	}
 
-    .card-link a {
-        padding: 27% 10%;
-        font-size: 1em;
-    }
+	.card-link a {
+		padding: 27% 10%;
+		font-size: 1em;
+	}
 }
 
 @media only screen and (min-width: 1400px) {
-    .card-link a {
-        font-size: 1.2vw;
-    }
+	.card-link a {
+		font-size: 1.2vw;
+	}
 }
 
 @media screen and (orientation: landscape) and (max-width: 812px) {
-    .card-link {
-        border-radius: 3px;
-        line-height: 1.8vw;
-    }
+	.card-link {
+		border-radius: 3px;
+		line-height: 1.8vw;
+	}
 
-    .card-link a {
-        padding: 22% 10%;
-        font-size: 0.8em;
-    }
+	.card-link a {
+		padding: 22% 10%;
+		font-size: 0.8em;
+	}
 }
