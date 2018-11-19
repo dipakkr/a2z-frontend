@@ -1,28 +1,16 @@
 [{
-		"title": "PyCon US",
-		"link": "https://us.pycon.org/2019/",
-		"ti": "No",
-		"place": "USA",
-		"date": "May 1",
-		"deadline": "May 9",
-		"type": "Python"
+		"title": "Google Developer Group",
+		"link": "https://developers.google.com/programs/community/gdg/",
+		"area": "All States"
 	},
 	{
-		"title": "PyCon US",
-		"link": "https://us.pycon.org/2019/",
-		"ti": "No",
-		"place": "USA",
-		"date": "May 1",
-		"deadline": "May 9",
-		"type": "Python"
+		"title": "Mozilla Open Source Community",
+		"link": "https://developers.google.com/programs/community/gdg/",
+		"area": "Delhi & Banglore"
 	},
 	{
-		"title": "PyCon US",
-		"link": "https://us.pycon.org/2019/",
-		"ti": "No",
-		"place": "USA",
-		"date": "May 1",
-		"deadline": "May 9",
-		"type": "Python"
+		"title": "Mozilla Campus Clubs",
+		"link": "https://campus.mozilla.community/",
+		"area": "NA"
 	}
 ]

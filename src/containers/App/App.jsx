@@ -109,6 +109,9 @@ class App extends Component {
                 <Route path="/conferences" exact render={() => (
                   <EventsPage page="1" />
                 )} />
+                <Route path="/meetups" exact render={() => (
+                  <EventsPage page="2" />
+                )} />
                 <Route path="/top-charts" exact render={() => (
                   <TopCharts />
                 )} />
