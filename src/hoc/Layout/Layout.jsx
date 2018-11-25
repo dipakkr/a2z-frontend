@@ -9,8 +9,8 @@ import { Link } from 'react-router-dom';
 import github from '../../assets/images/github.png';
 import gitter from '../../assets/images/gitter.png';
 import profile from '../../assets/images/man.png';
-import Login from '../../containers/Login/Login';
-import SignUp from '../../containers/SignUp/SignUp';
+//import Login from '../../containers/Login/Login';
+//import SignUp from '../../containers/SignUp/SignUp';
 
 const Layout = (props) => {
     return (
@@ -20,10 +20,10 @@ const Layout = (props) => {
                 navLinks,
                 navHandler,
                 isLanding,
-                toggleModals,
+                toggleModals/*,
                 loginModal,
                 signupModal,
-                loginHandler,
+                loginHandler,*/
             }) => {
 
                 const landingStyles = {
@@ -39,8 +39,8 @@ const Layout = (props) => {
                 };
 
                 return <>
-                    {(loginModal) ? <Login ok={loginHandler} close={toggleModals} /> : null}
-                    {(signupModal) ? <SignUp ok={loginHandler} close={toggleModals} /> : null}
+                    {/*(loginModal) ? <Login ok={loginHandler} close={toggleModals} /> : null*/}
+                    {/*(signupModal) ? <SignUp ok={loginHandler} close={toggleModals} /> : null*/}
                     {(navIsOpen) ? <Backdrop clicked={navHandler} /> : null}
                     <SlidingNav />
                     <header style={isLanding ? landingStyles.header : null}>

@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "http://a2zhq.github.io/a2z-frontend",
   "dependencies": {
+    "@firebase/auth": "^0.7.9",
+    "grpc": "^1.16.1",
     "firebase": "^5.5.8",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",

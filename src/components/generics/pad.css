@@ -1,0 +1,61 @@
+.upperPad{
+	padding: 1em;
+	margin: 0;
+	margin-bottom: 1em;
+	text-align: center;
+	background: #eee;
+}
+.padHeading{
+	font-size: 250%;
+	margin: 4em auto 1em auto;
+	font-weight: bold;
+}
+.padHome{
+	background: #fff;
+	color: #000;
+	border: 1px solid;
+	border-radius: 100px;
+	padding: .5rem 1.5em;
+	text-align: center;
+	font-size: smaller;
+	float: right;
+}
+a.padHome:visited{
+	color: #000;
+}
+e.padHome:focus{
+	color: #000;
+}
+.tabsContainer{
+	max-width: max-content;
+    display: flex;
+    text-align: center;
+	overflow-x: auto;
+	margin: 4em auto 1em auto;
+	content: ' ';
+}
+.padButton{
+	padding: .5rem 1.5rem;
+	border: 1px solid;
+	color: #000;
+	transition: 0.3s ease;
+	font-size: 10pt;
+	background: #fff;
+	min-width: 140px;
+    max-width: 200px;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	border-left: none;
+}
+.active{
+	background: #ddd;
+}
+.padButton:first-of-type{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-left: 1px solid;
+}
+.padButton:last-of-type{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}

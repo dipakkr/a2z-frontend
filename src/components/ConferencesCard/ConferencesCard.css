@@ -105,3 +105,33 @@
 		padding-left: 15px;
 	}
 }
+
+/*PRAKHAR*/
+.events-page-container {
+	margin: 2em auto;
+	padding: 1em;
+	width: 100%;
+}
+.conference-card{
+	background: #edfcee;
+	border: 1px solid #C5E1A5;
+	border-radius: 4px;
+	color: #262626;
+	padding: 1em;
+	margin: 1em auto;
+}
+.conference-card>h1{
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 20pt;
+}
+.conference-card>span.date,.conference-card>span.place{
+	display: block;
+	font-size: medium;
+	margin: 0.5em 0 1em 0;
+}
+.conference-card>span.place{
+	margin-bottom: 0em;
+}
+.conference-card>span.time{
+	margin: 0 0 0.5rem 80%;
+}
