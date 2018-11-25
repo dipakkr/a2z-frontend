@@ -3,10 +3,23 @@ import './HackathonsPage.css';
 import Tags from '../../components/Tags/Tags';
 import Loader from '../../components/Loader/Loader';
 import HackathonsCard from '../../components/HackathonsCard/HackathonsCard';
+import Pad from '../../components/generics/pad'
 
 export default class HackathonsPage extends React.Component {
+	constructor(){
+		super()
+		this.state = {
+			loading: true,
+			hackathonsInit: [],
+			hackathons: [],
+			majorTags: [],
+			selectedTags: [],
+			mappedTags: {},
+			colors: ["#dbc224", "#8465ac", "#06addb", "#49dbbd", "#f67676", "#6fbb2d", "#257281", "#595a5b"]
+		}
+	}
     
-    state = {
+    /*state = {
         loading: true,
         hackathonsInit: [],
         hackathons: [],
@@ -14,37 +27,43 @@ export default class HackathonsPage extends React.Component {
         selectedTags: [],
         mappedTags: {},
         colors: ["#dbc224", "#8465ac", "#06addb", "#49dbbd", "#f67676", "#6fbb2d", "#257281", "#595a5b"]
-    }
+    }*/
 
-    findMonth = (num) => {
-        switch(num) {
-            case "01":
+    findMonth(num){
+		const months=["January","February","March","April","May","June","July","August","September","October","November","December"]
+		num=parseInt(num)
+		if(num<=12&&num>=1)
+			return months[num-1]
+		return ""
+		/*
+		switch(parseInt(num)) {
+            case 1:
                 return "January";
-            case "02":
+            case 2:
                 return "February";
-            case "03":
+            case 3:
                 return "March";
-            case "04":
+            case 4:
                 return "April";
-            case "05":
+            case 5:
                 return "May";
-            case "06":
+            case 6:
                 return "June";
-            case "07":
+            case 7:
                 return "July";
-            case "08":
+            case 8:
                 return "August";
-            case "09":
+            case 9:
                 return "September";
-            case "10":
+            case 10:
                 return "October";
-            case "11":
+            case 11:
                 return "November";
-            case "12":
+            case 12:
                 return "December";
             default:
                 return "";
-        }
+        }*/
     }
 
     makeDate = (date) => {
@@ -188,6 +207,7 @@ export default class HackathonsPage extends React.Component {
         return (
             <>
                 {loader}
+				<Pad tabs={["Hackathons","Competetions"]} name={'Hackathons & Competetions'} tab_default={'Hackathons'}/>
                 <div className="hackathons-page-container">
                     <h1>Hackthons</h1>
                     <div className="hackathons-page-tags">

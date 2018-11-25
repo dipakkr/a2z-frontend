@@ -3,6 +3,7 @@ import './EventsPage.css';
 import ConferencesCard from '../../components/ConferencesCard/ConferencesCard';
 import Meetups from '../../components/Meetups/Meetups';
 import Loader from '../../components/Loader/Loader';
+import Pad from '../../components/generics/pad'
 
 export default class EventsPage extends React.Component {
 
@@ -34,8 +35,6 @@ export default class EventsPage extends React.Component {
     render() {
 
         const conferences = <div id="conferences">
-            <h1>Conferences</h1>
-            <hr />
             {this.state.conferences.map((conf, i) => (
                 <ConferencesCard
                     key={i}
@@ -79,6 +78,7 @@ export default class EventsPage extends React.Component {
 
         return (
             <>
+				<Pad name={'Conferences'} />
                 {this.state.loading ? <Loader /> : null}
                 {view}
             </>

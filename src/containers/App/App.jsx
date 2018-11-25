@@ -12,6 +12,7 @@ import ProgramsPage from '../ProgramsPage/ProgramsPage';
 import TopCharts from '../TopCharts/TopCharts';
 import Dashboard from '../Dashboard/Dashboard';
 import EventsPage from '../EventsPage/EventsPage';
+import Scholarship from '../../Scholarship/ScholarshipPage'
 
 class App extends Component {
 
@@ -115,6 +116,7 @@ class App extends Component {
                 <Route path="/top-charts" exact render={() => (
                   <TopCharts />
                 )} />
+				<Route path="/scholarships" exact render={()=><Scholarship />} />
                 <Route path="/dashboard" exact render={() => {
                   if (this.state.isVerified) {
                     return <Dashboard />;

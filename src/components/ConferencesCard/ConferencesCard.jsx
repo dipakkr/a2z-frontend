@@ -1,7 +1,7 @@
 import React from 'react';
 import './ConferencesCard.css';
 
-const ConferencesCard = (props) => {
+/*const ConferencesCard = (props) => {
     return (
         <a href={props.link}>
             <div className="conferences-card">
@@ -17,5 +17,15 @@ const ConferencesCard = (props) => {
         </a>
     );
 }
-
+*/
+const ConferencesCard=props=>{
+	return (
+		<div className={'conference-card'}>
+			<h1>{props.title}</h1>
+			<span className={'date'}>{props.date}</span>
+			<span className={'place'}>{props.place}</span>
+			<span className={'time'}>Deadline:&nbsp;<time>{props.deadline}</time></span>
+		</div>
+	)
+}
 export default ConferencesCard;
