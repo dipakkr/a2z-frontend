@@ -1,4 +1,4 @@
-# A2Z Resources for Students ( Front-end ) 
+# A2Z Resources for Students ( Front-end ) V1.0 Release
 
 #### Webiste Live at : https://a2z-hq.github.io/a2z-frontend/
 
