@@ -1,12 +1,14 @@
 .hackathons-page-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-top: 7vh;
     margin-bottom: 10%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     position: relative;
     min-height: 70vh;
+    padding-left: 5vw;
 }
 
 .hackathons-page-container h1 {

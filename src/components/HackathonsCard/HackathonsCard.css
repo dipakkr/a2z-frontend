@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     max-width: 360px;
+    min-height: 180px;
     box-sizing: border-box;
     box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.16);
     margin-top: 6vh;
@@ -10,7 +11,7 @@
     transition: all 0.2s;
     background: #fff;
     cursor: pointer;
-    float: left;
+    float: left;;
 }
 
 .hackathons-card:hover {

@@ -21,8 +21,8 @@ class App extends Component {
     navLinks: [
       ["Home", "/home"],
       ["Roadmaps", "/roadmaps"],
-      ["SignUp", "/signup"],
-      ["Login", "/login"],
+      // ["SignUp", "/signup"],
+      // ["Login", "/login"],
     ],
     isVerified: false,
     loginModal: false,
