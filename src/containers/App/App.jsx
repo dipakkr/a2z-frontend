@@ -16,6 +16,16 @@ import EventsPage from '../EventsPage/EventsPage';
 class App extends Component {
 
   state = {
+    pages: [
+      ["Coding Resources", "/coding-resources",],
+      ["Hackathons & Competitions", "/hackathons",],
+      ["Open Source Programs", "/open-source",],
+      ["Startup Programs", "/startup-programs",],
+      ["Student Benefits", "/student-benefits",],
+      ["Conferences", "/conferences",],
+      ["Meetups", "/meetups",],
+      ["Top Charts", "/top-charts",],
+    ],
     isLanding: false,
     navIsOpen: false,
     navLinks: [
@@ -75,6 +85,7 @@ class App extends Component {
       <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div className="App">
           <Provider value={{
+            pages: this.state.pages,
             isLanding: this.state.isLanding,
             navIsOpen: this.state.navIsOpen,
             navLinks: this.state.navLinks,
