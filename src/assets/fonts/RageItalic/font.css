@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'RageItalic';
+	src: url('./RageItalic.eot');
+	src: local('RageItalic'), url('./RageItalic.woff') format('woff'), url('./RageItalic.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_17763">Text with this font applied</p> */
+.fontsforweb_fontid_17763 {
+	font-family: 'RageItalic' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */

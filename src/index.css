@@ -11,6 +11,12 @@
   --font-size: 16px;
 }
 
+@font-face {
+	font-family: 'RageItalic';
+	src: url('./assets/fonts/RageItalic/RageItalic.eot');
+	src: local('RageItalic'), url('./assets/fonts/RageItalic/RageItalic.woff') format('woff'), url('./assets/fonts/RageItalic/RageItalic.ttf') format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;

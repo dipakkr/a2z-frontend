@@ -50,7 +50,7 @@ const Footer = (props) => {
                                 </div>
                             </div>
                             <div id="copyright">
-                                &copy; Copyright 2018 | A2Z
+                                &copy; Copyright 2018 | FrontBench <del>A2Z</del>
                             </div>
                         </div>
                     </footer>

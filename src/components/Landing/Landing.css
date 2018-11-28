@@ -5,15 +5,23 @@
 }
 
 .background-svg-1 {
-    width: 40vw;
+    height: 27vw;
     position: fixed;
-    top: 27%;
-    right: 7%;
+    top: 23%;
+    right: 9%;
+    z-index: -1;
+}
+
+.background-svg-3 {
+    width: 10vw;
+    position: fixed;
+    left: 0;
+    top: 80%;
     z-index: -1;
 }
 
 .background-svg-2 {
-    height: 75vh;
+    width: 55vw;
     position: fixed;
     z-index: -1;
     bottom: 0;
@@ -21,8 +29,9 @@
 }
 
 #special-container {
-    margin-top: 20vh;
+    margin-top: 17vh;
     margin-left: 10vw;
+    z-index: 10;
 }
 
 #special-container h1 {
@@ -32,7 +41,7 @@
 #special-container p {
     font-size: 1.5vw;
     margin-top: 2vh;
-    font-weight: 500;
+    font-weight: bold;
     color: var(--theme);
 }
 
@@ -56,18 +65,15 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: -webkit-gradient(linear,left top, left bottom,from(#fca15a),to(#f587b0));
-    background: -webkit-linear-gradient(#fca15a,#f587b0);
-    background: -o-linear-gradient(#fca15a,#f587b0);
-    background: linear-gradient(#fca15a,#f587b0);
+    background: #f67676;
     height: 4vw;
-    border-radius: 10vw;
+    border-radius: 5px;
     -webkit-box-shadow: 2px 8px 22px rgba(0, 0, 0, 0.16);
             box-shadow: 2px 8px 22px rgba(0, 0, 0, 0.16);
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (orientation: portrait) and (max-width: 768px) {
     .background-svg-1{
         width: 70vw;
         height: auto;
@@ -81,78 +87,10 @@
         height: auto;
     }
 
-    #landing-page-container {
-        text-align: center;
-    }
-
-    #special-container {
-        margin-top: 14vh;
-        margin-left: 0;
-    }
-    
-    #special-container h1 {
-        font-size: 3.5vh;
-    }
-
-    #special-container p {
-        font-size: 2vh;
-    }
-
-    #special-container div {
-        font-size: 1.7vh;
-        margin: 4vh auto;
-        max-width: 15vh;
-    }
-
-    #special-container div a {
-        height: 5vh;
-    }
-}
-
-@media screen and (orientation: landscape) and (max-width: 768px) {
-    .background-svg-1 {
+    .background-svg-3 {
         display: none;
     }
 
-    .background-svg-2 {
-        width: 100vw;
-        height: auto;
-    }
-
-    #special-container h1 {
-        font-size: 2.5vw;
-    }
-
-    #special-container p {
-        font-size: 1.5vw;
-        color: black;
-    }
-
-    #special-container div {
-        font-size: 1.4vw;
-        margin: 4vh auto;
-        max-width: 12vw;
-    }
-
-    #special-container div a {
-        height: 4vw;
-    }
-}
-
-@media only screen and (orientation: portrait) and (max-width: 1024px) and (min-width: 812px) {
-    .background-svg-1{
-        width: 70vw;
-        height: auto;
-        top: 50vh;
-        left: 50%;
-        margin-left: -35vw;
-    }
-
-    .background-svg-2 {
-        width: 100vw;
-        height: auto;
-    }
-
     #landing-page-container {
         text-align: center;
     }
@@ -164,6 +102,8 @@
     
     #special-container h1 {
         font-size: 3.5vh;
+        max-width: 80%;
+        margin: 0 auto;
     }
 
     #special-container p {
