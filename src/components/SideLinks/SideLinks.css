@@ -1,0 +1,92 @@
+.side-links-container {
+	position: fixed;
+	top: 45%;
+	left: 0px;
+}
+
+
+.side-link {
+	-webkit-transform: translateX(-40px);
+	-ms-transform: translateX(-40px);
+	transform: translateX(-40px);
+	margin-top: 25px;
+	background: var(--black);
+	-webkit-box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.16);
+	box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.16);
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -webkit-transform 0.2s;
+	-o-transition: transform 0.2s;
+	transition: transform 0.2s;
+	transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.side-link:hover {
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.side-link a {
+	display: block;
+	padding: 25px 30px 25px 70px;
+}
+
+.side-link img {
+	width: 32px;
+}
+
+@media only screen and (min-width: 2000px) {
+	.side-links-container {
+		-webkit-transform: scale(0.4) translateX(-90px);
+		-ms-transform: scale(0.4) translateX(-90px);
+		transform: scale(0.4) translateX(-90px);
+		top: 25%;
+	}
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1940px) {
+	.side-links-container {
+		-webkit-transform: scale(0.4) translateX(-90px);
+		-ms-transform: scale(0.4) translateX(-90px);
+		transform: scale(0.4) translateX(-90px);
+		top: 25%;
+	}
+
+	.side-link:hover {
+		-webkit-transform: translateX(-50px);
+		-ms-transform: translateX(-50px);
+		transform: translateX(-50px);
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.side-links-container {
+		-webkit-transform: scale(0.3) translateX(-160px);
+		-ms-transform: scale(0.3) translateX(-160px);
+		transform: scale(0.3) translateX(-160px);
+		top: 25%;
+	}
+
+	.side-link:hover {
+		-webkit-transform: translateX(-40px);
+		-ms-transform: translateX(-40px);
+		transform: translateX(-40px);
+	}
+
+}
+
+@media screen and (orientation: landscape) and (max-width: 812px) {
+
+	.side-links-container {
+		-webkit-transform: scale(0.3) translateX(-160px);
+		-ms-transform: scale(0.3) translateX(-160px);
+		transform: scale(0.3) translateX(-160px);
+		top: 15%;
+	}
+
+	.side-link:hover {
+		-webkit-transform: translateX(-40px);
+		-ms-transform: translateX(-40px);
+		transform: translateX(-40px);
+	}
+}

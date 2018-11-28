@@ -16,89 +16,27 @@ export default class HackathonsPage extends React.Component {
         colors: ["#dbc224", "#8465ac", "#06addb", "#49dbbd", "#f67676", "#6fbb2d", "#257281", "#595a5b"]
     }
 
-    findMonth = (num) => {
-        switch(num) {
-            case "01":
-                return "January";
-            case "02":
-                return "February";
-            case "03":
-                return "March";
-            case "04":
-                return "April";
-            case "05":
-                return "May";
-            case "06":
-                return "June";
-            case "07":
-                return "July";
-            case "08":
-                return "August";
-            case "09":
-                return "September";
-            case "10":
-                return "October";
-            case "11":
-                return "November";
-            case "12":
-                return "December";
-            default:
-                return "";
-        }
-    }
-
-    makeDate = (date) => {
-        date = date.split('-')
-        let newDate = "";
-        if(date.length === 2) {
-            newDate = this.findMonth(date[1]) + ", " + date[0];
-        } else if(date.length === 3) {
-            newDate = this.findMonth(date[1]) + " " + date[2] + ", " + date[0];
-        }
-        return newDate;
-    }
-
     separateDetails = (res) => {
         for(let hack of res) {
             hack.details = [];
             //date
-            if(hack["event"] !== "Ended" && hack["event"] !== "TBD") {
-                hack.details.push(this.makeDate(hack["event"]));
-            } else {
-                hack.details.push(hack["event"]);
-            }
+            hack.details.push(hack["date"]);
 
             //place
-            hack.details.push("Place:" + ((hack["specifics"]) ? " " + hack["specifics"] + ", " : " ") + hack["place"]);
+            hack.details.push("Place: " + hack["place"]);
 
-            //application
-            if(hack["application"]) {
-                hack.details.push("Application Date: "+ this.makeDate(hack["application"]));
-            }
+            //type
+            hack.details.push("Type: "+ hack["type"]);
+
+            //ta
+            hack.details.push("TA: " + hack["ta"]);
             
         }
         return res;
     }
 
-    isHappeningSoon = (date) => {
-        if(date === "Ended" || date === "TBD") return false;
-        const currentDate = new Date();
-        const [month, year] = [currentDate.getMonth(), currentDate.getFullYear()];
-        date = date.split('-');
-        if(date.length === 2
-            && (parseInt(date[0]) - year) === 0
-            && (parseInt(date[1]) - (month + 1)) === 0) {
-            return true;
-        } else if(date.length === 3
-                    && (parseInt(date[0]) - year) === 0
-                    && (parseInt(date[1]) - (month + 1)) <= 1) {
-            return true;    
-        }
-        return false;
-    }
-
     componentDidMount() {
-        fetch('https://api.myjson.com/bins/1hag5i')
+        fetch('https://api.myjson.com/bins/1benoy')
             .then(res => res.json())
             .then(res => {
                 //add tags
@@ -110,7 +48,6 @@ export default class HackathonsPage extends React.Component {
                     }
                     res[i].tags = [place];
                 }
-                majorTags.push("Happening Soon");
                 
                 //add colors
                 let mappedTags = {}
@@ -120,13 +57,6 @@ export default class HackathonsPage extends React.Component {
 
                 //separate details
                 res = this.separateDetails(res);
-
-                //isHappeningSoonTag
-                for(let i in res) {
-                    if(this.isHappeningSoon(res[i]["event"])) {
-                        res[i].tags.push("Happening Soon");    
-                    }
-                }
 
                 //save data
                 this.setState({
@@ -206,7 +136,7 @@ export default class HackathonsPage extends React.Component {
                             return (
                                 <HackathonsCard
                                     key={i}
-                                    title={hack.name}
+                                    title={hack.title}
                                     details={hack.details}
                                     tags={hack.tags}
                                     mappedTags={this.state.mappedTags} />
