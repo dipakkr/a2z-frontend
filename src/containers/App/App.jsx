@@ -115,6 +115,9 @@ class App extends Component {
                 <Route path="/top-charts" exact render={() => (
                   <TopCharts />
                 )} />
+                <Route path="/roadmaps" exact render={() => (
+                  <TopCharts />
+                )} />
                 <Route path="/dashboard" exact render={() => {
                   if (this.state.isVerified) {
                     return <Dashboard />;
