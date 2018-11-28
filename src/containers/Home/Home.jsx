@@ -21,22 +21,28 @@ export default class Home extends React.Component {
                 color: "#06addb"
             },
             {
-                title: "Hackathons & Events",
+                title: "Hackathons & Competitions",
                 link: "/hackathons",
                 png: event,
                 color: "#f67676"
             },
             {
-                title: "Student Benefits",
-                link: "/student-benefits",
-                png: classroom,
-                color: "#ffc600"
+                title: "Conferences",
+                link: "/conferences",
+                png: conference,
+                color: "#8465ac"
             },
             {
                 title: "Open Source Programs",
                 link: "/open-source",
                 png: idea,
                 color: "#49dbbd"
+            },
+            {
+                title: "Student Benefits",
+                link: "/student-benefits",
+                png: classroom,
+                color: "#f99931"
             },
             {
                 title: "Startup Programs & Incubators",
@@ -50,12 +56,7 @@ export default class Home extends React.Component {
                 png: group,
                 color: "#257281"
             },
-            {
-                title: "Conferences",
-                link: "/conferences",
-                png: conference,
-                color: "#8465ac"
-            },
+           
             {
                 title: "Top Charts",
                 link: "/top-charts",
