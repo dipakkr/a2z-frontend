@@ -16,7 +16,7 @@ export default class ProgramsPage extends React.Component {
 
     componentDidMount() {
         const studentBenefits = fetch("https://api.myjson.com/bins/143q9e");
-        const openSource = fetch("https://api.myjson.com/bins/135foy");
+        const openSource = fetch("https://api.myjson.com/bins/9reca");
         const startupPrograms = fetch("https://api.myjson.com/bins/154dpe");
 
         Promise
@@ -41,7 +41,7 @@ export default class ProgramsPage extends React.Component {
             <h1>Open Source Programs</h1>
             {this.state.openSource.map((el, i) => {
                 return (
-                    <OpenSource key={i} title={el.title} link={el.link} org={el.org} stipend={el.stipend} />
+                    <OpenSource key={i} title={el.title} link={el.url} stipend={el.incentives} />
                 );
             })}
         </div>
@@ -79,8 +79,7 @@ export default class ProgramsPage extends React.Component {
         } else if (this.props.page === "2") {
             view = <div className="programs-page-container">
                 {openSource}
-                {studentBenefits}
-                {startupPrograms}
+               
             </div>
         } else if (this.props.page === "3") {
             view = <div className="programs-page-container">
