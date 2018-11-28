@@ -55,7 +55,7 @@ export default class ProgramsPage extends React.Component {
                 </div>
                 <div className="column">
                     <StudentBenefits title="Student Fellowship Programs" links={this.state.studentBenefits["Student Fellowship Programs"] || []} />
-                    <StudentBenefits title="Scholarships" links={this.state.studentBenefits["Scholarships"] || []} />
+                    {/* <StudentBenefits title="Scholarships" links={this.state.studentBenefits["Scholarships"] || []} /> */}
                 </div>
             </div>
         </div>
@@ -73,8 +73,6 @@ export default class ProgramsPage extends React.Component {
         if (this.props.page === "1") {
             view = <div className="programs-page-container">
                 {studentBenefits}
-                {openSource}
-                {startupPrograms}
             </div>
         } else if (this.props.page === "2") {
             view = <div className="programs-page-container">
@@ -84,8 +82,6 @@ export default class ProgramsPage extends React.Component {
         } else if (this.props.page === "3") {
             view = <div className="programs-page-container">
                 {startupPrograms}
-                {studentBenefits}
-                {openSource}
             </div>
         }
 

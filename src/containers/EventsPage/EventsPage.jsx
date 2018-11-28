@@ -42,8 +42,7 @@ export default class EventsPage extends React.Component {
                     title={conf.title}
                     link={conf.link}
                     place={conf.place}
-                    date={conf.date}
-                    deadline={conf.deadline}
+                    date={conf.deadline}
                     type={conf.type}
                     coverage={conf.ti} />
             ))}
