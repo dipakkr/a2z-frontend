@@ -14,8 +14,8 @@ export default class EventsPage extends React.Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
-        const conferences = fetch("https://api.myjson.com/bins/dlbgq");
-        const meetups = fetch("https://api.myjson.com/bins/6mrei");
+        const conferences = fetch("https://api.myjson.com/bins/i393e");
+        const meetups = fetch("https://api.myjson.com/bins/flg2i");
 
         Promise
             .all([conferences, meetups])
@@ -55,7 +55,7 @@ export default class EventsPage extends React.Component {
             {this.state.meetups.map((el, i) => {
                 console.log(this.state.meetups);
                 return (
-                    <Meetups key={i} title={el.title} link={el.link} area={el.area} />
+                    <Meetups key={i} title={el.title} link={el.link} area={el.location} />
                 );
             })}
         </div>
@@ -65,17 +65,14 @@ export default class EventsPage extends React.Component {
         if (this.props.page === "1") {
             view = <div className="events-page-container">
                 {conferences}
-                {meetups}
             </div>
         }
 
         if (this.props.page === "2") {
             view = <div className="events-page-container">
                 {meetups}
-                {conferences}
             </div>
         }
-
 
         return (
             <>
