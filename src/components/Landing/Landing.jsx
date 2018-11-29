@@ -26,7 +26,7 @@ class Landing extends React.Component {
     render() {
         return (
             <>
-                {this.state.loading ? <Loader /> : null}
+                {this.state.loading ? <Loader message=" " /> : null}
                 <div id="landing-page-container">
                     <div id="special-container">
                         <h1><del>A2Z</del> Resources for Students</h1>

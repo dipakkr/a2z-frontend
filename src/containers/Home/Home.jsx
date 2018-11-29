@@ -9,6 +9,7 @@ import laptop from '../../assets/images/laptop.png';
 import event from '../../assets/images/event.png';
 import classroom from '../../assets/images/classroom.png';
 import Cards from '../../components/Cards/Cards';
+import Loader from '../../components/Loader/Loader';
 
 export default class Home extends React.Component {
 
@@ -63,16 +64,26 @@ export default class Home extends React.Component {
                 png: chart,
                 color: "#595a5b"
             },
-        ]
+        ],
+        loading: true
+    }
+
+    componentDidMount() {
+        this.setState({
+            loading: false
+        });
     }
 
     render() {
         return (
-            <div id="home-page-container">
-                <h1 className="heading">Explore the ultimate collection</h1>
-                <p className="sub-heading">What's on your mind today? Want to do self-study? Explore new peers?</p>
-                <Cards cards={this.state.cards} />
-            </div>
+            <>
+                {this.state.loading ? <Loader message=" " /> : null}
+                <div id="home-page-container">
+                    <h1 className="heading">Explore the ultimate collection</h1>
+                    <p className="sub-heading">What's on your mind today? Want to do self-study? Explore new peers?</p>
+                    <Cards cards={this.state.cards} />
+                </div>
+            </>
         );
     }
 }
