@@ -19,7 +19,7 @@ class ResourcesPage extends React.Component {
     }
 
     componentDidMount() {
-        fetch('https://api.myjson.com/bins/iw6zq')
+        fetch('https://api.myjson.com/bins/1fn2kq')
             .then(res => res.json())
             .then(res => {
                 let majorTags = []

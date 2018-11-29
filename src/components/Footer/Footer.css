@@ -18,7 +18,7 @@ footer {
 }
 
 #left-footer h3, #right-footer h3 {
-    color: #565656;
+    color: #f59145;
 }
 
 #left-footer a {
@@ -26,6 +26,8 @@ footer {
     font-size: 14px;
     font-weight: 600;
     display: block;
+    font-family: monospace;
+    margin-top: 2px;
 }
 
 #left-footer a:hover {

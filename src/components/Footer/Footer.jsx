@@ -3,7 +3,9 @@ import './Footer.css';
 import { Consumer } from '../Context/Context';
 import { Link } from 'react-router-dom';
 import github from '../../assets/images/github.png';
-import gitter from '../../assets/images/gitter.png';
+import facebook from '../../assets/images/fb.png';
+import twitter from '../../assets/images/twiter.png';
+import instagram from '../../assets/images/instagram.png';
 
 const Footer = (props) => {
 
@@ -29,28 +31,48 @@ const Footer = (props) => {
                                 ))}
                             </div>
                             <div id="right-footer">
-                                <h3>Contact/Contribute</h3>
+                            <h3>Social Media</h3>
                                 <div id="contact-links">
                                     <a
                                         href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
                                         target="_blank"
                                         rel="noopener noreferrer">
                                         <span role="img" aria-label="contact-link">
-                                            <img src={github} alt="Git" />
+                                            <img src={facebook} alt="FB" />
                                         </span>
                                     </a>
                                     <a
-                                        href="https://gitter.im/a2z-resources"
+                                        href="www.google.com"
                                         target="_blank"
                                         rel="noopener noreferrer">
                                         <span role="img" aria-label="contact-link">
-                                            <img src={gitter} alt="Git" />
+                                            <img src={github} alt="Github" />
                                         </span>
                                     </a>
+                                   
+                                    <a
+                                        href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        <span role="img" aria-label="contact-link">
+                                            <img src={instagram} alt="Instagram" />
+                                        </span>
+                                    </a>
+                                    <a
+                                        href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
+                                        target="_blank"
+                                        rel="noopener noreferrer">
+                                        <span role="img" aria-label="contact-link">
+                                            <img src={twitter} alt="Twitter" />
+                                        </span>
+                                    </a>
+                                  
                                 </div>
                             </div>
+                           
                             <div id="copyright">
-                                &copy; Copyright 2018 | FrontBench <del>A2Z</del>
+                            <hr/>
+                                &copy; Copyright 2018 | frontBench
                             </div>
                         </div>
                     </footer>

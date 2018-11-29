@@ -30,6 +30,7 @@ class App extends Component {
     navIsOpen: false,
     navLinks: [
       ["Home", "/home"],
+      ["Blog", "/blog"],
       ["Roadmaps", "/roadmaps"],
       // ["SignUp", "/signup"],
       // ["Login", "/login"],
