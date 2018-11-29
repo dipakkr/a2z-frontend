@@ -4,10 +4,10 @@
     max-width: 360px;
     min-height: 180px;
     box-sizing: border-box;
-    box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.16);
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
     margin-top: 6vh;
     margin-right: 6vh;
-    border-radius: 3px;
+    border-radius: 0.55rem;
     transition: all 0.2s;
     background: #fff;
     cursor: pointer;
@@ -70,7 +70,7 @@
     padding: 5px 10px;
     background: #262626;
     font-family: inherit;
-    font-size: 0.8em;
+    font-size: 0.6em;
     transition: all 0.2s;
     box-sizing: border-box;
 }
