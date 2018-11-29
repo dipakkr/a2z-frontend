@@ -14,9 +14,6 @@ class Landing extends React.Component {
 
     componentDidMount() {
         this.props.toggleLanding();
-        this.setState({
-            loading: false
-        })
     }
 
     componentWillUnmount() {
@@ -33,7 +30,7 @@ class Landing extends React.Component {
                         <p>Explore the ultimate collection</p>
                         <div><Link to="/home">Get Started</Link></div>
                     </div>
-                    <img src={black} alt="" className="background-svg-2" />
+                    <img src={black} alt="" className="background-svg-2" onLoad={() => this.setState({ loading: false })} />
                     <img src={back} alt="" className="background-svg-1" />
                     <img src={side} alt="" className="background-svg-3" />
                     
