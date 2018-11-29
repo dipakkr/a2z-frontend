@@ -31,7 +31,7 @@ const Footer = (props) => {
                                 ))}
                             </div>
                             <div id="right-footer">
-                            <h3>Social Media</h3>
+                            <h3>Stay Connected with Us !!</h3>
                                 <div id="contact-links">
                                     <a
                                         href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
@@ -72,7 +72,7 @@ const Footer = (props) => {
                            
                             <div id="copyright">
                             <hr/>
-                                &copy; Copyright 2018 | frontBench
+                                &copy; Copyright 2018 | FrontBench
                             </div>
                         </div>
                     </footer>

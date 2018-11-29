@@ -27,7 +27,7 @@ class Landing extends React.Component {
                 {this.state.loadingBack && this.state.loadingBlack ? <Loader message=" " /> : null}
                 <div id="landing-page-container">
                     <div id="special-container">
-                        <h1><del>A2Z</del> Resources for Students</h1>
+                        <h1>Resources for Students</h1>
                         <p>Explore the ultimate collection</p>
                         <div><Link to="/home">Get Started</Link></div>
                     </div>

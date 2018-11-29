@@ -17,3 +17,23 @@
 
 ## Prototypes
 - [Home page mobile layout](https://www.figma.com/proto/VfVtvA8BzVXmDcCGCgj2kR2k/MockUp-Page-1-Mobile-v1.0?node-id=3%3A2&scaling=scale-down)
+
+# endpoint 
+
+- CODING MAIN - https://api.myjson.com/bins/giplm
+
+- Android - https://api.myjson.com/bins/hpkt6
+
+- Python - https://api.myjson.com/bins/odmsa
+
+- ML - https://api.myjson.com/bins/19t8ka
+
+- HTML & CSS - https://api.myjson.com/bins/gmzx6
+
+- ReactJS - https://api.myjson.com/bins/n6rkq
+
+- NodeJS - https://api.myjson.com/bins/tqj8a
+
+- Databases - https://api.myjson.com/bins/d2eai
+
+- Git - https://api.myjson.com/bins/w49ne
