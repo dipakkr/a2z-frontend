@@ -9,18 +9,20 @@ export default class ProgramsPage extends React.Component {
 
     state = {
         loading: true,
-        studentBenefits: {},
+        studentBenefits: [],
         openSource: [],
         startupPrograms: [],
+        fellowship: [],
     }
 
     componentDidMount() {
-        const studentBenefits = fetch("https://api.myjson.com/bins/143q9e");
+        const studentBenefits = fetch("https://api.myjson.com/bins/sbxgy");
         const openSource = fetch("https://api.myjson.com/bins/9reca");
         const startupPrograms = fetch("https://api.myjson.com/bins/154dpe");
+        const fellowship = fetch("https://api.myjson.com/bins/pw1w2");
 
         Promise
-            .all([studentBenefits, openSource, startupPrograms])
+            .all([studentBenefits, openSource, startupPrograms, fellowship])
             .then(responses => {
                 return Promise.all(responses.map(res => res.json()))
             })
@@ -30,6 +32,7 @@ export default class ProgramsPage extends React.Component {
                     studentBenefits: responses[0],
                     openSource: responses[1],
                     startupPrograms: responses[2],
+                    fellowship: responses[3]
                 })
             })
         window.scrollTo(0, 0);
@@ -50,11 +53,11 @@ export default class ProgramsPage extends React.Component {
             <h1>Student Benefits</h1>
             <div className="row">
                 <div className="column">
-                    <StudentBenefits title="Campus Ambassador Programs" links={this.state.studentBenefits["Campus Ambassador Programs"] || []} />
-                    <StudentBenefits title="Student Benefits and Packs" links={this.state.studentBenefits["Student Benefits and Packs"] || []} />
+                    {/* <StudentBenefits title="Campus Ambassador Programs" links={this.state.studentBenefits["Campus Ambassador Programs"] || []} /> */}
+                    <StudentBenefits title="Student Benefits and Packs" links={this.state.studentBenefits || []} />
                 </div>
                 <div className="column">
-                    <StudentBenefits title="Student Fellowship Programs" links={this.state.studentBenefits["Student Fellowship Programs"] || []} />
+                    <StudentBenefits title="Student Fellowship Programs" links={this.state.fellowship || []} />
                     {/* <StudentBenefits title="Scholarships" links={this.state.studentBenefits["Scholarships"] || []} /> */}
                 </div>
             </div>

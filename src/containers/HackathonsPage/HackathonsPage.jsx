@@ -66,7 +66,8 @@ export default class HackathonsPage extends React.Component {
                     majorTags,
                     mappedTags,
                 })
-            })
+            });
+        window.scrollTo(0, 0);
     }
 
     updateCards = () => {

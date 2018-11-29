@@ -7,7 +7,7 @@ const Loader = (props) => {
         <div className="loader-container">
             <div className="loader">
                 <img src={loader} alt="Loading..." />
-                <p>Fetching content..</p>
+                <p>{props.message || "Fetching Content.."}</p>
             </div>
         </div>
     );
