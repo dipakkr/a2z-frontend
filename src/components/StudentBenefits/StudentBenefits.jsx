@@ -10,7 +10,7 @@ const StudentBenefits = (props) => {
                 {props.links.map((link, i) => {
                     return (
                         <li key={i}>
-                            <a href={link[1]}>{link[0]}</a>
+                            <a href={link["url"]}>{link["title"]}</a>
                         </li>
                     );
                 })}

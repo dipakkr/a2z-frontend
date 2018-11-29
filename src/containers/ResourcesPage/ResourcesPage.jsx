@@ -46,6 +46,7 @@ class ResourcesPage extends React.Component {
                     loading: false
                 })
             })
+            window.scrollTo(0, 0);
     }
 
     bookmarkHandler = (title) => {

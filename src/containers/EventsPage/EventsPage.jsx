@@ -28,7 +28,8 @@ export default class EventsPage extends React.Component {
                     conferences: responses[0],
                     meetups: responses[1]
                 })
-            })
+            });
+        window.scrollTo(0, 0);
     }
 
     render() {
