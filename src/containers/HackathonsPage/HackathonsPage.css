@@ -19,3 +19,9 @@
     margin-top: 2vh;
     font-size: medium;
 }
+
+@media only screen and (max-width: 480px) {
+    .hackathons-page-container {
+        padding-left: 0;
+    }
+}

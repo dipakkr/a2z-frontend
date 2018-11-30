@@ -1,7 +1,7 @@
 .sliding-nav-container {
 	height: 100%;
 	width: 70%;
-	position: absolute;
+	position: fixed;
 	z-index: 13;
 	background-color: #262626;
 	-webkit-box-shadow: 8px 10px 20px 0 rgba(46, 61, 73, .15);

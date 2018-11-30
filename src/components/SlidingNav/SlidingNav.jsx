@@ -16,7 +16,7 @@ const SlidingNav = () => {
                 return (
                     <div className="sliding-nav-container" style={slideNav}>
                         <div id="sliding-nav-header">
-                            <Logo color="#fff" />
+                            <Logo white="true" />
                             <div onClick={navHandler} id="back-button"></div>
                         </div>
                         <div id="sliding-nav-main">
