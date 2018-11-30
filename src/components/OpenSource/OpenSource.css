@@ -1,19 +1,31 @@
 .open-source-card {
 	min-width: 150px;
-	min-height: 100px;
-	background: #c79aaa;
+	min-height: 250px;
+	background: #49dbbd;
 	border-radius: 3px;
 	box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.2);
 	width: 40%;
 	margin: 40px;
 	margin-top: 60px;
 	float: left;
-	color: white;
+	color: #565656;
+	font-weight: 600;
 	transition: all 0.2s;
 }
-.upper{
-	background-image: url('../../assets/images/code.jpg');
-	min-height: 150px;
+.upper {
+	position: relative;
+	min-height: 210px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background-size: cover;
+}
+
+.overlay {
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.3);
 }
 
 .open-source-card:hover {
@@ -28,9 +40,10 @@
 .open-source-card h3 {
 	color: #ffffff;
 	font-size: 30px;
-	padding: 40px;
-	font-family: monospace;
+	padding: 40px 20px 40px 30px;
+	font-family: inherit;
 	text-decoration: none;
+	z-index: 3;
 }
 
 .open-source-card hr {
@@ -50,12 +63,10 @@ a {
 
 .open-source-card span {
 	display: block;
-	font-weight: 600;
+	font-weight: bold;
 	text-decoration: none;
-}
-
-.open-source-card span:first-child {
-	margin-top: 7px;
+	color: white;
+	text-shadow: rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (max-width: 600px) {

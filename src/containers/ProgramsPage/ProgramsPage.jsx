@@ -4,6 +4,10 @@ import StudentBenefits from '../../components/StudentBenefits/StudentBenefits';
 import Loader from '../../components/Loader/Loader';
 import OpenSource from '../../components/OpenSource/OpenSource';
 import StartupPrograms from '../../components/StartupPrograms/StartupPrograms';
+import os1 from '../../assets/images/code.jpg';
+import os2 from '../../assets/images/code2.jpeg';
+import os3 from '../../assets/images/code3.jpg';
+import os4 from '../../assets/images/code4.png';
 
 export default class ProgramsPage extends React.Component {
 
@@ -43,8 +47,12 @@ export default class ProgramsPage extends React.Component {
         const openSource = <div id="open-source" className="section">
             <h1>Open Source Programs</h1>
             {this.state.openSource.map((el, i) => {
+                let bgImg = null;
+                if(i % 3 === 0) bgImg = os1;
+                else if(i % 3 === 1) bgImg = os2;
+                else bgImg = os4;
                 return (
-                    <OpenSource key={i} title={el.title} link={el.url} stipend={el.incentives} />
+                    <OpenSource key={i} bgImg={bgImg} title={el.title} link={el.url} stipend={el.incentives} />
                 );
             })}
         </div>

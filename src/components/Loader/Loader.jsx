@@ -6,8 +6,11 @@ const Loader = (props) => {
     return (
         <div className="loader-container">
             <div className="loader">
-                <img src={loader} alt="Loading..." />
-                <p>{props.message || "Fetching Content.."}</p>
+                <div className="ellipse"></div>
+                <div className="ellipse"></div>
+                <div className="ellipse"></div>
+                <div className="ellipse"></div>
+                <div className="ellipse"></div>
             </div>
         </div>
     );
