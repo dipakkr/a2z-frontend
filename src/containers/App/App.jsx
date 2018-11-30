@@ -12,6 +12,7 @@ import ProgramsPage from '../ProgramsPage/ProgramsPage';
 import TopCharts from '../TopCharts/TopCharts';
 import Dashboard from '../Dashboard/Dashboard';
 import EventsPage from '../EventsPage/EventsPage';
+import About from '../../components/About/About';
 
 class App extends Component {
 
@@ -32,6 +33,7 @@ class App extends Component {
       ["Home", "/home"],
       ["Blog", "/blog"],
       ["Roadmaps", "/roadmaps"],
+      ["About", "/about"],
       // ["SignUp", "/signup"],
       // ["Login", "/login"],
     ],
@@ -132,6 +134,9 @@ class App extends Component {
                 )} />
                  <Route path="/blog" exact render={() => (
                   <TopCharts />
+                )} />
+                <Route path="/about" exact render={() => (
+                  <About />
                 )} />
                 <Route path="/dashboard" exact render={() => {
                   if (this.state.isVerified) {

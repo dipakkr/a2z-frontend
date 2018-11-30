@@ -31,12 +31,13 @@ const Footer = (props) => {
                                 ))}
                             </div>
                             <div id="right-footer">
-                            <h3>Stay Connected with Us !!</h3>
+                            <h3>Stay Connected with Us</h3>
                                 <div id="contact-links">
                                     <a
                                         href="https://www.facebook.com/frontbench.xyz/"
                                         target="_blank"
-                                        rel="noopener noreferrer">
+                                        rel="noopener noreferrer"
+                                        title="Facebook">
                                         <span role="img" aria-label="contact-link">
                                             <img src={facebook} alt="FB" />
                                         </span>
@@ -44,7 +45,8 @@ const Footer = (props) => {
                                     <a
                                         href="https://linkedin.com"
                                         target="_blank"
-                                        rel="noopener noreferrer">
+                                        rel="noopener noreferrer"
+                                        title="LinkedIn">
                                         <span role="img" aria-label="contact-link">
                                             <img src={linkedin} alt="LinkedIn" />
                                         </span>
@@ -53,7 +55,8 @@ const Footer = (props) => {
                                     <a
                                         href="https://instagram.com/frontbench.xyz"
                                         target="_blank"
-                                        rel="noopener noreferrer">
+                                        rel="noopener noreferrer"
+                                        title="Instagram">
                                         <span role="img" aria-label="contact-link">
                                             <img src={instagram} alt="Instagram" />
                                         </span>
@@ -61,7 +64,8 @@ const Footer = (props) => {
                                     <a
                                         href="https://twitter.com/frontbench"
                                         target="_blank"
-                                        rel="noopener noreferrer">
+                                        rel="noopener noreferrer"
+                                        title="Twitter">
                                         <span role="img" aria-label="contact-link">
                                             <img src={twitter} alt="Twitter" />
                                         </span>
@@ -71,7 +75,7 @@ const Footer = (props) => {
                             </div>
                            
                             <div id="copyright">
-                            <hr/>
+                                <hr/>
                                 &copy; Copyright 2018 | FrontBench
                             </div>
                         </div>

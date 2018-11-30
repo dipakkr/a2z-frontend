@@ -18,7 +18,7 @@ footer {
 }
 
 #left-footer h3, #right-footer h3 {
-    color: #f59145;
+    color: #678;
 }
 
 #left-footer a {
@@ -47,7 +47,8 @@ footer {
 }
 
 #contact-links img {
-    max-height: 20px;
+    max-height: 27px;
+    vertical-align: middle;
 }
 
 #copyright {
@@ -56,6 +57,11 @@ footer {
     width: 100%;
     text-align: center;
     font-size: 12px;
+}
+
+#copyright hr {
+    border: 1px solid #678;
+    margin-bottom: 2px;
 }
 
 @media only screen and (max-width: 480px) {
