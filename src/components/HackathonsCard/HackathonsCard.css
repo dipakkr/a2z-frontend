@@ -4,10 +4,10 @@
     max-width: 360px;
     min-height: 180px;
     box-sizing: border-box;
-    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    box-shadow: 5px 5px 25px 0 rgba(104, 133, 148, 0.49);
     margin-top: 6vh;
     margin-right: 6vh;
-    border-radius: 0.55rem;
+    border-radius: 0.30rem;
     transition: all 0.2s;
     background: #fff;
     cursor: pointer;

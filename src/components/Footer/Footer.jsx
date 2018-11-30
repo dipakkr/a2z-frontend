@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Consumer } from '../Context/Context';
 import { Link } from 'react-router-dom';
-import github from '../../assets/images/linkedin48.png';
+import linkedin from '../../assets/images/linkedin48.png';
 import facebook from '../../assets/images/fb.png';
 import twitter from '../../assets/images/twiter.png';
 import instagram from '../../assets/images/instagram.png';
@@ -34,7 +34,7 @@ const Footer = (props) => {
                             <h3>Stay Connected with Us !!</h3>
                                 <div id="contact-links">
                                     <a
-                                        href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
+                                        href="https://www.facebook.com/frontbench.xyz/"
                                         target="_blank"
                                         rel="noopener noreferrer">
                                         <span role="img" aria-label="contact-link">
@@ -42,16 +42,16 @@ const Footer = (props) => {
                                         </span>
                                     </a>
                                     <a
-                                        href="www.google.com"
+                                        href="https://linkedin.com"
                                         target="_blank"
                                         rel="noopener noreferrer">
                                         <span role="img" aria-label="contact-link">
-                                            <img src={github} alt="Github" />
+                                            <img src={linkedin} alt="LinkedIn" />
                                         </span>
                                     </a>
                                    
                                     <a
-                                        href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
+                                        href="https://instagram.com/frontbench.xyz"
                                         target="_blank"
                                         rel="noopener noreferrer">
                                         <span role="img" aria-label="contact-link">
@@ -59,7 +59,7 @@ const Footer = (props) => {
                                         </span>
                                     </a>
                                     <a
-                                        href="https://github.com/dipakkr/A-to-Z-Resources-for-Students"
+                                        href="https://twitter.com/frontbench"
                                         target="_blank"
                                         rel="noopener noreferrer">
                                         <span role="img" aria-label="contact-link">

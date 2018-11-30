@@ -36,7 +36,7 @@ export default class HackathonsPage extends React.Component {
     }
 
     componentDidMount() {
-        fetch('https://api.myjson.com/bins/1benoy')
+        fetch('https://api.myjson.com/bins/ebu3e')
             .then(res => res.json())
             .then(res => {
                 //add tags
