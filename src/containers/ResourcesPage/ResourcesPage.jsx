@@ -19,7 +19,7 @@ class ResourcesPage extends React.Component {
     }
 
     componentDidMount() {
-        fetch('https://api.myjson.com/bins/giplm')
+        fetch('https://api.myjson.com/bins/1e0kv6')
             .then(res => res.json())
             .then(res => {
                 let majorTags = []
@@ -35,8 +35,7 @@ class ResourcesPage extends React.Component {
                     mappedTags[tag] = this.state.colors[Math.round((Math.random()*(this.state.colors.length-1)))];
                 }
                 for(let i in res) {
-                    res[i].url = "/coding-resources/" + res[i].title.toLowerCase()
-                    res[i].fetch = "https://api.myjson.com/bins/10vhgm";
+                    res[i].internalLink = "/coding-resources/" + res[i].title.toLowerCase()
                 }
                 this.setState({
                     resourcesInit: res,
@@ -118,13 +117,13 @@ class ResourcesPage extends React.Component {
         return (
             <Switch>
                 {this.state.resources.map(res => (
-                    <Route key={res.title} path={res.url} exact render={() => (
+                    <Route key={res.title} path={res.internalLink} exact render={() => (
                         <ResourceCardExpanded
                             title={res.title}
                             icon={res.icon}
                             bookmark={this.bookmarkHandler}
                             isBookmarked={res.fav}
-                            fetch={res.fetch}
+                            fetch={res.url}
                             color={this.props.color}/>
                     )} />
                 ))}
@@ -152,7 +151,7 @@ class ResourcesPage extends React.Component {
                                         <ResourceCard
                                             key={res.title}
                                             icon={res.icon}
-                                            url={res.url}
+                                            url={res.internalLink}
                                             title={res.title}
                                             linksCount={res.linksCount}
                                             bookmark={this.bookmarkHandler}

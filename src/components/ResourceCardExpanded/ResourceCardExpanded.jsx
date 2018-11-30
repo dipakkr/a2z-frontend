@@ -23,8 +23,9 @@ class ResourceCardExpanded extends React.Component {
             .then(res => {
                 let majorTags = []
                 for(let r of res) {
+                    r.tags = r.tags.split(',').filter(tag => tag.length > 0 ? true : false);
                     for(let tag of r.tags) {
-                        if(!majorTags.includes(tag)) {
+                        if(!majorTags.includes(tag) && tag.length > 0) {
                             majorTags.push(tag)
                         }
                     }
@@ -128,14 +129,14 @@ class ResourceCardExpanded extends React.Component {
                         ))}
                     </div>
                     <div className="resource-links-container">
-                        {this.state.links.map((l, i) => (
+                        {this.state.links.map((l, i) => l.description.length > 0 ? (
                             <LinkButton
                                 key={i}
                                 link={l.link}
                                 description={l.description}
                                 tags={l.tags}
                                 tagColors={this.state.mappedTags} />
-                        ))}
+                        ) : null)}
                     </div>
                 </div>
             </>

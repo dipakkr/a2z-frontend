@@ -1,114 +1,83 @@
 [
 	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121df",
-	"title": "GitHub Student Developer Pack - Free Resources for Students",
-	"url": "https://education.github.com/pack"
+	"title": "Python",
+	"linksCount": "14",
+	"fav": false,
+	"tags": [
+	"Programming Language"
+	],
+	"url": "https://api.myjson.com/bins/odmsa"
 	},
 	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121e0",
-	"title": "Visual Studio Essentials - Access to Microsoft Premium Services",
-	"url": "https://visualstudio.microsoft.com/dev-essentials/"
+	"title": "Android",
+	"linksCount": "9",
+	"fav": false,
+	"tags": [
+	"Technology"
+	],
+	"url": "https://api.myjson.com/bins/hpkt6"
 	},
 	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121e1",
-	"title": "Microsoft Imagine Pack - Tools and subscriptions for Students",
-	"url": "https://imagine.microsoft.com/en-us/catalog"
+	"title": "Machine Learning",
+	"linksCount": "12",
+	"fav": false,
+	"tags": [
+	"Technology"
+	],
+	"url": "https://api.myjson.com/bins/19t8ka"
 	},
 	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121e2",
-	"title": "Microsoft Azure - $100 Azure credit for students",
-	"url": "https://azure.microsoft.com/en-gb/free/students/"
+	"title": "HTML & CSS",
+	"linksCount": "24",
+	"fav": false,
+	"tags": [
+	"Programming Language"
+	],
+	"url": "https://api.myjson.com/bins/gmzx6"
 	},
 	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121e3",
-	"title": "JetBrains Students pack",
-	"url": "https://www.jetbrains.com/student/"
+	"title": "ReactJS - Frontend",
+	"linksCount": "13",
+	"fav": false,
+	"tags": [
+	"Technology"
+	],
+	"url": "https://api.myjson.com/bins/n6rkq"
 	},
 	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121e4",
-	"title": "AWS Educate",
-	"url": "https://aws.amazon.com/education/awseducate/"
+	"title": "NodeJS - Backend",
+	"linksCount": "10",
+	"fav": false,
+	"tags": [
+	"Technology"
+	],
+	"url": "https://api.myjson.com/bins/tqj8a"
 	},
 	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121e5",
-	"title": "Google Cloud",
-	"url": "https://cloud.google.com/free/"
+	"title": "Git & Github",
+	"linksCount": "11",
+	"fav": false,
+	"tags": [
+	"Technology"
+	],
+	"url": "https://api.myjson.com/bins/w49ne"
 	},
 	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121e6",
-	"title": "Intel Developer pack",
-	"url": "https://software.intel.com/en-us/ai-academy/ambassadors/apply"
+	"title": "Databases",
+	"linksCount": "8",
+	"fav": false,
+	"tags": [
+	"Technology"
+	],
+	"url": "https://api.myjson.com/bins/d2eai"
 	},
 	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121e7",
-	"title": "Google Reskilling India Program | Pluralsight",
-	"url": "https://www.pluralsight.com/partners/google/"
-	},
-	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121e8",
-	"title": "Free .tech domain for 1 year | dot tech Domains",
-	"url": "https://get.tech/students"
-	},
-	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121e9",
-	"title": "Free Web Hosting for 1 year | Znetlive",
-	"url": "https://www.znetlive.com/student-web-hosting/"
-	},
-	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121ea",
-	"title": "Bitbucket Education",
-	"url": "https://bitbucket.org/product/education"
-	},
-	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121eb",
-	"title": "Namecheap free .name Domain",
-	"url": "https://nc.me/"
-	},
-	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121ec",
-	"title": "Autodesk Education software for students",
-	"url": "https://www.autodesk.com/education/free-software/featured"
-	},
-	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121ed",
-	"title": "Invision Free app for Education",
-	"url": "https://www.invisionapp.com/education-signup"
-	},
-	{
-	"active": true,
-	"bookmarks": false,
-	"_id": "5bfd8948759da7580d0121ee",
-	"title": "Canvas File Sync",
-	"url": "https://github.com/drew-royster/canvasFileSync"
+	"title": "Research Papers",
+	"linksCount": "10",
+	"fav": false,
+	"tags": [
+	"Technology"
+	],
+	"url": "https://api.myjson.com/bins/d2eai"
 	}
 	]
