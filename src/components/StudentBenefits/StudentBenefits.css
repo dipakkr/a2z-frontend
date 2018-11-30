@@ -6,6 +6,7 @@
 	margin: 20px;
 	min-width: 350px;
 	color: #fff;
+	font-family: sans-serif;
 }
 
 .student-benefits-card hr {
@@ -19,7 +20,7 @@
 }
 
 .student-benefits-card li {
-	margin-top: 5px;
+	margin-top: 20px;
 }
 
 .student-benefits-card a {

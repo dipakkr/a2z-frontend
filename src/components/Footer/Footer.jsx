@@ -2,7 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Consumer } from '../Context/Context';
 import { Link } from 'react-router-dom';
-import github from '../../assets/images/github.png';
+import github from '../../assets/images/linkedin48.png';
 import facebook from '../../assets/images/fb.png';
 import twitter from '../../assets/images/twiter.png';
 import instagram from '../../assets/images/instagram.png';

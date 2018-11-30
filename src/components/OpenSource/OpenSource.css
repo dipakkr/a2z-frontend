@@ -1,14 +1,19 @@
 .open-source-card {
-	min-width: 350px;
-	background: #49dbbd;
-	padding: 20px 30px;
+	min-width: 150px;
+	min-height: 100px;
+	background: #c79aaa;
 	border-radius: 3px;
 	box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.2);
 	width: 40%;
-	margin: 10px;
+	margin: 40px;
+	margin-top: 60px;
 	float: left;
 	color: white;
 	transition: all 0.2s;
+}
+.upper{
+	background-image: url('../../assets/images/code.jpg');
+	min-height: 150px;
 }
 
 .open-source-card:hover {
@@ -16,8 +21,15 @@
 	box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
+.container {
+    padding: 10px 20px;
+}
+
 .open-source-card h3 {
-	color: #262626;
+	color: #ffffff;
+	font-size: 30px;
+	padding: 40px;
+	font-family: monospace;
 	text-decoration: none;
 }
 
@@ -29,7 +41,7 @@
 .open-source-card .des {
 	display: inline-block;
 	font-weight: bold;
-	color: rgba(0, 0, 0, 0.4);
+	color: rgba(0, 0, 0, 0.93);
 }
 
 a {
@@ -46,12 +58,13 @@ a {
 	margin-top: 7px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
 	.open-source-card {
 		min-width: 0;
 		margin: 20px auto;
 		width: 75%;
 		float: none;
-		padding: 20px;
+		font-size: 15px;
+		padding : 1px
 	}
 }

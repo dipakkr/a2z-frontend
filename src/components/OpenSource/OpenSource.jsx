@@ -3,12 +3,14 @@ import './OpenSource.css';
 
 const OpenSource = (props) => {
     return (
-        <a href={props.link}>
+        <a target="_blank" rel="noopener noreferrer" href={props.link}>
             <div className="open-source-card">
-                <h3>{props.title}</h3>
-                <hr />
-                <span><span className="des">Organization:</span> {props.org === "NA" ? "--" : props.org}</span>
-                <span><span className="des">Incentives:</span> {props.stipend === "NA" ? "--" : props.stipend}</span>
+            <div className="upper">
+                    <h3>{props.title}</h3>
+            </div>
+                <div className="container">
+                    <span><span className="des">Incentives:</span> {props.stipend === "NA" ? "--" : props.stipend}</span>
+                </div>     
             </div>
         </a>
     );
