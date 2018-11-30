@@ -132,12 +132,13 @@ export default class HackathonsPage extends React.Component {
                                 background={this.state.mappedTags[tag]} />
                         ))}
                     </div>
-                    <div>
+                    <div className="hackathons-cards-container">
                         {this.state.hackathons.map((hack, i) => {
                             return (
                                 <HackathonsCard
                                     key={i}
                                     title={hack.title}
+                                    url={hack.url}
                                     details={hack.details}
                                     tags={hack.tags}
                                     mappedTags={this.state.mappedTags} />

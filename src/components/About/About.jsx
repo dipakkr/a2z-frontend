@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.css';
-import Logo from '../Logo/Logo';
 
 const About = (props) => {
     return (

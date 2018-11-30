@@ -9,22 +9,30 @@
     border-radius: 2px;
     font-size: 0.7em;
     box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.16);
+    transition: all 0.05s;
+}
+
+.link-button:hover {
+    box-shadow: 2px 8px 25px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transform: scale(1.01);
 }
 
 .link-button > *:first-child {
     color: #06addb;
     font-weight: 600;
+    font-size: 1.2em;
 }
 
 .link-tags {
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top: 5px;
 }
 
 @media only screen and (min-width: 768px) {
     .link-button {
         max-width: 350px;
-        margin-right: 5%;
+        margin-right: 3%;
         margin-bottom: 1.5%;
         padding: 1vw 1.5vw;
         font-size: 0.9em;

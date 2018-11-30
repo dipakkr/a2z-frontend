@@ -99,7 +99,7 @@ class ResourceCardExpanded extends React.Component {
                         <span>
                             <span>
                                 <Link to="/coding-resources"> 
-                                    <button  className="close">
+                                    <button className="close">
                                         ◀
                                     </button>
                                 </Link>

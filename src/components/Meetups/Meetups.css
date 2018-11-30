@@ -24,6 +24,7 @@
 .meetups-card hr {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	margin-top: 5px;
+	margin-bottom: 0;
 }
 
 .meetups-card .des-sp {
@@ -40,10 +41,6 @@ a {
 	display: block;
 	font-weight: 600;
 	text-decoration: none;
-}
-
-.meetups-card span:first-child {
-	margin-top: 7px;
 }
 
 @media only screen and (max-width: 480px) {

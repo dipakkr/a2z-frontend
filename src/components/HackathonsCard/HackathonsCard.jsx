@@ -26,9 +26,11 @@ const HackathonsCard = (props) => {
                     );
                 })}
             </div>
-            <button className="side-button view">
-                <img src={link} alt="Go" />
-            </button>
+            <a href={props.url} target="blank" rel="noopener noreferrer">
+                <button className="side-button view">
+                    <img src={link} alt="Go" />
+                </button>
+            </a>
         </div>
     );
 }

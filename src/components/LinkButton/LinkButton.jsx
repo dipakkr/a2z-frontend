@@ -4,7 +4,7 @@ import Tags from '../Tags/Tags';
 
 const LinkButton = (props) => {
     return (
-        <a href={props.link}>
+        <a href={props.link} rel="noopener noreferrer" target="_blank">
             <button className="link-button">
                 <p>{props.description}</p>
                 <div className="link-tags">

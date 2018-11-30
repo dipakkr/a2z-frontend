@@ -3,7 +3,7 @@ import './ConferencesCard.css';
 
 const ConferencesCard = (props) => {
     return (
-        <a href={props.link}>
+        <a href={props.link} target="_blank" rel="noopener noreferrer">
             <div className="conferences-card">
                 <div className="conferences-card-cover">
                     <h2>{props.title} <span aria-label="open" role="img" id="reveal"></span></h2>
