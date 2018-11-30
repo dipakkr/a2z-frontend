@@ -5,7 +5,7 @@ import SlidingNav from '../../components/SlidingNav/SlidingNav';
 import { Consumer } from '../../components/Context/Context';
 import Header from '../../components/Header/Header';
 import Footer from '../../components/Footer/Footer';
-import SideLinks from '../../components/SideLinks/SideLinks';
+// import SideLinks from '../../components/SideLinks/SideLinks';
 
 const Layout = (props) => {
     return (
@@ -34,7 +34,7 @@ const Layout = (props) => {
 
                     <Footer />
                     
-                    <SideLinks />
+                    {/* <SideLinks /> */}
                 </>
             }}
         </Consumer>
