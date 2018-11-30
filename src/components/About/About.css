@@ -6,6 +6,10 @@
     padding: 5vh 0 10vh 0;
 }
 
+.about-container {
+    width: 100%;
+}
+
 .about-page-container span {
     color: #678;
     display: inline-block;
@@ -15,9 +19,25 @@
 .about-p {
     max-width: 850px;
     margin: 0 auto;
-    text-align: justify;
     margin-top: 32px;
     font-weight: 500;
+    text-align: justify;
     font-family: inherit;
     color: #556655;
+}
+
+@media only screen and (max-width: 880px) {
+    .about-container h1 {
+        font-size: 1.2em;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .about-container span {
+        margin-top: 0;
+    }
+
+    .about-p {
+        max-width: 80%;
+    }
 }
