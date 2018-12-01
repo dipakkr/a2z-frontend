@@ -43,7 +43,7 @@ const Footer = (props) => {
                                         </span>
                                     </a>
                                     <a
-                                        href="https://linkedin.com"
+                                        href="https://www.linkedin.com/company/frontbenchxyz/"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         title="LinkedIn">
@@ -62,7 +62,7 @@ const Footer = (props) => {
                                         </span>
                                     </a>
                                     <a
-                                        href="https://twitter.com/frontbench"
+                                        href="https://twitter.com/frontbenchh"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         title="Twitter">
