@@ -10,7 +10,7 @@ export default class TopCharts extends React.Component {
 
     render() {
         return (
-            <ComingSoon message="Stay Updated !! Releasing soon in v2.0"  />
+            <ComingSoon message="Stay Updated !! Releasing soon in future versions"  />
         );
     }
 }
