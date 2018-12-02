@@ -7,7 +7,7 @@ const StartupPrograms = (props) => {
             <div className="startup-programs-card">
                 <h3>{props.title}</h3>
                 <hr />
-                <span><span className="des-sp">Organization:</span> {props.org === "NA" ? "--" : props.org}</span>
+                <span><span className="des-sp"> Type :</span> {props.org === "NA" ? "--" : props.org}</span>
             </div>
         </a>
     );

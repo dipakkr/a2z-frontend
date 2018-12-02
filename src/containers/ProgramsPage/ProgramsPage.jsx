@@ -22,7 +22,7 @@ export default class ProgramsPage extends React.Component {
     componentDidMount() {
         const studentBenefits = fetch("https://api.myjson.com/bins/sbxgy");
         const openSource = fetch("https://api.myjson.com/bins/9reca");
-        const startupPrograms = fetch("https://api.myjson.com/bins/154dpe");
+        const startupPrograms = fetch("https://api.myjson.com/bins/ymz2y");
         const fellowship = fetch("https://api.myjson.com/bins/pw1w2");
 
         Promise
