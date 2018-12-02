@@ -5,7 +5,7 @@ const About = (props) => {
     return (
         <div className="about-page-container">
             <div className="about-container">
-                <h1>FrontBench <span> | Empowering Youths</span></h1>
+                <h1>About Us </h1>
                 
                 <p className="about-p">
                 Hi,<br/><br/>
