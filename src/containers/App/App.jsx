@@ -13,6 +13,7 @@ import TopCharts from '../TopCharts/TopCharts';
 import Dashboard from '../Dashboard/Dashboard';
 import EventsPage from '../EventsPage/EventsPage';
 import About from '../../components/About/About';
+import ContactUs from '../../components/ContactUs/ContactUs';
 
 class App extends Component {
 
@@ -31,9 +32,9 @@ class App extends Component {
     navIsOpen: false,
     navLinks: [
       ["Home", "/home"],
-      ["Blog", "/blog"],
       ["Roadmaps", "/roadmaps"],
       ["About", "/about"],
+      ["Contact", "/contact"],
       // ["SignUp", "/signup"],
       // ["Login", "/login"],
     ],
@@ -132,11 +133,11 @@ class App extends Component {
                 <Route path="/roadmaps" exact render={() => (
                   <TopCharts />
                 )} />
-                 <Route path="/blog" exact render={() => (
-                  <TopCharts />
-                )} />
                 <Route path="/about" exact render={() => (
                   <About />
+                )} />
+                <Route path="/contact" exact render={() => (
+                  <ContactUs />
                 )} />
                 <Route path="/dashboard" exact render={() => {
                   if (this.state.isVerified) {
@@ -145,7 +146,6 @@ class App extends Component {
                     alert("You need to login")
                     return <Redirect to="/home" />
                   }
-
                 }} />
                 <Route path="/lost" component={Lost} />
                 <Redirect to="/lost" />

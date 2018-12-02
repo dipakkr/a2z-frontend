@@ -1,0 +1,36 @@
+.contact-page-container {
+    width: 100%;
+    min-height: 55vh;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5vh 0 10vh 0;
+}
+
+.contact-container {
+    width: 100%;
+}
+
+.contact-page-container span {
+    color: #678;
+    display: inline-block;
+    margin-top: -30px;
+}
+
+.contact-container iframe {
+    border: none;
+    width: 70%;
+    margin: 10vh auto;
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 880px) {
+    .contact-container h1 {
+        font-size: 1.2em;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact-container span {
+        margin-top: 0;
+    }
+}
