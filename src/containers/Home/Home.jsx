@@ -40,7 +40,7 @@ export default class Home extends React.Component {
                 color: "#49dbbd"
             },
             {
-                title: "Student Benefits",
+                title: "Student Benefit & Fellowship Programs",
                 link: "/student-benefits",
                 png: classroom,
                 color: "#f99931"
