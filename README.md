@@ -1,4 +1,9 @@
-# A2Z Resources for Students ( Front-end ) 
+# FrontBench - Frontend
+
+## Instructions
+
+- Please make sure to merge your PRs/commits in dev branch.
+- master is production branch. Don't commit directly to master. 
 
 
 ## Tech Stack 
@@ -36,6 +41,3 @@
 - Databases - https://api.myjson.com/bins/d2eai
 
 - Git - https://api.myjson.com/bins/w49ne
-
-
-test
