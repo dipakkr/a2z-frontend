@@ -34,7 +34,7 @@ class App extends Component {
       ["Home", "/home"],
       ["Roadmaps", "/roadmaps"],
       ["About", "/about"],
-      ["Contact", "/contact"],
+      ["Connect With Us", "/contact"],
       // ["SignUp", "/signup"],
       // ["Login", "/login"],
     ],

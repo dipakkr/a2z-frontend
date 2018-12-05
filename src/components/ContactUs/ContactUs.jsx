@@ -5,8 +5,8 @@ const ContactUs = (props) => {
     return (
         <div className="contact-page-container">
             <div className="contact-container">
-                <h1> Contact Us </h1>
-                <iframe title="form" src="https://docs.google.com/forms/d/1Rz-ZJvZ43wuTIpCXBaj1Fz8CfGwGV4tETInpSlo7NCA/viewform?chromeless=1&edit_requested=true"></iframe>
+                <h1> Connect With Us </h1>
+                <iframe title="form" src="https://docs.google.com/forms/d/e/1FAIpQLSe770z5vA6-YFun8GTz87mXXCoQ_8Mlsu00asWT4-6whBS1yQ/viewform?embedded=true"></iframe>
             </div>
         </div>
     );
