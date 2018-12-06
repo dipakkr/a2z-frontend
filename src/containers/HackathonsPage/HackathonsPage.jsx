@@ -120,7 +120,7 @@ export default class HackathonsPage extends React.Component {
             <>
                 {loader}
                 <div className="hackathons-page-container">
-                    <h1>Hackthons</h1>
+                    <h1>Hackathons</h1>
                     <div className="hackathons-page-tags">
                         {this.state.majorTags.map(tag => (
                             <Tags

@@ -14,7 +14,7 @@
 }
 
 .resources-page-container h1 {
-    font-size: 1.1em;
+    font-size: 1.5em;
     padding-top: 7px;
 }
 
@@ -22,6 +22,7 @@
     min-height: 100%;
     height: auto;
     display: block;
+    font-size: 20px;
 }
 
 .backdrop-resource-page {
@@ -46,7 +47,7 @@
     }
 
     .resources-page-container h1 {
-        font-size: 2vw;
+        font-size: 2.5vw;
         float: left;
     }
 

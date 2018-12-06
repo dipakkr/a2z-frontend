@@ -36,7 +36,7 @@ export default class EventsPage extends React.Component {
 
         const conferences = <div id="conferences">
             <h1>Conferences</h1>
-            <hr />
+          
             {this.state.conferences.map((conf, i) => (
                 <ConferencesCard
                     key={i}
