@@ -18,9 +18,10 @@
 
 .contact-container iframe {
     border: none;
-    width: 70%;
     margin: 10vh auto;
-    min-height: 100vh;
+    width: 90%;
+    max-width: 500vh;
+    min-height: 200vh;
 }
 
 @media only screen and (max-width: 880px) {
