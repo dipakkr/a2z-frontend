@@ -24,6 +24,16 @@
     min-height: 200vh;
 }
 
+.about-p {
+    max-width: 650px;
+    margin: 0 auto;
+    margin-top: 32px;
+    font-weight: 500;
+    text-align: justify;
+    font-family: inherit;
+    color: #000;
+}
+
 @media only screen and (max-width: 880px) {
     .contact-container h1 {
         font-size: 1.2em;
