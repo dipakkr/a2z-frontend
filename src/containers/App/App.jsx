@@ -14,6 +14,7 @@ import Dashboard from '../Dashboard/Dashboard';
 import EventsPage from '../EventsPage/EventsPage';
 import About from '../../components/About/About';
 import ContactUs from '../../components/ContactUs/ContactUs';
+import CampusStar from '../../components/CampusStar/CampusStar';
 
 class App extends Component {
 
@@ -33,8 +34,9 @@ class App extends Component {
     navLinks: [
       ["Home", "/home"],
       ["Roadmaps", "/roadmaps"],
-      ["About", "/about"],
       ["Connect With Us", "/contact"],
+      ["Campus Connect", "/campus-connect"],
+      ["About", "/about"]
       // ["SignUp", "/signup"],
       // ["Login", "/login"],
     ],
@@ -138,6 +140,9 @@ class App extends Component {
                 )} />
                 <Route path="/contact" exact render={() => (
                   <ContactUs />
+                )} />
+                 <Route path="/campus-connect" exact render={() => (
+                  <CampusStar />
                 )} />
                 <Route path="/dashboard" exact render={() => {
                   if (this.state.isVerified) {
