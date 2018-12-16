@@ -1,0 +1,41 @@
+.blog-page-container {
+    width: 100%;
+    min-height: 55vh;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 2vh 0 10vh 0;
+}
+
+.blog-container {
+    height: 25vh;
+    width: 100%;
+    min-height: 90%;
+    text-align: center;
+    display: table;
+}
+
+.blog-background{
+  background: aliceblue;
+}
+
+.blog-h1{
+    margin:0;
+    padding:0;
+    vertical-align:middle;
+    display:table-cell; 
+}
+
+.blog-list-container{
+  padding-top: 2%;
+}
+
+.blog-individual{
+    display: block;
+    background-color: #eee;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:1%;
+    border: 2px solid red;
+    border-radius: 8px;
+    width: 25%;
+}
