@@ -77,7 +77,7 @@
 .blog-data{
     margin-left: 210px;
     margin-left: 20%;
-    word-break: break-all;
+    word-wrap: whitespace;
     padding: 2%;
 }
 
