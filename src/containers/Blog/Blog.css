@@ -35,7 +35,21 @@
     margin-left: auto;
     margin-right: auto;
     margin-top:1%;
-    border: 2px solid red;
+    border: 2px solid #f1e8e8;
     border-radius: 8px;
     width: 25%;
+}
+
+.blog-title{
+    text-align: left;
+    padding-left: 4%;
+    padding-top:2%;
+
+}
+
+.blog-author{
+    text-align: left;
+    padding-left: 4%;
+    padding-top:1%;
+    padding-bottom:2%;
 }
