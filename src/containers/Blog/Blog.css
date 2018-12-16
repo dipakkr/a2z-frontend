@@ -30,8 +30,6 @@
 }
 
 .blog-individual{
-    /* margin: 20px 20px 0 0; */
-    /* border: 5px solid #333; */
     overflow: auto;
     display: block;
     background-color: #eee;
@@ -79,4 +77,9 @@
     margin-left: 20%;
     word-break: break-all;
     padding: 2%;
+}
+
+.blog-tag{
+  float:left;
+  padding-left:3%;
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Blog.css';
+import Tags from '../../components/Tags/Tags';
 
 const Blog = (props) => {
   return (
@@ -19,6 +20,12 @@ const Blog = (props) => {
               <span className="blog-author">Anonymous</span>
               <span className="blog-date">15.08.2020</span>
             </p>
+            <div className="blog-tag">
+              <Tags
+                key="something"
+                text="Blockchain"
+                background="blue" />
+            </div>
           </div>
         </div>
         <div className="blog-individual">
@@ -31,6 +38,12 @@ const Blog = (props) => {
               <span className="blog-author">Anonymous</span>
               <span className="blog-date">15.08.2020</span>
             </p>
+            <div className="blog-tag">
+              <Tags
+                key="something"
+                text="Blockchain"
+                background="blue" />
+            </div>
           </div>
         </div>
       </div>
