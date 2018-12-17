@@ -13,8 +13,9 @@ import TopCharts from '../TopCharts/TopCharts';
 import Dashboard from '../Dashboard/Dashboard';
 import EventsPage from '../EventsPage/EventsPage';
 import About from '../../components/About/About';
-import ContactUs from '../../components/ContactUs/ContactUs';
+// import ContactUs from '../../components/ContactUs/ContactUs';
 import CampusStar from '../../components/CampusStar/CampusStar';
+import SubscriptionForm from '../../components/SubscriptionForm/SubscriptionForm';
 
 class App extends Component {
 
@@ -139,7 +140,7 @@ class App extends Component {
                   <About />
                 )} />
                 <Route path="/contact" exact render={() => (
-                  <ContactUs />
+                  <SubscriptionForm />
                 )} />
                  <Route path="/campus-connect" exact render={() => (
                   <CampusStar />
