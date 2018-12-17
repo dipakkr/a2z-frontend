@@ -4,24 +4,31 @@ import Tags from '../../components/Tags/Tags';
 
 const BlogListCard = (props) => {
   return (
-    <div className="blog-individual">
-      <div className="blog-img">
-        <img src="https://via.placeholder.com/100 " alt="blog" />
-      </div>
-      <div className="blog-data">
-        <p className="blog-title">Exploiting Developer Infrastructure Is Ridiculously Easy</p>
-        <p className="blog-author-container"> Author:
-              <span className="blog-author">Anonymous</span>
-          <span className="blog-date">15.08.2020</span>
-        </p>
-        <div className="blog-tag">
-          <Tags
-            key="something"
-            text="Blockchain"
-            background="blue" />
-        </div>
-      </div>
-    </div>
+    <>
+      {props.data.map((card) => {
+        return (
+          <div className="blog-individual" key={card.id}>
+            <div className="blog-img">
+              <img src={card.img} alt="blog" />
+            </div>
+            <div className="blog-data">
+              <p className="blog-title">{card.title}</p>
+              <p className="blog-author-container"> Author:
+              <span className="blog-author">{card.author}</span>
+                <span className="blog-date">{card.date}</span>
+              </p>
+              <div className="blog-tag">
+                <Tags
+                  key={card.tags.key}
+                  text={card.tags.text}
+                  background={card.tags.background} />
+              </div>
+            </div>
+          </div>
+
+        );
+      })}
+    </>
   );
 }
 
