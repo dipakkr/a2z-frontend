@@ -6,7 +6,7 @@ const CampusStar = (props) => {
             <div className="campus-star-page-container">
                 <h1> Campus Connect Program </h1>
                 <br />
-                <p className="about-p1">Want to create a better ecosystem at your Campus? Be the part of change you want to see in world. Register for our Campus Connect Program. </p>
+                <p className="about-p1">Want to create a better ecosystem at your Campus? Represent FrontBench at yout Campus. Register for our Campus Connect Program. </p>
                 <div className="campus-star-container">
                 <form action="https://xyz.us19.list-manage.com/subscribe/post?u=f47653ab77a99147b5fb1bdc4&amp;id=04a9e4d392" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" novalidate>
                         <div>
