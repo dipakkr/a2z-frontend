@@ -1,4 +1,4 @@
-.contact-page-container {
+.campus-star-page-container {
     width: 100%;
     min-height: 55vh;
     text-align: center;
@@ -6,42 +6,96 @@
     padding: 5vh 0 10vh 0;
 }
 
-.contact-container {
-    width: 100%;
+.about-p1 {
+    font-weight: 600;
+    font-size: 0.95em;
+    max-width: 550px;
+    padding: 0 15px;
+    margin: 0 auto;
+    color: #678;
 }
 
-.contact-page-container span {
+.campus-star-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.campus-star-page-container span {
     color: #678;
     display: inline-block;
     margin-top: -30px;
 }
 
-.contact-container iframe {
-    border: none;
-    margin: 10vh auto;
-    width: 90%;
-    max-width: 500vh;
-    min-height: 200vh;
+.campus-star-page-container form {
+    margin-top: 7vh;
+    text-align: left;
+    color: red;
+    font-weight: bold;
 }
 
-.about-p1 {
-    max-width: 650px;
-    margin: 0 auto;
-    margin-top: 32px;
-    font-weight: 500;
-    text-align: justify;
+.campus-star-page-container input[type=number]::-webkit-inner-spin-button, 
+.campus-star-page-container input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+.campus-star-page-container input[type="text"],
+.campus-star-page-container input[type="email"],
+.campus-star-page-container input[type="number"],
+.campus-star-page-container select,
+.campus-star-page-container textarea {
+    margin: 15px;
+    outline: none;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    min-width: 450px;
+    border: 2px solid #678;
     font-family: inherit;
-    color: #000;
+    font-size: 1em;
+    font-weight: 600;
+    color: #262626;
+    border-radius: 2px;
+}
+
+.campus-star-page-container input[type="submit"] {
+    box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.16);
+    font-family: inherit;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 15px;
+    padding: 12px 15px;
+    color: white;
+    background: #262626;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #262626;
+    border-radius: 2px;
+    min-width: 450px;
+    transition: all 0.2s;
+}
+
+.campus-star-page-container input[type="submit"]:hover {
+    background: white;
+    color: #262626;
 }
 
 @media only screen and (max-width: 880px) {
-    .contact-container h1 {
+    .campus-star-container h1 {
         font-size: 1.2em;
         max-width: 90%;
         margin: 0 auto;
     }
 
-    .contact-container span {
+    .campus-star-container span {
         margin-top: 0;
+    }
+
+    .campus-star-page-container input[type="text"],
+    .campus-star-page-container input[type="email"],
+    .campus-star-page-container input[type="number"],
+    .campus-star-page-container select,
+    .campus-star-page-container textarea,
+    .campus-star-page-container input[type="submit"] {
+        min-width: 300px;
     }
 }
