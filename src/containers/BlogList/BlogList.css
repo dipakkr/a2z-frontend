@@ -3,7 +3,6 @@
     min-height: 55vh;
     text-align: center;
     box-sizing: border-box;
-    padding: 2vh 0 10vh 0;
 }
 
 .blog-container {
@@ -15,7 +14,10 @@
 }
 
 .blog-background{
-  background: aliceblue;
+  background: #262626;
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .blog-h1{
@@ -23,4 +25,12 @@
     padding:0;
     vertical-align:middle;
     display:table-cell; 
+}
+
+.blog-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4vh 5vw;
+    padding-bottom: 10vh;
 }

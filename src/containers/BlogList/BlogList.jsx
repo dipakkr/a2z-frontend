@@ -5,66 +5,125 @@ import BlogListCard from '../../components/BlogListCard/BlogListCard';
 export default class BlogList extends React.Component {
 
   state = {
-  }
-
-  render() {
-    const blogData = [
+    blogs: [
       {
         id: "23834304",
         title: "Exploiting Developer Infrastructure Is Ridiculously Easy",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
-        date: "15.8.2020", //I'm not sure what format date will be sent hence using String for now
-        tags: {
-          key: "something",
-          text: "Blockchain",
-          background: "blue"
-        }
+        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
+        url: "."
       },
       {
         id: "1232323",
         title: "We Won’t Text Back When We’re Dead",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
-        date: "15.8.2020", //I'm not sure what format date will be sent hence using String for now
-        tags: {
-          key: "something",
-          text: "Machine Learning",
-          background: "red"
-        }
+        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
+        url: "."
       },
       {
         id: "83298",
         title: "The Dirty Secret of Elite College Admissions",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
-        date: "15.8.2020", //I'm not sure what format date will be sent hence using String for now
-        tags: {
-          key: "something",
-          text: "Data Science",
-          background: "green"
-        }
+        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
+        url: "."
       },
       {
         id: "495445",
         title: "London branch of the Apple Store",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
-        date: "15.8.2020", //I'm not sure what format date will be sent hence using String for now
-        tags: {
-          key: "something",
-          text: "Machine Learning",
-          background: "yellow"
-        }
+        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
+        url: "."
       },
-    ];
+      {
+        id: "23834304",
+        title: "Exploiting Developer Infrastructure Is Ridiculously Easy",
+        img: "https://via.placeholder.com/100",
+        author: "Anonymous",
+        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
+        url: "."
+      },
+      {
+        id: "1232323",
+        title: "We Won’t Text Back When We’re Dead",
+        img: "https://via.placeholder.com/100",
+        author: "Anonymous",
+        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
+        url: "."
+      },
+      {
+        id: "83298",
+        title: "The Dirty Secret of Elite College Admissions",
+        img: "https://via.placeholder.com/100",
+        author: "Anonymous",
+        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
+        url: "."
+      },
+      {
+        id: "495445",
+        title: "London branch of the Apple Store",
+        img: "https://via.placeholder.com/100",
+        author: "Anonymous",
+        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
+        url: "."
+      },
+      {
+        id: "23834304",
+        title: "Exploiting Developer Infrastructure Is Ridiculously Easy",
+        img: "https://via.placeholder.com/100",
+        author: "Anonymous",
+        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
+        url: "."
+      },
+      {
+        id: "1232323",
+        title: "We Won’t Text Back When We’re Dead",
+        img: "https://via.placeholder.com/100",
+        author: "Anonymous",
+        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
+        url: "."
+      },
+      {
+        id: "83298",
+        title: "The Dirty Secret of Elite College Admissions",
+        img: "https://via.placeholder.com/100",
+        author: "Anonymous",
+        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
+        url: "."
+      },
+      {
+        id: "495445",
+        title: "London branch of the Apple Store",
+        img: "https://via.placeholder.com/100",
+        author: "Anonymous",
+        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
+        url: "."
+      },
+    ]
+  }
+
+  render() {
     return (
       <div className="blog-page-container">
         <div className="blog-container blog-background">
           <h1 className="blog-h1">Campus Stories </h1>
         </div>
         <div className="blog-list-container">
-          <BlogListCard data={blogData} />
+          {this.state.blogs.map(blog => {
+            return (
+              <BlogListCard
+                key={blog.id}
+                img={blog.img}
+                title={blog.title}
+                author={blog.author}
+                date={blog.date}
+                url={blog.url}
+              />
+            );
+          })}
         </div>
       </div>
     );
