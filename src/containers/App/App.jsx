@@ -12,7 +12,7 @@ import ProgramsPage from '../ProgramsPage/ProgramsPage';
 import TopCharts from '../TopCharts/TopCharts';
 import Dashboard from '../Dashboard/Dashboard';
 import EventsPage from '../EventsPage/EventsPage';
-import Blog from '../Blog/Blog';
+import BlogList from '../BlogList/BlogList';
 import About from '../../components/About/About';
 import ContactUs from '../../components/ContactUs/ContactUs';
 import CampusStar from '../../components/CampusStar/CampusStar';
@@ -145,8 +145,8 @@ class App extends Component {
                 <Route path="/campus-connect" exact render={() => (
                   <CampusStar />
                 )} />
-                <Route path="/blog" exact render={() => (
-                  <Blog />
+                <Route path="/blog-list" exact render={() => (
+                  <BlogList />
                 )} />
                 <Route path="/dashboard" exact render={() => {
                   if (this.state.isVerified) {
