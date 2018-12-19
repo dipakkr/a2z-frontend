@@ -18,19 +18,23 @@
     margin-top: -30px;
 }
 
-form {
+.subscription-page-container form {
     margin-top: 7vh;
     text-align: left;
     color: red;
     font-weight: bold;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
+.subscription-page-container input[type=number]::-webkit-inner-spin-button, 
+.subscription-page-container input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none;
 }
 
-input[type="text"], input[type="email"], input[type="number"], select, textarea {
+.subscription-page-container input[type="text"],
+.subscription-page-container input[type="email"],
+.subscription-page-container input[type="number"],
+.subscription-page-container select,
+.subscription-page-container textarea {
     margin: 15px;
     outline: none;
     box-sizing: border-box;
@@ -44,7 +48,7 @@ input[type="text"], input[type="email"], input[type="number"], select, textarea 
     border-radius: 2px;
 }
 
-input[type="submit"] {
+.subscription-page-container input[type="submit"] {
     box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.16);
     font-family: inherit;
     font-size: 1em;
@@ -61,7 +65,7 @@ input[type="submit"] {
     transition: all 0.2s;
 }
 
-input[type="submit"]:hover {
+.subscription-page-container input[type="submit"]:hover {
     background: white;
     color: #262626;
 }
@@ -77,7 +81,12 @@ input[type="submit"]:hover {
         margin-top: 0;
     }
 
-    input[type="text"], input[type="email"], input[type="number"], select, textarea, input[type="submit"] {
+    .subscription-page-container input[type="text"],
+    .subscription-page-container input[type="email"],
+    .subscription-page-container input[type="number"],
+    .subscription-page-container select,
+    .subscription-page-container textarea,
+    .subscription-page-container input[type="submit"] {
         min-width: 300px;
     }
 }
