@@ -1,0 +1,47 @@
+.row-container {
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 12%;
+    white-space: nowrap;
+    padding-bottom: 5%;
+}
+
+.left{
+    width: 25%;
+    float: left;
+}
+
+.center{
+  width: 25%;
+    margin:0 auto;
+   display:inline-block
+}
+
+.right{
+  width: 25%;
+  float: right;
+}
+
+.image{
+  margin:auto;
+  width:200px;
+  position:relative;
+}
+
+.image img{
+  width: 5vw;
+  position:absolute;
+  bottom:0;  
+  left:50px;
+}
+
+.text p{
+  letter-spacing: 1px;
+  white-space: normal;
+}
+
+.title{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}

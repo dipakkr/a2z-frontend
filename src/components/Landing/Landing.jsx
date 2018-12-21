@@ -2,6 +2,7 @@ import React from 'react';
 import './Landing.css';
 import Loader from '../Loader/Loader';
 import SectionOne from './SectionOne/SectionOne';
+import SectionTwo from './SectionTwo/SectionTwo';
 
 class Landing extends React.Component {
 
@@ -31,9 +32,9 @@ class Landing extends React.Component {
                         stopLoading={this.stopLoading}
                     />
                 </div>
-                <div>
-                    <h1>Section 2</h1>
-                </div>
+                <SectionTwo />
+                <hr />
+
             </>
         );
     }
