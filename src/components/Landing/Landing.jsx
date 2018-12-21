@@ -38,7 +38,9 @@ class Landing extends React.Component {
                     {/* <img src={side} alt="" className="background-svg-3" /> */}
                     <img src={Test} alt="" className="background-svg-10" onLoad={() => this.setState({ loadingBlack: false })} />
                     <img src={Test2} alt="" className="background-svg-20" onLoad={() => this.setState({ loadingBlack: false })} />
-
+                    <div className="scroll-div">
+                        <button className="scroll-btn" title="Click to stay updated"><i className="down"></i></button>
+                    </div>
                 </div>
             </>
         );
