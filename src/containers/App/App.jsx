@@ -146,7 +146,7 @@ class App extends Component {
                 <Route path="/campus-connect" exact render={() => (
                   <CampusStar />
                 )} />
-                <Route path="/blog-list" exact render={() => (
+                <Route path="/bsr125dev" exact render={() => (
                   <BlogList />
                 )} />
                 <Route path="/dashboard" exact render={() => {
