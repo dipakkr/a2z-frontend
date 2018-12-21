@@ -38,6 +38,9 @@ class Landing extends React.Component {
                         <button className="scroll-btn" title="Click to stay updated"><i className="down"></i></button>
                     </div>
                 </div>
+                <div>
+                    {/* <h1>Section 2</h1> */}
+                </div>
             </>
         );
     }
