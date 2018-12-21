@@ -141,3 +141,40 @@
     left: 32vw;
     background: #353A43;
 }
+
+.scroll-div{
+    position: fixed;
+    left: 50%;
+    bottom: 1vw;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.scroll-btn{
+    vertical-align:top;
+    margin-top:5vw;
+    width:4vw;
+    height:2vw;
+    cursor:pointer;
+    border-radius: 50px;
+    border: 2px solid white;
+    background: transparent;
+    transform:rotate(7deg);
+    -ms-transform:rotate(90deg); /* IE 9 */
+    -moz-transform:rotate(90deg); /* Firefox */
+    -webkit-transform:rotate(90deg); /* Safari and Chrome */
+    -o-transform:rotate(90deg); /* Opera */
+}
+
+i{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down{
+    margin-left:40%;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
