@@ -1,0 +1,34 @@
+.padding-container{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.featured{
+    color: white;
+    width: 23%;
+    height:4vw;
+    margin: 0 auto;
+    background: #353A43;
+    text-align: center;
+}
+
+.featured h3{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+.features{
+    padding-top: 8%;
+    width: 70%;
+    height: 4vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.features div{
+  width: 25%;
+  display: inline-block;
+  float: left;
+}

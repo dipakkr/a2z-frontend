@@ -3,6 +3,7 @@ import './Landing.css';
 import Loader from '../Loader/Loader';
 import SectionOne from './SectionOne/SectionOne';
 import SectionTwo from './SectionTwo/SectionTwo';
+import SectionThree from './SectionThree/SectionThree';
 
 class Landing extends React.Component {
 
@@ -34,7 +35,7 @@ class Landing extends React.Component {
                 </div>
                 <SectionTwo />
                 <hr />
-
+                <SectionThree />
             </>
         );
     }
