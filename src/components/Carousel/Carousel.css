@@ -4,7 +4,7 @@
     margin: 0 auto;
     text-align: center;
     padding-top: 7%;
-    padding-bottom: 13%;
+    padding-bottom: 25%;
 }
 
 .image-slide {
@@ -20,7 +20,7 @@
 }
 
 .slide-arrow {
-	color: #14B6D4;
+	color: #353A43;
 	cursor: pointer;
   font-size: 2rem;
   padding: 3%;
@@ -37,10 +37,23 @@
 }
 
 .slide-content{
+  width: 20%;
   margin:1%;
 }
 
 .slide-content img{
   border-radius: 50%;
   margin-bottom: 10%;
+}
+
+.testimony{
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.testimony-author{
+  color: darkslateblue;
+  padding-top: 5%;
+  margin-right: 20%;
+  text-align: right;
 }

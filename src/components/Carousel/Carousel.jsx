@@ -1,45 +1,71 @@
 import React from 'react';
 import './Carousel.css';
 
-const imgUrls = [
-  "https://via.placeholder.com/150",
-  "https://via.placeholder.com/150",
-  "https://via.placeholder.com/150",
+const data = [
+  {
+    url: "https://via.placeholder.com/150",
+    text: `" I really got everything what
+          I was looking for Thankyou
+          frontbench . "`,
+    author: "Anonymous"
+  },
+  {
+    url: "https://via.placeholder.com/150",
+    text: `" I really got everything what
+            This is the 2nd one."`,
+    author: "Anonymous"
+  },
+  {
+    url: "https://via.placeholder.com/150",
+    text: `" I really got everything what
+            This is the 3rd one. "`,
+    author: "Anonymous"
+  },
+  {
+    url: "https://via.placeholder.com/150",
+    text: `" This is the 4th one bitch"`,
+    author: "Anonymous"
+  },
 ];
 
 class Carousel extends React.Component {
 
   state = {
-    currentImageIndex: 0
+    startImageIndex: 0,
+    endImageIndex: 3,
   }
 
   previousSlide = () => {
-    const lastIndex = imgUrls.length - 1;
-    const { currentImageIndex } = this.state;
-    const shouldResetIndex = currentImageIndex === 0;
-    const index = shouldResetIndex ? lastIndex : currentImageIndex - 1;
-
-    this.setState({
-      currentImageIndex: index
-    });
+    const { startImageIndex, endImageIndex } = this.state;
+    if (startImageIndex !== 0) {
+      this.setState({
+        startImageIndex: startImageIndex - 1,
+        endImageIndex: endImageIndex - 1
+      })
+    }
   }
 
   nextSlide = () => {
-    const lastIndex = imgUrls.length - 1;
-    const { currentImageIndex } = this.state;
-    const shouldResetIndex = currentImageIndex === lastIndex;
-    const index = shouldResetIndex ? 0 : currentImageIndex + 1;
-
-    this.setState({
-      currentImageIndex: index
-    });
+    const lastIndex = data.length;
+    const { startImageIndex, endImageIndex } = this.state;
+    if (lastIndex !== endImageIndex) {
+      this.setState({
+        startImageIndex: startImageIndex + 1,
+        endImageIndex: endImageIndex + 1
+      })
+    }
   }
 
   render() {
+    const { startImageIndex, endImageIndex } = this.state;
+    console.log('start then end');
+    console.log(startImageIndex);
+    console.log(endImageIndex);
+    const showData = data.slice(startImageIndex, endImageIndex)
     return (
       <div className="carousel">
         <Arrow direction="left" clickFunction={this.previousSlide} glyph="&#9664;" />
-        <ImageSlide url={imgUrls[this.state.currentImageIndex]} />
+        <ImageSlide data={showData} />
         <Arrow direction="right" clickFunction={this.nextSlide} glyph="&#9654;" />
       </div>
     );
@@ -55,34 +81,21 @@ const Arrow = ({ direction, clickFunction, glyph }) => (
   </div>
 );
 
-const ImageSlide = ({ url }) => {
+const ImageSlide = ({ data }) => {
 
   return (
     <div className="image-slide">
-      <div className="slide-content">
-        <img src={url} alt="user-testimonials" />
-        <p>" I really got everything what
-            I was looking for Thankyou
-            frontbench . "
-        </p>
-        <p>-Anonymous</p>
-      </div>
-      <div className="slide-content">
-        <img src={url} alt="user-testimonials" />
-        <p>" I really got everything what
-            I was looking for Thankyou
-            frontbench . "
-        </p>
-        <p>-Anonymous</p>
-      </div>
-      <div className="slide-content">
-        <img src={url} alt="user-testimonials" />
-        <p>" I really got everything what
-            I was looking for Thankyou
-            frontbench . "
-        </p>
-        <p>-Anonymous</p>
-      </div>
+      {
+        data.map((data) => {
+          return (
+            <div className="slide-content" key={data.text}>
+              <img src={data.url} alt="user-testimonials" />
+              <p className="testimony">{data.text}</p>
+              <p className="testimony-author">-{data.author}</p>
+            </div>
+          );
+        })
+      }
     </div>
   );
 }
