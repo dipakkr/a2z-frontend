@@ -1,0 +1,20 @@
+.padding-container{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.user-thoughts{
+    color: white;
+    width: 23%;
+    height:4vw;
+    margin: 0 auto;
+    background: #353A43;
+    text-align: center;
+}
+
+.user-thoughts h3{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
