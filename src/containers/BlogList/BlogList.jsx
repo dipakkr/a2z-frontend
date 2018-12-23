@@ -1,13 +1,15 @@
 import React from 'react';
 import './BlogList.css';
 import BlogListCard from '../../components/BlogListCard/BlogListCard';
-
+import {Route} from 'react-router-dom'
+import Content from '../../components/BlogArticle/BlogArticle'
+import Modal from '../Modal/Modal';
 export default class BlogList extends React.Component {
 
   state = {
     blogs: [
       {
-        id: "23834304",
+        id: 1, // "23834304"
         title: "Exploiting Developer Infrastructure Is Ridiculously Easy",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
@@ -15,7 +17,7 @@ export default class BlogList extends React.Component {
         url: "."
       },
       {
-        id: "1232323",
+        id: 2, //"1232323"
         title: "We Won’t Text Back When We’re Dead",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
@@ -23,7 +25,7 @@ export default class BlogList extends React.Component {
         url: "."
       },
       {
-        id: "83298",
+        id: 3, //"83298"
         title: "The Dirty Secret of Elite College Admissions",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
@@ -31,7 +33,7 @@ export default class BlogList extends React.Component {
         url: "."
       },
       {
-        id: "495445",
+        id: 4, //"495445"
         title: "London branch of the Apple Store",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
@@ -39,7 +41,7 @@ export default class BlogList extends React.Component {
         url: "."
       },
       {
-        id: "23834304",
+        id: 5, //"23834304"
         title: "Exploiting Developer Infrastructure Is Ridiculously Easy",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
@@ -47,7 +49,7 @@ export default class BlogList extends React.Component {
         url: "."
       },
       {
-        id: "1232323",
+        id: 6, //"1232323"
         title: "We Won’t Text Back When We’re Dead",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
@@ -55,7 +57,7 @@ export default class BlogList extends React.Component {
         url: "."
       },
       {
-        id: "83298",
+        id: 7, //"83298"
         title: "The Dirty Secret of Elite College Admissions",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
@@ -63,7 +65,7 @@ export default class BlogList extends React.Component {
         url: "."
       },
       {
-        id: "495445",
+        id: 8, //"495445"
         title: "London branch of the Apple Store",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
@@ -71,7 +73,7 @@ export default class BlogList extends React.Component {
         url: "."
       },
       {
-        id: "23834304",
+        id: 9, //"23834304"
         title: "Exploiting Developer Infrastructure Is Ridiculously Easy",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
@@ -79,7 +81,7 @@ export default class BlogList extends React.Component {
         url: "."
       },
       {
-        id: "1232323",
+        id: 10, //"1232323"
         title: "We Won’t Text Back When We’re Dead",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
@@ -87,7 +89,7 @@ export default class BlogList extends React.Component {
         url: "."
       },
       {
-        id: "83298",
+        id: 11, //"83298"
         title: "The Dirty Secret of Elite College Admissions",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
@@ -95,7 +97,7 @@ export default class BlogList extends React.Component {
         url: "."
       },
       {
-        id: "495445",
+        id: 12, //"495445"
         title: "London branch of the Apple Store",
         img: "https://via.placeholder.com/100",
         author: "Anonymous",
@@ -114,14 +116,24 @@ export default class BlogList extends React.Component {
         <div className="blog-list-container">
           {this.state.blogs.map(blog => {
             return (
+				<>
+				<Route exact path={`/bsr125dev/${blog.id}`} render={()=>{
+					return <Modal onClose={
+					  ()=>{
+						  window.history.pushState({},'','/bsr125dev')
+						  }
+						  }/>
+				}}></Route>
               <BlogListCard
                 key={blog.id}
                 img={blog.img}
                 title={blog.title}
                 author={blog.author}
                 date={blog.date}
-                url={blog.url}
+                url={`/bsr125dev/${blog.id}`}
+				id={blog.id}
               />
+			  </>
             );
           })}
         </div>
