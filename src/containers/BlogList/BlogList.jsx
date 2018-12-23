@@ -1,9 +1,6 @@
 import React from 'react';
 import './BlogList.css';
 import BlogListCard from '../../components/BlogListCard/BlogListCard';
-import {Route} from 'react-router-dom'
-import Content from '../../components/BlogArticle/BlogArticle'
-import Modal from '../Modal/Modal';
 export default class BlogList extends React.Component {
 
   state = {
@@ -116,14 +113,6 @@ export default class BlogList extends React.Component {
         <div className="blog-list-container">
           {this.state.blogs.map(blog => {
             return (
-				<>
-				<Route exact path={`/bsr125dev/${blog.id}`} render={()=>{
-					return <Modal onClose={
-					  ()=>{
-						  window.history.pushState({},'','/bsr125dev')
-						  }
-						  }/>
-				}}></Route>
               <BlogListCard
                 key={blog.id}
                 img={blog.img}
@@ -131,9 +120,7 @@ export default class BlogList extends React.Component {
                 author={blog.author}
                 date={blog.date}
                 url={`/bsr125dev/${blog.id}`}
-				id={blog.id}
               />
-			  </>
             );
           })}
         </div>

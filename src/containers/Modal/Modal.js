@@ -26,7 +26,7 @@ export default class Modal extends React.Component{
 			this.props.onClose(event)
 		let rem=(!ReactDOM.unmountComponentAtNode(document.getElementById('modal')))||undefined
 		console.log(rem)
-		if(rem==undefined)
+		if(rem===undefined)
 			document.getElementById('modal').removeChild(this.el)
 	}
 	render(){

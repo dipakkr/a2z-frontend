@@ -17,6 +17,7 @@ import About from '../../components/About/About';
 // import ContactUs from '../../components/ContactUs/ContactUs';
 import CampusStar from '../../components/CampusStar/CampusStar';
 import SubscriptionForm from '../../components/SubscriptionForm/SubscriptionForm';
+import Content from '../../components/BlogArticle/BlogArticle';
 
 class App extends Component {
 
@@ -146,9 +147,10 @@ class App extends Component {
                 <Route path="/campus-connect" exact render={() => (
                   <CampusStar />
                 )} />
-                <Route path="/bsr125dev" render={() => (
+                <Route path="/bsr125dev" exact render={() => (
                   <BlogList />
                 )} />
+				<Route path="/bsr125dev/:id" exact component={Content}/>
                 <Route path="/dashboard" exact render={() => {
                   if (this.state.isVerified) {
                     return <Dashboard />;
