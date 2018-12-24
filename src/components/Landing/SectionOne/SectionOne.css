@@ -153,3 +153,16 @@ i{
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
+
+/* edits */
+
+div#sectionOne-container:after {
+    content: ' ';
+    position: absolute;
+    background: linear-gradient(49deg,#3f434b 28%,#363a42 0%,#363a42 68.5%,#3f434b 0%);
+    height: 97vh;
+    width: 100%;
+    top: 0;
+	left: 0;
+	z-index: -100;
+}
