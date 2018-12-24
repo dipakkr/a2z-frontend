@@ -10,18 +10,26 @@ const Content=props=>{
 				{` Blog id: ${props.match.params.id}`} {/*content to be fetched from server with this blog id */}
 			</h1>
 			<div className={'post-heading'}>
+			<ul className={'post-heading-ul'}>
+				<li>
 				<span className={'blog-author'}>
 					author&nbsp;<span className={'name'}>{'Prakhar Srivastava'/* to be fetched from backend */}</span>
 				</span>
+				</li>
+				<li>
 				<time>
 					posted on&nbsp;<span>{'Mon Dec 24'}</span>
 				</time>
+				</li>
+				<li>
 				<span className={'blog-shares'}>
 				share on
 					<a href="https://www.facebook.com/sharer/sharer.php?u=#url"><i className={"fab fa-facebook-square"}></i></a>
 					<a href={`whatsapp://send?text=${window.location}`}><i className={"fab fa-whatsapp"}></i></a>
 					<a href={`https://twitter.com/share?url=${window.location}`}><i className={"fab fa-twitter"}></i></a>
 				</span>
+				</li>
+				</ul>
 			</div>
 			<p className={'blog-content'}>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et mollis urna. Cras pharetra sapien vitae nulla porta, vitae ultricies lectus tristique. Cras convallis malesuada est, vel mattis nibh tempus eu. Integer interdum euismod est. Fusce eleifend sagittis sem. Nam finibus, risus non porta tincidunt, purus ex varius ligula, at accumsan nibh odio sit amet justo. Quisque feugiat sit amet dolor nec finibus. Integer tortor eros, suscipit condimentum sem quis, dapibus fermentum turpis. Aenean porta est sit amet eros efficitur gravida et et nisl. Praesent porta quam sed urna semper tempor. Maecenas sed neque volutpat, fringilla lectus eu, euismod nibh. In convallis sem a neque facilisis, eu interdum eros aliquet.
