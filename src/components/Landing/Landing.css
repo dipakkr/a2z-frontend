@@ -183,3 +183,24 @@ i{
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
+
+#get-started{
+    margin-left: 41%;
+    font-size: 1.4vw;
+    font-weight: bold;
+    z-index: 10;
+    max-width: 13vw;
+    padding-bottom: 5vw;
+}
+
+#get-started a{
+    text-decoration: none;
+    color: #353A43;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 5vw;
+    border-radius: 5px;
+    border: 2px solid #353A43;
+}

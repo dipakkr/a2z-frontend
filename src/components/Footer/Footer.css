@@ -9,6 +9,10 @@ footer {
     box-sizing: border-box; 
 }
 
+#footer-container{
+    margin-top: 2%;
+}
+
 #left-footer, #right-footer {
     min-height: 20vh;
     min-width: 50%;
@@ -56,7 +60,7 @@ footer {
     bottom: 7px;
     width: 100%;
     text-align: center;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 #copyright hr {
