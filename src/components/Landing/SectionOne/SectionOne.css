@@ -77,30 +77,50 @@
     background: #353A43;
     /* width: 100%; */
     max-width: 77%;
+    /* height: 83.8%; */
+    height: 99.8%;
     position: absolute;
     z-index: -1;
-    max-height: 99%;    
+    max-height: 99%;
     top: 0;
     bottom: 0;
-    right: 64vw;
+    /* right: 65vw; */
+    right: 64.5vw;
 }
 
 .background-svg-20{
-    /* width: 100%; */
-    max-width: 77%;
+    max-width: 97%;
     position: absolute;
     z-index: -1;
     max-height: 99%;
     top: 0;
     /* bottom: 0; */
-    left: 23vw;
+    left: 34.5vw;
     background: #353A43;
+}
+
+@media only screen and (max-width: 1140px) {
+    .background-svg-10{
+        height: 74.5%;
+    }
+    .background-svg-20{
+        left: 34.9vw;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .background-svg-10{
+        height: 74.5%;
+    }
+    .background-svg-20{
+        left: 1.9vw;
+    }
 }
 
 .scroll-div{
     position: absolute;
     left: 50%;
-    bottom: 1vw;
+    top: 85%;
     transform: translate(-50%, -50%);
     margin: 0 auto;
 }
