@@ -58,9 +58,6 @@ class Carousel extends React.Component {
 
   render() {
     const { startImageIndex, endImageIndex } = this.state;
-    console.log('start then end');
-    console.log(startImageIndex);
-    console.log(endImageIndex);
     const showData = data.slice(startImageIndex, endImageIndex)
     return (
       <div className="carousel">

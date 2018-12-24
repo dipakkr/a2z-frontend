@@ -5,6 +5,7 @@ import SectionOne from './SectionOne/SectionOne';
 import SectionTwo from './SectionTwo/SectionTwo';
 import SectionThree from './SectionThree/SectionThree';
 import SectionFour from './SectionFour/SectionFour';
+import { Link } from 'react-router-dom';
 
 class Landing extends React.Component {
 
@@ -39,6 +40,7 @@ class Landing extends React.Component {
                 <SectionThree /> */}
                 <hr />
                 <SectionFour />
+                <div id="get-started"><Link to="/home">Get Started</Link></div>
             </>
         );
     }
