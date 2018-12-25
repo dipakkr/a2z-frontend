@@ -18,3 +18,9 @@
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
+
+@media only screen and (max-width: 960px) {
+.padding-container{
+  padding-bottom: 10%;
+}
+}

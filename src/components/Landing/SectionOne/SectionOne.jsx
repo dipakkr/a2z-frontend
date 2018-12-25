@@ -6,6 +6,8 @@ import back from '../../../assets/images/back.png';
 import { Link } from 'react-router-dom';
 
 const SectionOne = (props) => {
+  console.log(window.innerWidth);
+  const isDesktop = window.innerWidth > 960 ? true : false;
 
   return (
     <>
@@ -17,9 +19,10 @@ const SectionOne = (props) => {
       <img src={back} alt="" className="background-svg-1" onLoad={() => props.stopLoading()} />
       {/*<img src={blackLeft} alt="" className="background-svg-10" onLoad={() => props.stopLoading()} />
       <img src={blackRight} alt="" className="background-svg-20" onLoad={() => props.stopLoading()} />*/}
-      <div className="scroll-div">
-        <button className="scroll-btn" title="Click to stay updated"><i className="down"></i></button>
-      </div>
+      {isDesktop &&
+        <div className="scroll-div">
+          <button className="scroll-btn" title="Click to stay updated"><i className="down"></i></button>
+        </div>}
     </>
   );
 }

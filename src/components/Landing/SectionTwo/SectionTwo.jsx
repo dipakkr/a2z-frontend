@@ -10,7 +10,7 @@ import startup from '../../../assets/images/startup.png';
 const SectionTwo = (props) => {
 
   return (
-    <>
+    <div className="section-two-container">
       <div className="row-container">
         <div className="left">
           <div className="image">
@@ -92,7 +92,7 @@ const SectionTwo = (props) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

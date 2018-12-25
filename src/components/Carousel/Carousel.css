@@ -57,3 +57,15 @@
   margin-right: 20%;
   text-align: right;
 }
+
+@media only screen and (max-width: 960px) {
+
+  .carousel{
+    padding-bottom: 30%;
+  }
+  
+  .testimony{
+    font-size: small;
+    letter-spacing: 0;
+  }
+}
