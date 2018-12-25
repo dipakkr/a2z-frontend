@@ -46,8 +46,8 @@
 @media only screen and (orientation: portrait) and (max-width: 768px) {
 
    #special-container {
+        margin: 0 auto; 
         margin-top: 14vh;
-        margin-left: 0;
     }
     
     #special-container h1 {
@@ -58,6 +58,7 @@
 
     #special-container p {
         font-size: 2vh;
+        margin-left: 0;
     }
 
     #special-container div {
@@ -68,6 +69,7 @@
 
     #special-container div a {
         height: 5vh;
+        width: 30vw;
     }
 
 }

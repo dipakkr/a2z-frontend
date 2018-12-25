@@ -22,8 +22,11 @@ const Header = (props) => {
 
                 const landingStyles = {
                     header: {
-                        background: 'transparent'
+                        background: 'transparent',
                     },
+                    li: {
+                        color: 'white'
+                    }
                 };
 
                 return (
@@ -60,7 +63,7 @@ const Header = (props) => {
                                             //     )
                                             // }
                                             return (
-                                                <li key={i}>
+                                                <li key={i} style={isLanding ? landingStyles.li : null}>
                                                     <Link to={link[1]}>{link[0]}</Link>
                                                 </li>
                                             )

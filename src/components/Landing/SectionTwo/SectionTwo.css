@@ -4,13 +4,17 @@
 
 @media only screen and (min-width: 460px) {
 
+.landing-page-section-2 {
+  padding-bottom: 10%;
+}
+
 .row-container {
     text-align: center;
     width: 80vw;
     margin: 0 auto;
-    padding-top: 12%;
+    padding: 10%;
     white-space: nowrap;
-    padding-bottom: 5%;
+    padding-bottom: 4%;
 }
 
 .left{
@@ -20,8 +24,8 @@
 
 .center{
   width: 25%;
-    margin:0 auto;
-   display:inline-block
+  margin:0 auto;
+  display:inline-block
 }
 
 .right{
@@ -30,10 +34,16 @@
 }
 
 }
+.landing-page-section-2-image-container {
+  width: 100%;
+  height: 11vh;
+}
+
 .image{
   margin:auto;
-  width:200px;
+  width:5vw;
   position:relative;
+  height: auto;
 }
 
 .image img{
