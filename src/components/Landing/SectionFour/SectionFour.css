@@ -24,3 +24,15 @@
   padding-bottom: 10%;
 }
 }
+
+@media only screen and (max-width: 480px) {
+
+  .user-thoughts{
+    width: 45%;
+    height: 10vw;
+  }
+
+  .padding-container{
+    padding-bottom: 25%;
+  }
+}

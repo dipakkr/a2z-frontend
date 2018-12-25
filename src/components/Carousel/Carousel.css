@@ -69,3 +69,32 @@
     letter-spacing: 0;
   }
 }
+
+@media only screen and (max-width: 480px) {
+
+  .slide-content{
+    width: 100%;
+  }
+
+  .slide-arrow {
+    margin-top: 12%;
+  }
+
+  .slide-content img {
+    margin-right: 5vw;
+  }
+  
+  .testimony, .testimony-author {
+    margin: 0 auto;
+    width: 70%;
+    font-size: small;
+  }
+
+  .carousel{
+    padding-bottom: 45%;
+  }
+
+  .testimony-author {
+    padding-right: 20%;
+  }
+}
