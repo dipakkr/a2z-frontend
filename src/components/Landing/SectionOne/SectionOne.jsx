@@ -19,10 +19,10 @@ const SectionOne = (props) => {
       <img src={back} alt="" className="background-svg-1" onLoad={() => props.stopLoading()} />
       {/*<img src={blackLeft} alt="" className="background-svg-10" onLoad={() => props.stopLoading()} />
       <img src={blackRight} alt="" className="background-svg-20" onLoad={() => props.stopLoading()} />*/}
-      {isDesktop &&
+      {/* {isDesktop &&
         <div className="scroll-div">
           <button className="scroll-btn" title="Scroll Down"><i className="down"></i></button>
-        </div>}
+        </div>} */}
     </>
   );
 }
