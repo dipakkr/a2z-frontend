@@ -10,11 +10,7 @@ import startup from '../../../assets/images/startup.png';
 const SectionTwo = (props) => {
 
   return (
-<<<<<<< HEAD
     <div className="section-two-container">
-=======
-    <div className="landing-page-section-2">
->>>>>>> 4dc94f18afe7fa859a90ad295c58f9126c6bb6ad
       <div className="row-container">
         <div className="left">
           <div className="landing-page-section-2-image-container">
