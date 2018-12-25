@@ -3,6 +3,7 @@
     top: 0;
     left: 0;
     margin-bottom: 14%;
+    min-height: 0vh;
 }
 
 .background-svg-1 {
@@ -95,6 +96,7 @@
 
     #sectionOne-container {
         text-align: center;
+        min-height: 70vh;
     }
 
     #special-container {

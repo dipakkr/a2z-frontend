@@ -10,12 +10,13 @@ import startup from '../../../assets/images/startup.png';
 const SectionTwo = (props) => {
 
   return (
-    <>
+    <div className="landing-page-section-2">
       <div className="row-container">
         <div className="left">
-          <div className="image">
-            <img src={user} alt="user" className="" />
+          <div className="landing-page-section-2-image-container">
+            <img src={user} alt="user" className="image" />
           </div>
+          <div className="text-img-separator"></div>
           <h2 className="title">2K Users</h2>
           <div className="text">
             <p>
@@ -26,9 +27,10 @@ const SectionTwo = (props) => {
           </div>
         </div>
         <div className="center">
-          <div className="image">
-            <img src={contributor} alt="contributor" className="" />
+          <div className="landing-page-section-2-image-container">
+            <img src={contributor} alt="contributor" className="image" />
           </div>
+          <div className="text-img-separator"></div>
           <h2 className="title">1K Contributors </h2>
           <div className="text">
             <p>
@@ -39,9 +41,10 @@ const SectionTwo = (props) => {
           </div>
         </div>
         <div className="right">
-          <div className="image">
-            <img src={event} alt="event" className="" />
+          <div className="landing-page-section-2-image-container">
+            <img src={event} alt="event" className="image" />
           </div>
+          <div className="text-img-separator"></div>
           <h2 className="title">100s of Events </h2>
           <div className="text">
             <p>
@@ -54,9 +57,10 @@ const SectionTwo = (props) => {
       </div>
       <div className="row-container">
         <div className="left">
-          <div className="image">
-            <img src={coding} alt="user" className="" />
+          <div className="landing-page-section-2-image-container">
+            <img src={coding} alt="user" className="image" />
           </div>
+          <div className="text-img-separator"></div>
           <h2 className="title">Unlimited coding tech</h2>
           <div className="text">
             <p>
@@ -67,9 +71,10 @@ const SectionTwo = (props) => {
           </div>
         </div>
         <div className="center">
-          <div className="image">
-            <img src={startup} alt="contributor" className="" />
+          <div className="landing-page-section-2-image-container">
+            <img src={startup} alt="contributor" className="image" />
           </div>
+          <div className="text-img-separator"></div>
           <h2 className="title">Startup Programs </h2>
           <div className="text">
             <p>
@@ -79,8 +84,8 @@ const SectionTwo = (props) => {
           </div>
         </div>
         <div className="right">
-          <div className="image">
-            <img src={meetups} alt="event" className="" />
+          <div className="landing-page-section-2-image-container">
+            <img src={meetups} alt="event" className="image" />
           </div>
           <h2 className="title">Various Meetups </h2>
           <div className="text">
@@ -92,7 +97,7 @@ const SectionTwo = (props) => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
