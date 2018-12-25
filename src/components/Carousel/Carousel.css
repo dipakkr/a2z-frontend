@@ -16,13 +16,15 @@
     width: 80%;
     margin-left: 10%;
     -webkit-transition: background-image .3s ease-in-out;
-    transition: background-image .3s ease-in-out;
+    /* transition: background-image .3s ease-in-out; */
+    transform: translateX(calc(- 20px));
+    transition: transform ease-out 0.45s;
 }
 
 .slide-arrow {
-	color: #353A43;
+	color: darkblue;
 	cursor: pointer;
-  font-size: 2rem;
+  font-size: 4rem;
   padding: 3%;
 }
 

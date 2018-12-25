@@ -61,9 +61,9 @@ class Carousel extends React.Component {
     const showData = data.slice(startImageIndex, endImageIndex)
     return (
       <div className="carousel">
-        <Arrow direction="left" clickFunction={this.previousSlide} glyph="&#9664;" />
+        <Arrow direction="left" clickFunction={this.previousSlide} glyph="&#8249;" />
         <ImageSlide data={showData} />
-        <Arrow direction="right" clickFunction={this.nextSlide} glyph="&#9654;" />
+        <Arrow direction="right" clickFunction={this.nextSlide} glyph="&#8250;" />
       </div>
     );
   }
