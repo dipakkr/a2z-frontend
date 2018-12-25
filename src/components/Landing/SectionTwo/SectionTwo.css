@@ -59,7 +59,7 @@
 @media only screen and (max-width: 480px) {
 
   .landing-page-section-2 {
-    padding-top: 20%;
+    padding-top: 0%;
     padding-bottom: 20%;
   }
 
@@ -84,7 +84,12 @@
     width: 100%;
     text-align: center;
     margin: 0 auto;
-    padding: 20% 0;
+    padding: 10% 0;
+  }
+
+  .left, .center, .right, .row-container:after {
+    content: "";
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   }
 
   .title {

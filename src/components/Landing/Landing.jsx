@@ -27,6 +27,7 @@ class Landing extends React.Component {
     }
 
     render() {
+        const notMobile = window.innerWidth > 480 ? true : false;
         return (
             <>
                 {this.state.loadingBack && this.state.loadingBlack ? <Loader message=" " /> : null}
@@ -38,7 +39,9 @@ class Landing extends React.Component {
                 <SectionTwo />
                 {/* <hr />
                 <SectionThree /> */}
-                <hr />
+                {notMobile &&
+                    <hr />
+                }
                 <SectionFour />
                 <div id="get-started"><Link to="/home">Get Started</Link></div>
             </>

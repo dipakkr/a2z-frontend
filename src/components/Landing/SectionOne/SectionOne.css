@@ -194,6 +194,7 @@ i{
 
     #sectionOne-container{
         margin-top: -15vw;
+        min-height: 0vw;
     }
 
     .background-svg-1 {
@@ -217,5 +218,12 @@ i{
     #special-container div{
         margin: 2vh auto;
         max-width: 20vh;
+    }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1140px){
+
+    #sectionOne-container{
+        margin-bottom: 25%;
     }
 }
