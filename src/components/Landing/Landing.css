@@ -5,13 +5,6 @@
     margin-bottom: 14%;
 }
 
-.background-svg-1 {
-    height: 27vw;
-    position: absolute;
-    top: 23%;
-    right: 2%;
-    z-index: 0;
-}
 
 .background-svg-3 {
     width: 10vw;
@@ -76,13 +69,13 @@
 
 
 @media only screen and (orientation: portrait) and (max-width: 768px) {
-    .background-svg-1{
+    /* .background-svg-1{
         width: 70vw;
         height: auto;
         top: 50vh;
         left: 50%;
         margin-left: -35vw;
-    }
+    } */
 
     .background-svg-2 {
         width: 100vw;

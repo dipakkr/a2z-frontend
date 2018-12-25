@@ -99,6 +99,14 @@
     background: #353A43;
 }
 
+.background-svg-1 {
+    height: 27vw;
+    position: absolute;
+    top: 23%;
+    right: 2%;
+    z-index: 0;
+}
+
 @media only screen and (max-width: 1140px) {
     .background-svg-10{
         height: 74.5%;
@@ -154,15 +162,58 @@ i{
     -webkit-transform: rotate(-45deg);
 }
 
-/* edits */
+@media only screen and (min-width: 460px) {
 
-div#sectionOne-container:after {
-    content: ' ';
-    position: absolute;
-    background: linear-gradient(49deg,#3f434b 28%,#363a42 0%,#363a42 68.5%,#3f434b 0%);
-    height: 97vh;
-    width: 100%;
-    top: 0;
-	left: 0;
-	z-index: -100;
+    div#sectionOne-container:after {
+        content: ' ';
+        position: absolute;
+        background: linear-gradient(49deg,#3f434b 28%,#363a42 0%,#363a42 68.5%,#3f434b 0%);
+        height: 97vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -100;
+    }
+
+}
+
+@media only screen and (max-width: 460px) {
+        
+    div#sectionOne-container:after {
+        content: ' ';
+        position: absolute;
+        background: #353A43;
+        height: 40vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -100;
+    }
+
+    #sectionOne-container{
+        margin-top: -15vw;
+    }
+
+    .background-svg-1 {
+        opacity: 0.2;
+        height: auto;
+        right: 16vw;
+        top: 16vw;
+        width: 70vw;
+    }
+
+    #special-container p{
+        margin-top: 2vh;
+        margin-left: -2vh;
+        color: white;
+    }
+
+    #special-container div a{
+        width: 30vw;
+    }
+
+    #special-container div{
+        margin: 2vh auto;
+        max-width: 20vh;
+    }
 }

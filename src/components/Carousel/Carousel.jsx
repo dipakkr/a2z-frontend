@@ -32,7 +32,7 @@ class Carousel extends React.Component {
 
   state = {
     startImageIndex: 0,
-    endImageIndex: 3,
+    endImageIndex: window.innerWidth > 460 ? 3 : 1,
   }
 
   previousSlide = () => {

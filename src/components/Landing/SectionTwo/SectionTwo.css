@@ -2,6 +2,8 @@
   margin-top: 24vh;
 }
 
+@media only screen and (min-width: 460px) {
+
 .row-container {
     text-align: center;
     width: 80vw;
@@ -27,6 +29,7 @@
   float: right;
 }
 
+}
 .image{
   margin:auto;
   width:200px;
