@@ -21,7 +21,7 @@ const SectionOne = (props) => {
       <img src={blackRight} alt="" className="background-svg-20" onLoad={() => props.stopLoading()} />*/}
       {isDesktop &&
         <div className="scroll-div">
-          <button className="scroll-btn" title="Click to stay updated"><i className="down"></i></button>
+          <button className="scroll-btn" title="Scroll Down"><i className="down"></i></button>
         </div>}
     </>
   );
