@@ -1,5 +1,5 @@
 #special-container {
-    margin-top: 24vh;
+    margin-top: 14vw;
     margin-left: 10vw;
     z-index: 10;
 }
@@ -43,63 +43,6 @@
     border: 2px solid white;
 }
 
-@media only screen and (orientation: portrait) and (max-width: 768px) {
-
-   #special-container {
-        margin: 0 auto; 
-        margin-top: 14vh;
-    }
-    
-    #special-container h1 {
-        font-size: 3.5vh;
-        max-width: 80%;
-        margin: 0 auto;
-    }
-
-    #special-container p {
-        font-size: 2vh;
-        margin-left: 0;
-    }
-
-    #special-container div {
-        font-size: 1.7vh;
-        margin: 4vh auto;
-        max-width: 15vh;
-    }
-
-    #special-container div a {
-        height: 5vh;
-        width: 30vw;
-    }
-
-}
-
-
-.background-svg-10{
-    background: #353A43;
-    /* width: 100%; */
-    max-width: 77%;
-    /* height: 83.8%; */
-    height: 99.8%;
-    position: absolute;
-    z-index: -1;
-    max-height: 99%;
-    top: 0;
-    bottom: 0;
-    /* right: 65vw; */
-    right: 64.5vw;
-}
-
-.background-svg-20{
-    max-width: 97%;
-    position: absolute;
-    z-index: -1;
-    max-height: 99%;
-    top: 0;
-    /* bottom: 0; */
-    left: 34.5vw;
-    background: #353A43;
-}
 
 .background-svg-1 {
     height: 27vw;
@@ -109,68 +52,13 @@
     z-index: 0;
 }
 
-@media only screen and (max-width: 1140px) {
-    .background-svg-10{
-        height: 74.5%;
-    }
-    .background-svg-20{
-        left: 34.9vw;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .background-svg-10{
-        height: 74.5%;
-    }
-    .background-svg-20{
-        left: 1.9vw;
-    }
-}
-
-.scroll-div{
-    position: absolute;
-    left: 50%;
-    top: 85%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-}
-
-.scroll-btn{
-    vertical-align:top;
-    margin-top:5vw;
-    width:4vw;
-    height:2vw;
-    cursor:pointer;
-    border-radius: 50px;
-    border: 2px solid white;
-    background: transparent;
-    transform:rotate(7deg);
-    -ms-transform:rotate(90deg); /* IE 9 */
-    -moz-transform:rotate(90deg); /* Firefox */
-    -webkit-transform:rotate(90deg); /* Safari and Chrome */
-    -o-transform:rotate(90deg); /* Opera */
-}
-
-i{
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-}
-
-.down{
-    margin-left:40%;
-    transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-}
-
 @media only screen and (min-width: 460px) {
 
     div#sectionOne-container:after {
         content: ' ';
         position: absolute;
         background: linear-gradient(49deg,#3f434b 28%,#363a42 0%,#363a42 68.5%,#3f434b 0%);
-        height: 97vh;
+        height: 96vh;
         width: 100%;
         top: 0;
         left: 0;
@@ -178,8 +66,14 @@ i{
     }
 
 }
+@media only screen and (max-width: 425px){
 
-@media only screen and (max-width: 460px) {
+    #special-container {
+        margin-top: 32vw;        
+    }
+
+}
+@media only screen and (max-width: 480px) {
         
     div#sectionOne-container:after {
         content: ' ';
@@ -205,25 +99,83 @@ i{
         width: 70vw;
     }
 
+    #special-container{
+        margin-left: 0;
+    }
+
+    #special-container h1{
+
+    }
+
     #special-container p{
-        margin-top: 2vh;
-        margin-left: -2vh;
+        margin-top: 2vw;
+        margin-left: 0vw;
         color: white;
     }
 
     #special-container div a{
-        width: 30vw;
+        width: 20vw;
     }
 
     #special-container div{
-        margin: 2vh auto;
-        max-width: 20vh;
+        margin-top: 2vw;
+        margin-left: 39vw;
+        max-width: 20vw;
     }
 }
 
-@media only screen and (min-width: 760px) and (max-width: 1140px){
+@media only screen and (min-width: 1020px) and (max-width: 1024px){
 
     #sectionOne-container{
-        margin-bottom: 25%;
+        margin-bottom: 29%;
+    }
+    
+    div#sectionOne-container:after{
+        height: 90vw;
+    }
+
+    #special-container {
+        margin-top: 28vw;
+    }    
+    
+    #special-container p {
+        margin-top: 1vw;
+        margin-left: 4vw;
+    }
+
+    #special-container div {
+        margin-top: 2vw;
+        margin-left: 8vw;
+    }
+}
+
+@media only screen and (min-width: 760px)  and (max-width: 768px){
+    #sectionOne-container{
+        margin-bottom: 2%;
+        min-height: 40vw;
+    }
+    
+    div#sectionOne-container:after{
+        height: 90vw;
+    }
+
+    #special-container {
+        margin-top: 24vw;
+        margin-left: 0;
+        margin-right: 45vw;
+    }    
+    
+    #special-container p {
+        margin-top: 1vw;
+        margin-left: 0vw;
+    }
+
+    #special-container h1 {
+        font-size: 4.0vw;
+    }
+
+    #special-container div {
+        margin-top: 2vw;
+        margin-left: 18vw;
     }
 }

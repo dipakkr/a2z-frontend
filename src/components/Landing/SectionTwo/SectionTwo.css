@@ -29,7 +29,7 @@
 
 .landing-page-section-2-image-container {
   width: 100%;
-  height: 11vh;
+  height: 5vh;
 }
 
 .image{
@@ -99,5 +99,23 @@
   .text p {
     width: 70%;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+
+  .title{
+    font-size: 2vw;
+  }
+  .text p{
+    font-size: 2vw;
+  }
+  .section-two-container {
+    margin-top: 26vw;
+    margin-bottom: 10vw;
+  }
+
+  .landing-page-section-2-image-container {
+    height: 6vw;
   }
 }
