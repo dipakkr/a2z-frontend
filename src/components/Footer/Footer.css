@@ -39,6 +39,7 @@ footer {
 }
 
 #right-footer {
+    padding-top: 0%;
     text-align: right;
 }
 
@@ -87,5 +88,12 @@ footer {
 
     #left-footer{
         padding-bottom: 5%;
+    }
+}
+
+@media only screen and (min-width: 480px) {
+    #contact-links {
+        float: right;
+        width: 80%;
     }
 }
