@@ -97,6 +97,7 @@
         right: 16vw;
         top: 16vw;
         width: 70vw;
+        z-index: -1;
     }
 
     #special-container{
