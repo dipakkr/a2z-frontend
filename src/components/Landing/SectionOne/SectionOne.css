@@ -69,7 +69,7 @@
 @media only screen and (max-width: 425px){
 
     #special-container {
-        margin-top: 32vw;        
+        margin-top: 26vw;        
     }
 
 }
@@ -103,10 +103,14 @@
         margin-left: 0;
     }
 
+    #special-container h1{
+        font-size: 6vw;
+    }
     #special-container p{
-        margin-top: 2vw;
+        margin-top: 2.5vw;
         margin-left: 0vw;
         color: white;
+        font-size: 4vw;
     }
 
     #special-container div a{
@@ -117,6 +121,7 @@
         margin-top: 2vw;
         margin-left: 39vw;
         max-width: 20vw;
+        font-size: 2.5vw;
     }
 }
 

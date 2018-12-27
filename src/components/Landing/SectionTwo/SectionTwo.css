@@ -94,11 +94,13 @@
 
   .title {
     text-align: center;
+    font-size: 3.5vw !important;
   }
 
   .text p {
     width: 70%;
     margin: 0 auto;
+    font-size: 3vw !important;
   }
 }
 
