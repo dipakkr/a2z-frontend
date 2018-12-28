@@ -1,11 +1,11 @@
 import React from 'react';
 import './SectionTwo.css';
-import contributor from '../../../assets/images/Contributor.png';
-import event from '../../../assets/images/EventImage.png';
-import user from '../../../assets/images/User.png';
-import coding from '../../../assets/images/coding.png';
-import meetups from '../../../assets/images/meetups.png';
-import startup from '../../../assets/images/startup.png';
+import contributor from '../../../assets/images/Contributor.svg';
+import event from '../../../assets/images/events.svg';
+import user from '../../../assets/images/User.svg';
+import coding from '../../../assets/images/coding.svg';
+import meetups from '../../../assets/images/meetups.svg';
+import startup from '../../../assets/images/startup.svg';
 
 const SectionTwo = (props) => {
 
