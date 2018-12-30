@@ -9,7 +9,7 @@ const Logo = (props) => {
     const final = props.white ? white : logo;
 
     return (
-        <Link to='/home' style={{ textDecoration: 'none' }}>
+        <Link to='/' style={{ textDecoration: 'none' }} className="logo-a-tag">
             <img src={final} alt="Front Bench" className="logo" />
         </Link>
     );

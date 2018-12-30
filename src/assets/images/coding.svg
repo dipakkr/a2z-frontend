@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.74 160.272">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #030303;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 10px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #000;
+      }
+    </style>
+  </defs>
+  <g id="codingResource" transform="translate(-1355.281 -709.67)">
+    <rect id="Rectangle_26" data-name="Rectangle 26" class="cls-1" width="40.671" height="32.895" transform="translate(1429.816 834.419)"/>
+    <rect id="Rectangle_27" data-name="Rectangle 27" class="cls-1" width="60.132" height="5.248" rx="2.624" transform="translate(1420.087 864.694)"/>
+    <rect id="Rectangle_28" data-name="Rectangle 28" class="cls-2" width="179.74" height="119.827" rx="12.753" transform="translate(1360.281 714.67)"/>
+    <path id="Path_101" data-name="Path 101" class="cls-3" d="M86.5,121.69H193.869v11.551H86.1Z" transform="translate(1310.11 614.079)"/>
+    <path id="Path_105" data-name="Path 105" class="cls-3" d="M86.5,121.69H193.869v11.551H86.1Z" transform="translate(1310.11 679.918)"/>
+    <path id="Path_103" data-name="Path 103" class="cls-3" d="M86.246,121.69h38.37v42.889H86.1Z" transform="translate(1310.11 631.207)"/>
+    <path id="Path_104" data-name="Path 104" class="cls-3" d="M86.328,121.69H146.96v42.889H86.1Z" transform="translate(1357.019 631.207)"/>
+  </g>
+</svg>

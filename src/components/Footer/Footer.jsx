@@ -2,6 +2,7 @@ import React from 'react';
 import './Footer.css';
 import { Consumer } from '../Context/Context';
 import { Link } from 'react-router-dom';
+import Logo from '../Logo/Logo';
 import linkedin from '../../assets/images/linkedin48.png';
 import facebook from '../../assets/images/fb.png';
 import twitter from '../../assets/images/twiter.png';
@@ -15,23 +16,24 @@ const Footer = (props) => {
                 pages,
                 isLanding,
             }) => {
-                
+
                 const extraStyles = {
-                    display: isLanding ? 'none' : 'block',
+                    // display: isLanding ? 'none' : 'block',
                     bottom: 0
                 }
 
                 return (
                     <footer style={extraStyles}>
                         <div id="footer-container">
+                            <Logo />
                             <div id="left-footer">
                                 <h3>GoTo</h3>
                                 {pages.map((page, i) => (
-                                   <Link key={i} to={page[1]}>{page[0]}</Link>
+                                    <Link key={i} to={page[1]}>{page[0]}</Link>
                                 ))}
                             </div>
                             <div id="right-footer">
-                            <h3>Stay Connected with Us</h3>
+                                <h3>Connect with Us</h3>
                                 <div id="contact-links">
                                     <a
                                         href="https://www.facebook.com/frontbench.xyz/"
@@ -51,7 +53,7 @@ const Footer = (props) => {
                                             <img src={linkedin} alt="LinkedIn" />
                                         </span>
                                     </a>
-                                   
+
                                     <a
                                         href="https://instagram.com/frontbench.xyz"
                                         target="_blank"
@@ -70,12 +72,12 @@ const Footer = (props) => {
                                             <img src={twitter} alt="Twitter" />
                                         </span>
                                     </a>
-                                  
+
                                 </div>
                             </div>
-                           
+
                             <div id="copyright">
-                                <hr/>
+                                <hr />
                                 &copy; Copyright 2018 | FrontBench
                             </div>
                         </div>
