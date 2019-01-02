@@ -76,7 +76,7 @@ const Footer = (props) => {
                            
                             <div id="copyright">
                                 <hr/>
-                                &copy; Copyright 2018 | FrontBench
+                                &copy; Copyright 2019 | FrontBench
                             </div>
                         </div>
                     </footer>
