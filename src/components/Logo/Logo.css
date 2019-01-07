@@ -4,3 +4,10 @@
     width: 120px;
     margin-left: -15px;
 }
+
+@media only screen and (max-width: 480px) {
+
+    .logo{
+        width: 75px;
+    }
+}

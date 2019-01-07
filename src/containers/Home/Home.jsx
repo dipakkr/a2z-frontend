@@ -57,7 +57,7 @@ export default class Home extends React.Component {
                 png: group,
                 color: "#257281"
             },
-           
+
             {
                 title: "Top Charts",
                 link: "/top-charts",
