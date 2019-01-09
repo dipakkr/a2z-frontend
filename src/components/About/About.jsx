@@ -1,12 +1,13 @@
 import React from 'react';
 import './About.css';
-import about from './../../assets/images/aboutus.jpg';
 
 const About = (props) => {
     return (
         <div className="about-page-container">
             <div className="about-container">
-                 <img src={about} alt="src-google" className="" />
+                 
+                 <div class="blog-container blog-background"><h1 class="blog-h1">About Us </h1></div>
+                 
                  <p className="about-p">
                 
                  <br/>

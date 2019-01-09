@@ -29,7 +29,12 @@
     color: #077de0;
     font-weight: 600;
 }
-
+.about-us-h1 {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    display: table-cell;
+}
 .list-grp{
     margin-left: 30px;
 }
