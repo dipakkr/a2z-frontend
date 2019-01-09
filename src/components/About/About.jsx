@@ -1,36 +1,36 @@
 import React from 'react';
 import './About.css';
+import about from './../../assets/images/aboutus.jpg';
 
 const About = (props) => {
     return (
         <div className="about-page-container">
             <div className="about-container">
-                <h1>About Us </h1>
+                 <img src={about} alt="src-google" className="" />
+                 <p className="about-p">
                 
-                <p className="about-p">
-                Hi,<br/><br/>
+                 <br/>
+                 We are a community working to enable, empower and enlighten those students across the country who don’t have access to right guidance and mentorship.
+                 <br/><br/>
+                 It will just take a few people and some love to empower the student community and The Front Bench is home to all such amazing individuals.
+                 <br/><br/>
+                 We believe in creating a democratised and a free platform where a student can visit and know how to do, what he wants to do.
+                 <br/><br/>
+                 From individuals to working professionals and experts, we provide a platform to everyone to talk about their experiences and share their knowledge and expertise with the world.
+                 <br/><br/>
+                 <hr/>
+                 <br/>
+                 <p className="about-p-title" >EDUCATION AND GUIDANCE NEEDS TO BE DEMOCRATISED</p>
+                 <br/>
+                 
+                 We believe that intent and conviction is more important than power and system to fix something which isn’t right. 
+                 In this digital age, even though information is a click away, according to AICTE, out of 1 million graduates passing out as 
+                 engineers every year, a whooping 60% is unemployable. A majority of the students of Tier 2 / Tier  3 engineering college, 
+                 often can’t figure out, what to do and what not to.  Google Summer of Codes or ACM ICPC seems alien to them. 
+                 According to our internal survey done on over 10,000 students - 
+                 <br/><br/>
 
-                Are you a college student or a working professional looking for resources to learn a new coding language ? 
-                Are you looking to meet new people in your community or searching for global conferences, hackathons, competitions, fellowships, 
-                internships and bootcamps to participate and ? If so, please continue reading.  If not, you should read too. 
-
-                <br/><br/>
-               
-                Very often, people from TIER 3 institutions complain that they didn’t have good ecosystem in college or they didn't have any guidance 
-                in college or they missed many opportunities due to lack of awareness. The problem isn't that they aren't hard working 
-                or sincere but the real problem is in the fact that they aren't aware of the opportunities available to them. 
-
-                <br/><br/>
-
-                How to begin? Where to begin? Be it for anything. Though Internet is available everywhere, the thing is that, at least 
-                they should have heard of the word before they can even google it.
-                
-                <br/><br/>
-               
-                To get a depth insight on this problem, We conducted a survey on 1000+ students got some eye opening insights. 
-                <br/><br/>
-
-                <ul className="list-grp">
+                 <ul className="list-grp">
                     <li>70% of them said that, “I didn't have any guidance”</li>
                     <li>75% of them said that, “I was not aware of the available opportunities”</li>
                     <li>67% of them said that, “I was confused which tech stack to choose to get a good Job”</li>
@@ -38,22 +38,62 @@ const About = (props) => {
                     <li>80% of them were from TIER 2 or 3 institution. </li>
                 </ul>
 
+                <br/>
+                We believe in creating a community, where people become enabler to empower students who are in dire need of educational support 
+                and guidance. We love sharing details about hackathons, conferences, foreign internships and roadmaps to get good employment 
+                and hence in becoming an empowered citizen of New India.
+                <br/><br/>
+                <hr/>
+
+                <br/>
+                <p className="about-p-title" >MAKING STUDENTS LESS IGNORANT AND MORE INFORMED</p>
+                <br/>
+
+                We believe, that every human being has an intention, to do something meaningful. We don’t discriminate students, 
+                on the basis, of the type of institutions, they come from. For us, everyone is equal. We are of the opinion, 
+                that if we can guide our students better, we can create a million quality professionals everyyear.   
+                <br/><br/>
+                <hr/>
+
+                <br/>
+                <p className="about-p-title">CAN A WEB PORTAL REALLY SOLVE THE ABOVE MENTIONED PROBLEM?</p>
+                <br/>
+
+                We believe that a generation exposed to more meaningful content is more likely to have a healthy thought process. We would be 
+                helping students, right from the scratch. We would provide mentorship, to students on what to do in their life. 
+                A community, where experience guides novice, will do wonders! 
+
+                <br/><br/>
+                <hr/>
+
+                <br/>
+                <p className="about-p-title">HOW DO WE PAY OUR BILLS?</p>
+                <br/>
+
+                We are currently a voluntary organisation. But we do need money to make payments to the web server holding our website. Till now, 
+                we are cutting our pocket money and thus managing our expenditure. We would love to sit with you over a cup of coffee, 
+                if you want to help us financially. 
+                <br/><br/>
+                <hr/>
+
+                <br/>
+                <p className="about-p-title">VALUES WE BELIEVE IN</p>
+                <br/>
+                Empathy, Coexistence, Volunteerism and Curiosity.
+                <br/><br/>
+                <hr/>
+
+                <br/>
+                <p className="about-p-title"> FRONTBENCH CREW </p>
+                <br/>
+
+                Sorry, to disappoint you. Front Bench crew doesn’t have an IIT - IIM grads on it’s board. We are passionate, enthusiast and self - motivated people. 
+                We have volunteers from more than 70 institutions all across this country. 
                 <br/><br/>
 
-                To Solve this problem,  We at FrontBench built a platform where you can find everything you need whether it is Coding resources, Hackathons, Competitions, Conferences, 
-                Scholarship programs, Community events or guidance in getting started with anything. 
+                Coffee, some self-motivation and people’s love are what keeps us going!
 
-                <br/><br/>
 
-                Our Vision to empower every youth of the country. We believe that quality education and a mentor/coach in life is key to achieve every single thing in life. 
-
-                <br/><br/>
-
-                Come Join Us and be a FrontBencher in life !!
-                
-                <br/><br/>
-                Thank You,<br/>
-                Team FrontBench
                 </p>
                              
             </div>

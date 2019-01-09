@@ -22,8 +22,12 @@
     margin-top: 32px;
     font-weight: 500;
     text-align: justify;
-    font-family: inherit;
+    font-family: Arial, Helvetica, sans-serif;
     color: #556655;
+}
+.about-p-title{
+    color: steelblue;
+    font-weight: 600
 }
 
 .list-grp{
