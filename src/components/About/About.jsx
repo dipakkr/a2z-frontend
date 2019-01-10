@@ -32,7 +32,7 @@ const About = (props) => {
 
                  <ul className="list-grp">
                     <li>70% groaned of not having a proper guidance. </li>
-                    <li>75% of them said that, “I was not aware of the72% were actively looking for a mentor. </li>
+                    <li>72% were actively looking for a mentor. </li>
                     <li> 67% were actively looking for roadmaps and guidance to enhance their career growth. </li>
                 </ul>
 
@@ -47,7 +47,7 @@ const About = (props) => {
 
                 We believe, that every human being has an intention, to do something meaningful. We don’t discriminate students, 
                 on the basis, of the type of institutions, they come from. For us, everyone is equal. We are of the opinion, 
-                that if we can guide our students better, we can create a million quality professionals everyyear.   
+                that if we can guide our students better, we can create a million quality professionals every year.   
                 <br/><br/><br/>
                 <hr/><br/><br/>
                 <p className="about-p-title">CAN A WEB PORTAL REALLY SOLVE THE ABOVE MENTIONED PROBLEM?</p>
