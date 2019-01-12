@@ -4,7 +4,7 @@ h1.blog-heading{
 	padding: 2em 0.5em;
 	margin: 0 auto 0.5em auto;
 	background: #ddd;
-	font-size: 3em;
+	font-size: 290%;
 	font-weight: 400;
 	text-transform: capitalize;
 	max-height: 30vh;
@@ -43,7 +43,7 @@ span.blog-author>span.name{
 	list-style: none;
 }
 li>time{
-	margin-left: 1em;
+	margin-left: -10em;
 	color: #979797;
 	text-align: center;
 	max-width: 25vw;
@@ -69,13 +69,16 @@ span.blog-shares>a,span.blog-shares>a:visited{
 	margin: 0 0.5em;
 	outline: none;
 }
-p.blog-content{
+p.text:first-of-type::first-letter{
+	font-size: 250%;
+	font-family: monospace;
+}
+.blog-content{
 	font-size: 16pt;
 	background: #ddd;
 	margin: 1em auto;
 	padding: 1em;
 	width: 87vw;
-	text-align: center;
 	border-radius: 10px;
 }
 @media only screen and (max-width: 890px){
@@ -88,5 +91,8 @@ p.blog-content{
 	}
 	span.blog-shares{
 		margin-top: 0;
+	}
+	li>time{
+		margin: 0;
 	}
 }
