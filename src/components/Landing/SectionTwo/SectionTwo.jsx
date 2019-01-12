@@ -1,10 +1,10 @@
 import React from 'react';
 import './SectionTwo.css';
-import contributor from '../../../assets/images/Contributor.svg';
+import campus from '../../../assets/images/university.svg';
 import event from '../../../assets/images/events.svg';
 import user from '../../../assets/images/User.svg';
 import coding from '../../../assets/images/coding.svg';
-import meetups from '../../../assets/images/meetups.svg';
+import newsletter from '../../../assets/images/newsletter.svg';
 import startup from '../../../assets/images/startup.svg';
 
 const SectionTwo = (props) => {
@@ -17,26 +17,24 @@ const SectionTwo = (props) => {
             <img src={user} alt="user" className="image" />
           </div>
           <div className="text-img-separator"></div>
-          <h2 className="title">2K Users</h2>
+          <h2 className="title">12,000 Users</h2>
           <div className="text">
             <p>
               Number of people are making way
-              towards their chosen dream , be the
-              part of amazing family.
+              towards their chosen dream, be the
+              part of growing community.
             </p>
           </div>
         </div>
         <div className="center">
           <div className="landing-page-section-2-image-container">
-            <img src={contributor} alt="contributor" className="image" />
+            <img src={campus} alt="contributor" className="image" />
           </div>
           <div className="text-img-separator"></div>
-          <h2 className="title">1K Contributors </h2>
+          <h2 className="title"> 50+ Campus </h2>
           <div className="text">
             <p>
-              People from all over the world are
-              contributing. Make the best out of
-              their contribution.
+             Collaborated with colleges across India to help students.
            </p>
           </div>
         </div>
@@ -45,12 +43,10 @@ const SectionTwo = (props) => {
             <img src={event} alt="event" className="image" />
           </div>
           <div className="text-img-separator"></div>
-          <h2 className="title">100s of Events </h2>
+          <h2 className="title">500+ opportunities </h2>
           <div className="text">
             <p>
-              Number of events are added daily.
-              Choose events according to your
-              intrest and domain.
+           Number of available opportunities to help students in the journey of becoming their best version.
             </p>
           </div>
         </div>
@@ -61,12 +57,12 @@ const SectionTwo = (props) => {
             <img src={coding} alt="user" className="image" />
           </div>
           <div className="text-img-separator"></div>
-          <h2 className="title">Unlimited coding tech</h2>
+          <h2 className="title"> Curated Resources </h2>
           <div className="text">
             <p>
               Access unlimited resources on
-              coding technologies. Learn from
-              the best and give the best.
+              your technologies.  Learn from the best and 
+              give the best.
             </p>
           </div>
         </div>
@@ -75,24 +71,22 @@ const SectionTwo = (props) => {
             <img src={startup} alt="contributor" className="image" />
           </div>
           <div className="text-img-separator"></div>
-          <h2 className="title">Startup Programs </h2>
+          <h2 className="title"> Learning Roadmaps </h2>
           <div className="text">
             <p>
-              Learn from the startup and grow
-              your own ideas.
+            Curated Learning Roadmaps to help you get started in your technology.
             </p>
           </div>
         </div>
         <div className="right">
           <div className="landing-page-section-2-image-container">
-            <img src={meetups} alt="event" className="image" />
+            <img src={newsletter} alt="event" className="image" />
           </div>
-          <h2 className="title">Various Meetups </h2>
+          <h2 className="title"> Newsletter </h2>
           <div className="text">
             <p>
-              Meet with people from different
-              domain and see their work and
-              connect with their thoughts.
+             Subscribe for curated newsletter weekly and stay updated with latest 
+             developments and opportunities in your domain. 
             </p>
           </div>
         </div>
