@@ -1,13 +1,13 @@
 import React from 'react';
 import './Home.css';
-import idea from '../../assets/images/idea.png';
-import chart from '../../assets/images/chart.png';
-import group from '../../assets/images/group.png';
-import conference from '../../assets/images/conference.png';
-import code from '../../assets/images/code.png';
-import laptop from '../../assets/images/laptop.png';
-import event from '../../assets/images/event.png';
-import classroom from '../../assets/images/classroom.png';
+import idea from '../../assets/images/opensource.svg';
+import chart from '../../assets/images/top-charts.svg';
+import group from '../../assets/images/DeveloperClub.svg';
+import conference from '../../assets/images/conferences.svg';
+import code from '../../assets/images/code.svg';
+import laptop from '../../assets/images/startup programs.svg';
+import event from '../../assets/images/event.svg';
+import classroom from '../../assets/images/studentbenefits.svg';
 import Cards from '../../components/Cards/Cards';
 import Loader from '../../components/Loader/Loader';
 

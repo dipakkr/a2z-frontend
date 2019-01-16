@@ -20,12 +20,21 @@
     max-width: 850px;
     margin: 0 auto;
     margin-top: 32px;
-    font-weight: 500;
+    font-weight: 300;
     text-align: justify;
-    font-family: inherit;
-    color: #556655;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #020202;
 }
-
+.about-p-title{
+    color: #077de0;
+    font-weight: 600;
+}
+.about-us-h1 {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    display: table-cell;
+}
 .list-grp{
     margin-left: 30px;
 }

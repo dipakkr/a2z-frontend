@@ -20,10 +20,10 @@ export default class ProgramsPage extends React.Component {
     }
 
     componentDidMount() {
-        const studentBenefits = fetch("https://api.myjson.com/bins/sbxgy");
-        const openSource = fetch("https://api.myjson.com/bins/9reca");
-        const startupPrograms = fetch("https://api.myjson.com/bins/ymz2y");
-        const fellowship = fetch("https://api.myjson.com/bins/pw1w2");
+        const studentBenefits = fetch("https://api.frontbench.xyz/student-benefits");
+        const openSource = fetch("https://api.frontbench.xyz/open-source");
+        const startupPrograms = fetch("https://api.frontbench.xyz/startup-programs");
+        const fellowship = fetch("https://api.frontbench.xyz/fellowship");
 
         Promise
             .all([studentBenefits, openSource, startupPrograms, fellowship])
@@ -75,7 +75,7 @@ export default class ProgramsPage extends React.Component {
             <h1>Startup Programs and Incubators</h1>
             {this.state.startupPrograms.map((el, i) => {
                 return (
-                    <StartupPrograms key={i} title={el.title} link={el.link} org={el.org} />
+                    <StartupPrograms key={i} title={el.title} link={el.link} org={el.type} />
                 );
             })}
         </div>

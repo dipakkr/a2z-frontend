@@ -14,8 +14,8 @@ export default class EventsPage extends React.Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
-        const conferences = fetch("https://api.myjson.com/bins/i393e");
-        const meetups = fetch("https://api.myjson.com/bins/flg2i");
+        const conferences = fetch("http://api.frontbench.xyz/conferences");
+        const meetups = fetch("https://api.frontbench.xyz/meetup");
 
         Promise
             .all([conferences, meetups])
@@ -41,11 +41,11 @@ export default class EventsPage extends React.Component {
                 <ConferencesCard
                     key={i}
                     title={conf.title}
-                    link={conf.link}
+                    link={conf.url}
                     place={conf.place}
                     date={conf.deadline}
                     type={conf.type}
-                    coverage={conf.ti} />
+                    coverage={conf.ta} />
             ))}
         </div>
 
