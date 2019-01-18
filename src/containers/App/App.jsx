@@ -39,7 +39,7 @@ class App extends Component {
       ["Roadmaps", "/roadmaps"],
       ["Connect With Us", "/contact"],
       ["Campus Connect", "/campus-connect"],
-      ["About", "/about"]
+      ["About Us", "/about"]
       // ["SignUp", "/signup"],
       // ["Login", "/login"],
     ],
