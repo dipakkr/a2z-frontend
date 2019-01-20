@@ -15,7 +15,7 @@ export default class EventsPage extends React.Component {
     componentDidMount() {
         window.scrollTo(0, 0);
         const conferences = fetch("http://api.frontbench.xyz/conferences");
-        const meetups = fetch("https://api.frontbench.xyz/meetup");
+        const meetups = fetch("https://api.frontbench.xyz/meetups");
 
         Promise
             .all([conferences, meetups])
