@@ -18,6 +18,7 @@ import About from '../../components/About/About';
 import CampusStar from '../../components/CampusStar/CampusStar';
 import SubscriptionForm from '../../components/SubscriptionForm/SubscriptionForm';
 import Content from '../../components/BlogArticle/BlogArticle';
+import Team from '../../components/Team/Team';
 
 class App extends Component {
 
@@ -39,7 +40,8 @@ class App extends Component {
       ["Roadmaps", "/roadmaps"],
       ["Connect With Us", "/contact"],
       ["Campus Connect", "/campus-connect"],
-      ["About Us", "/about"]
+      ["About Us", "/about"],
+      ["Team", "/team"]
       // ["SignUp", "/signup"],
       // ["Login", "/login"],
     ],
@@ -149,6 +151,9 @@ class App extends Component {
                 )} />
                 <Route path="/bsr125dev" exact render={() => (
                   <BlogList />
+                )} />
+                <Route path="/team" exact render={() => (
+                  <Team />
                 )} />
 				<Route path="/bsr125dev/:id" exact component={Content}/>
                 <Route path="/dashboard" exact render={() => {
