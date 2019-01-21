@@ -3,6 +3,7 @@ import './Landing.css';
 import Loader from '../Loader/Loader';
 import SectionOne from './SectionOne/SectionOne';
 import SectionTwo from './SectionTwo/SectionTwo';
+// eslint-disable-next-line
 import SectionThree from './SectionThree/SectionThree';
 import SectionFour from './SectionFour/SectionFour';
 import { Link } from 'react-router-dom';

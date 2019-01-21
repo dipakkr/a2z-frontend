@@ -2,7 +2,7 @@ import React, {/*{useState, useEffect}*/} from 'react' //will be needing those w
 import './BlogArticle.css'
 import {Redirect} from 'react-router-dom'
 import getRenderedJSON from './Helper'
-import injectSheet from 'react-jss'
+//import injectSheet from 'react-jss'
 const JsonCSS={
 	subtitle1:{
 		color: '#444',
@@ -173,7 +173,7 @@ const JsonElem={
 									{
 										component: 'li',
 										props: {
-											children: "Mostly related to 'verb', 'tenses', and 'modals'"
+											children: 'Mostly related to \'verb\', \'tenses\', and \'modals\''
 										}
 									},
 								]
@@ -196,7 +196,7 @@ const BlogContent=props=>{
 		</p>
 		<p className={'text'}>
 		Before starting my preparation, I goggled about the exam pattern. There were two phases of the recruitment process :-
-		<b>Written Test</b> and <b>Interview</b>. 10 days prior, I was informed about the test.
+			<b>Written Test</b> and <b>Interview</b>. 10 days prior, I was informed about the test.
 		</p>
 		<p className={'text'}>
 		The written test was of 90 minutes and included four sections
@@ -244,33 +244,33 @@ const Content=props=>{
 		<>
 			<h1 className={'blog-heading'}>
 				Placement at TCS<br />
-				{` Blog id: ${props.match.params.id}`} {/*content to be fetched from server with this blog id */}
+				{ `Blog id: ${props.match.params.id}` } {/*`content to be fetched from server with this blog id */}
 			</h1>
 			<div className={'post-heading'}>
-			<ul className={'post-heading-ul'}>
-				<li>
-				<span className={'blog-author'}>
+				<ul className={'post-heading-ul'}>
+					<li>
+						<span className={'blog-author'}>
 					author&nbsp;<span className={'name'}>{'Arisha Tomar'/* to be fetched from backend */}</span>
-				</span>
-				</li>
-				<li>
-				<time>
+						</span>
+					</li>
+					<li>
+						<time>
 					posted on&nbsp;<span>{Date()}</span>
-				</time>
-				</li>
-				<li>
-				<span className={'blog-shares'}>
+						</time>
+					</li>
+					<li>
+						<span className={'blog-shares'}>
 				share on
-					<a href="https://www.facebook.com/sharer/sharer.php?u=#url"><i className={"fab fa-facebook-square"}></i></a>
-					<a href={`whatsapp://send?text=${window.location}`}><i className={"fab fa-whatsapp"}></i></a>
-					<a href={`https://twitter.com/share?url=${window.location}`}><i className={"fab fa-twitter"}></i></a>
-				</span>
-				</li>
+							<a href="https://www.facebook.com/sharer/sharer.php?u=#url"><i className={'fab fa-facebook-square'}></i></a>
+							<a href={`whatsapp://send?text=${window.location}`}><i className={'fab fa-whatsapp'}></i></a>
+							<a href={`https://twitter.com/share?url=${window.location}`}><i className={'fab fa-twitter'}></i></a>
+						</span>
+					</li>
 				</ul>
 			</div>
 			<div className={'blog-content'} id='content'>
-			{<BlogContent />}
-			{maybe}
+				{<BlogContent />}
+				{maybe}
 			</div>
 		</>
 		)

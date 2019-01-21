@@ -37,7 +37,7 @@ function validSimpleRJXSyntax(simpleRJX = {}) {
 }
 
 function getAdvancedBinding() {
-
+// eslint-disable-next-line
   if (typeof window === 'undefined') {
     var window = (this && this.window)
       ? this.window
@@ -83,8 +83,8 @@ function getBoundedComponents(options = {}) {
 
 function getComponentFromLibrary(options = {}) {
   const { componentLibraries = {}, rjx = {}, } = options;
-  const libComponent = Object.keys(componentLibraries)
-    .map(libraryName => {
+  const libComponent = Object.keys(componentLibraries)// eslint-disable-next-line
+	.map(libraryName => {
       const cleanLibraryName = rjx.component.replace(`${libraryName}.`, '');
       const libraryNameArray = cleanLibraryName.split('.');
       if (libraryNameArray.length === 2
@@ -149,6 +149,7 @@ function getRJXProps(options = {}) {
 
 function getEvalProps(options = {}) {
   const { rjx, } = options;
+  // eslint-disable-next-line
   const scopedEval = eval; //https://github.com/rollup/rollup/wiki/Troubleshooting#avoiding-eval
   const evProps = Object.keys(rjx.__dangerouslyEvalProps || {}).reduce((eprops, epropName) => {
     // eslint-disable-next-line
@@ -327,7 +328,8 @@ function displayComponent(options = {}) {
     const opscompares = Object.assign({}, comp, propcompares);
     switch (opscompares.operation) {
     case 'eq':
-    case '==':
+	case '==':
+	// eslint-disable-next-line
       return opscompares.left == opscompares.right;
     case 'dneq':
     case '!=':
@@ -441,6 +443,7 @@ function getRenderedJSON(rjx = {}, resources = {}) {
   if (!rjx.component)
 		return createElement('span', {}, debug ? 'Error: Missing Component Object' : '');
   try {
+	  // eslint-disable-next-line
     const components = Object.assign({}, componentMap, reactComponents);
 
     const reactComponents = (boundedComponents.length)?

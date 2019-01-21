@@ -1,3 +1,68 @@
+.team_heading{
+	background: #262626;
+	color: #fff;
+	padding: 3em 0;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 250%;
+}
+.sub_heading{
+	margin: 2em auto;
+	width: fit-content;
+	border-bottom: 2px double #979797;
+	font-family: cursive;
+	font-size: 200%;
+}
+.people_container{
+	display: inline;
+	max-width: 100vh;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+	padding: 2em;
+}
+.person{
+	display: inline-block;
+	margin: 0 auto 3em 4em;
+	text-align: center;
+	align-self: center;
+	align-content: center;
+	justify-content: center;
+	justify-self: center;
+	align-items: center;
+	vertical-align: middle;
+	width: fit-content;
+	margin-inline-start: 4em;
+	padding-left: 7vw;
+}
+.person>img{
+	border: 4pt solid #ddd;
+	border-radius: 100% 100%;
+	height: 12em;
+	width:  12em;
+	filter: grayscale(100%)contrast(125%)saturate(150%);
+	background: #ddd;
+}
+.person_name{
+	border-radius: 4pt;
+	background-color: #ddf0f6;
+	padding: .5em .25em;
+	width: 75%;
+	margin: 1em auto .5em auto;
+	color: #0600ff;
+	vertical-align: middle;
+}
+.person_detail{
+    border-radius: 4pt;
+    width: fit-content;
+    margin: auto;
+    padding: .2em 1.75em;
+	font-size: 11pt;
+	color: #979797;
+	vertical-align: middle;
+}
 .about-page-container {
     width: 100%;
     min-height: 55vh;

@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 const SectionOne = (props) => {
   console.log(window.innerWidth);
+  // eslint-disable-next-line
   const isDesktop = window.innerWidth > 960 ? true : false;
 
   return (
