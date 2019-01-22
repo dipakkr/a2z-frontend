@@ -34,7 +34,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint-config-react-app": "^3.0.5",
+    "eslint-config-react-app": "^3.0.6",
     "eslint-plugin-react": "^7.12.3"
   }
 }
