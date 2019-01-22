@@ -74,7 +74,7 @@ p.text:first-of-type::first-letter{
 	font-family: monospace;
 }
 .blog-content{
-	font-size: 14pt;
+	font-size: 16pt;
 	background: #ddd;
 	margin: 1em auto;
 	padding: 1em;
