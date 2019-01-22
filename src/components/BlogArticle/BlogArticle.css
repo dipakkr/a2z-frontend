@@ -12,14 +12,14 @@ h1.blog-heading{
 	overflow-y: scroll;
 }
 .post-heading{
-	padding: 1em 0.25em;
+	padding: 1.5em 0.25em;
 	width: fit-content;
 	margin: auto;
 	text-align: center;
 	align-self: center;
 	width: 90vw;
 	box-shadow: 1px 3px 5px 1px #00000045;
-	border-radius: 57px;
+	border-radius: 10px;
 }
 span.blog-author{
 	float: left;
@@ -75,7 +75,7 @@ p.text:first-of-type::first-letter{
 }
 .blog-content{
 	font-size: 14pt;
-	background: #ddd;
+	background: #fff;
 	margin: 1em auto;
 	padding: 1em;
 	width: 87vw;

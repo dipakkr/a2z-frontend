@@ -170,7 +170,7 @@ const Content=props=>{
 				<ul className={'post-heading-ul'}>
 					<li>
 						<span className={'blog-author'}>
-					author&nbsp;<span className={'name'}>{'Arisha Tomar'/* to be fetched from backend */}</span>
+					&nbsp;<span className={'name'}>{'Arisha Tomar'/* to be fetched from backend */}</span>
 						</span>
 					</li>
 					<li>
@@ -180,7 +180,7 @@ const Content=props=>{
 					</li>
 					<li>
 						<span className={'blog-shares'}>
-				share on
+				
 							<a href="https://www.facebook.com/sharer/sharer.php?u=#url"><i className={'fab fa-facebook-square'}></i></a>
 							<a href={`whatsapp://send?text=${window.location}`}><i className={'fab fa-whatsapp'}></i></a>
 							<a href={`https://twitter.com/share?url=${window.location}`}><i className={'fab fa-twitter'}></i></a>

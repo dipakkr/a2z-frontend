@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://dipakkr.github.io/a2z-frontend",
   "dependencies": {
+    "eslint": "5.6.0",
     "firebase": "^5.5.8",
     "jss": "^9.8.7",
     "react": "^16.6.0",
