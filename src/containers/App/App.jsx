@@ -27,7 +27,8 @@ class App extends Component {
       ["Coding Resources", "/coding-resources",],
       ["Hackathons & Competitions", "/hackathons",],
       ["Open Source Programs", "/open-source",],
-      ["Startup Programs", "/startup-programs",],
+      // ["Startup Programs", "/startup-programs",],
+      ["Campus Placement", "/campus-placement",],
       ["Student Benefits", "/student-benefits",],
       ["Conferences", "/conferences",],
       ["Meetups", "/meetups",],
@@ -155,7 +156,7 @@ class App extends Component {
                 <Route path="/team" exact render={() => (
                   <Team />
                 )} />
-		        		<Route path="/blog/:id" exact component={Content}/>
+		      		<Route path="/blog/:id" exact component={Content}/>
                 <Route path="/dashboard" exact render={() => {
                   if (this.state.isVerified) {
                     return <Dashboard />;
