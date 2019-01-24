@@ -74,12 +74,13 @@ p.text:first-of-type::first-letter{
 	font-family: monospace;
 }
 .blog-content{
-	font-size: 14pt;
-	background: #fff;
+	font-size: 12pt;
+	background: #f3f3f3;
 	margin: 1em auto;
-	padding: 1em;
-	width: 87vw;
+	padding: 3em;
+	width: 50vw;
 	border-radius: 10px;
+	font-family: sans-serif
 }
 @media only screen and (max-width: 890px){
 	span.blog-author,div.post-heading>time,span.blog-shares{
@@ -94,5 +95,13 @@ p.text:first-of-type::first-letter{
 	}
 	li>time{
 		margin: 0;
+	}
+	.blog-content{
+		font-size: 12pt;
+		background: #f3f3f3;
+		margin: 1em auto;
+		padding: 1em;
+		width: 87vw;
+		border-radius: 10px;
 	}
 }
