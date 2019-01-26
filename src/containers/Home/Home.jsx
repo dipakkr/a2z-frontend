@@ -17,7 +17,7 @@ export default class Home extends React.Component {
         cards: [
             {
                 title: "New Arrival",
-                link: "/top-charts",
+                link: "/latest",
                 png: chart,
                 color: "#dd2727b6"
             },

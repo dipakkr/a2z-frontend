@@ -20,6 +20,7 @@ import SubscriptionForm from '../../components/SubscriptionForm/SubscriptionForm
 import Content from '../../components/BlogArticle/BlogArticle';
 import Team from '../../components/Team/Team';
 import PlacementStory from '../PlacementStory/PlacementStory';
+import NewArrival from '../NewArrival/NewArrival';
 
 class App extends Component {
 
@@ -136,8 +137,8 @@ class App extends Component {
                 <Route path="/meetups" exact render={() => (
                   <EventsPage page="2" />
                 )} />
-                <Route path="/top-charts" exact render={() => (
-                  <TopCharts />
+                <Route path="/latest" exact render={() => (
+                  <NewArrival page="2" />
                 )} />
                 <Route path="/roadmaps" exact render={() => (
                   <TopCharts />

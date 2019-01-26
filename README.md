@@ -41,3 +41,14 @@
 - Databases - https://api.myjson.com/bins/d2eai
 
 - Git - https://api.myjson.com/bins/w49ne
+
+
+## New Arrival Section
+
+- title
+- description
+- tag
+- place 
+- Frontbench review
+-  
+
