@@ -1,11 +1,11 @@
 .meetups-card {
 	min-width: 350px;
 	background: #3c0404b5;
-	padding: 50px 50px;
+	padding: 5px;
 	border-radius: 3px;
+	width: 90%;
 	box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.2);
-	width: 50%;
-	margin: 20px;
+	margin: 30px;
     float: none;
     user-select: text;
 	color: white;
@@ -17,22 +17,34 @@
 	box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-.meetups-card h3 {
+.meetups-card h2 {
 	color: #fff;
-    text-decoration: none;
-    
+	text-align: center;
+	padding: 15px;
+	background: #3c0404b5;   
+}
+
+.des-url{
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+	background: #3c040441;
+    text-decoration: none;   
+}
+.des-url:hover {
+	background: rgb(93, 62, 62);
+	color: #000;
 }
 
 .meetups-card hr {
 	border: 1px solid rgba(0, 0, 0, 0.2);
-	margin-top: 5px;
 	margin-bottom: 0;
 }
 
 .meetups-card .des-sp {
 	display: inline-block;
     font-weight: bold;
-	color: rgba(0, 0, 0, 0.4);
+	color: rgba(255, 255, 255, 0.733);
 }
 
 a {
@@ -44,7 +56,7 @@ a {
     font-weight: 600;
     font-family: sans-serif;
     text-decoration: none;
-    margin: 5px;
+    margin: 4px;
 }
 
 @media only screen and (max-width: 480px) {
@@ -53,6 +65,6 @@ a {
 		margin: 20px auto;
 		width: 75%;
 		float: none;
-		padding: 20px;
+		padding: 10px;
 	}
 }
