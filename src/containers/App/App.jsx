@@ -17,10 +17,10 @@ import About from '../../components/About/About';
 // import ContactUs from '../../components/ContactUs/ContactUs';
 import CampusStar from '../../components/CampusStar/CampusStar';
 import SubscriptionForm from '../../components/SubscriptionForm/SubscriptionForm';
-import Content from '../../components/BlogArticle/BlogArticle';
 import Team from '../../components/Team/Team';
 import PlacementStory from '../PlacementStory/PlacementStory';
 import NewArrival from '../NewArrival/NewArrival';
+import BlogArticle from '../../components/BlogArticle/BlogArticle';
 
 class App extends Component {
 
@@ -160,7 +160,7 @@ class App extends Component {
                 )} />
                  <Route path="/campus-placement" exact component={PlacementStory} />
                  
-		      		<Route path="/blog/:id" exact component={Content}/>
+		      		<Route path="/blog/:slug" exact component={BlogArticle}/>
                 <Route path="/dashboard" exact render={() => {
                   if (this.state.isVerified) {
                     return <Dashboard />;
