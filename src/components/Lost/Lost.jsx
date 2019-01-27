@@ -6,7 +6,7 @@ const Lost = () => {
     return (
         <div className="lost">
             <div className="lost-message">
-                <h2>Your page wasn't found</h2>
+                <h2>Hey !! You are lost.</h2>
                 <p>Find your way <Link to="/home">home</Link></p>
             </div>
         </div>

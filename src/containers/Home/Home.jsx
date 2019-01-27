@@ -5,7 +5,7 @@ import chart from '../../assets/images/top-charts.svg';
 import group from '../../assets/images/DeveloperClub.svg';
 import conference from '../../assets/images/conferences.svg';
 import code from '../../assets/images/code.svg';
-import laptop from '../../assets/images/startup programs.svg';
+import laptop from '../../assets/images/jobs.png';
 import event from '../../assets/images/event.svg';
 import classroom from '../../assets/images/studentbenefits.svg';
 import Cards from '../../components/Cards/Cards';
@@ -15,6 +15,12 @@ export default class Home extends React.Component {
 
     state = {
         cards: [
+            {
+                title: "New Arrival",
+                link: "/latest",
+                png: chart,
+                color: "#dd2727b6"
+            },
             {
                 title: "Coding Resources",
                 link: "/coding-resources",
@@ -37,7 +43,7 @@ export default class Home extends React.Component {
                 title: "Open Source Programs",
                 link: "/open-source",
                 png: idea,
-                color: "#49dbbd"
+                color: "#e7559ef1"
             },
             {
                 title: "Student Benefit & Fellowship Programs",
@@ -46,23 +52,16 @@ export default class Home extends React.Component {
                 color: "#f99931"
             },
             {
-                title: "Startup Programs & Incubators",
-                link: "/startup-programs",
-                png: laptop,
-                color: "#6fbb2d"
-            },
-            {
                 title: "Developer clubs & Meetups",
                 link: "/meetups",
                 png: group,
                 color: "#257281"
             },
-
             {
-                title: "Top Charts",
-                link: "/top-charts",
-                png: chart,
-                color: "#595a5b"
+                title: "Placement Stories",
+                link: "/campus-placement",
+                png: laptop,
+                color: "#45bd59"
             },
         ],
         loading: true

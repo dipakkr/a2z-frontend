@@ -7,12 +7,13 @@
 }
 
 .lost-message {
-    padding: 2vh 3vw;
+    padding: 4vh 4vw;
     box-sizing: border-box;
-    background: #595a5b;
-    box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.16);
+    background: #676262;
+    box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.16);
     text-align: center;
     color: white;
+    border-radius: 10px;
 }
 
 .lost-message h2 {

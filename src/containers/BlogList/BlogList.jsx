@@ -1,128 +1,45 @@
 import React from 'react';
 import './BlogList.css';
 import BlogListCard from '../../components/BlogListCard/BlogListCard';
+import * as contentful from 'contentful';
 export default class BlogList extends React.Component {
 
-  state = {
-    blogs: [
-      {
-        id: 1, // "23834304"
-        title: "Exploiting Developer Infrastructure Is Ridiculously Easy",
-        img: "https://via.placeholder.com/100",
-        author: "Anonymous",
-        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
-        url: "."
-      },
-      {
-        id: 2, //"1232323"
-        title: "We Won’t Text Back When We’re Dead",
-        img: "https://via.placeholder.com/100",
-        author: "Anonymous",
-        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
-        url: "."
-      },
-      {
-        id: 3, //"83298"
-        title: "The Dirty Secret of Elite College Admissions",
-        img: "https://via.placeholder.com/100",
-        author: "Anonymous",
-        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
-        url: "."
-      },
-      {
-        id: 4, //"495445"
-        title: "London branch of the Apple Store",
-        img: "https://via.placeholder.com/100",
-        author: "Anonymous",
-        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
-        url: "."
-      },
-      {
-        id: 5, //"23834304"
-        title: "Exploiting Developer Infrastructure Is Ridiculously Easy",
-        img: "https://via.placeholder.com/100",
-        author: "Anonymous",
-        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
-        url: "."
-      },
-      {
-        id: 6, //"1232323"
-        title: "We Won’t Text Back When We’re Dead",
-        img: "https://via.placeholder.com/100",
-        author: "Anonymous",
-        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
-        url: "."
-      },
-      {
-        id: 7, //"83298"
-        title: "The Dirty Secret of Elite College Admissions",
-        img: "https://via.placeholder.com/100",
-        author: "Anonymous",
-        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
-        url: "."
-      },
-      {
-        id: 8, //"495445"
-        title: "London branch of the Apple Store",
-        img: "https://via.placeholder.com/100",
-        author: "Anonymous",
-        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
-        url: "."
-      },
-      {
-        id: 9, //"23834304"
-        title: "Exploiting Developer Infrastructure Is Ridiculously Easy",
-        img: "https://via.placeholder.com/100",
-        author: "Anonymous",
-        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
-        url: "."
-      },
-      {
-        id: 10, //"1232323"
-        title: "We Won’t Text Back When We’re Dead",
-        img: "https://via.placeholder.com/100",
-        author: "Anonymous",
-        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
-        url: "."
-      },
-      {
-        id: 11, //"83298"
-        title: "The Dirty Secret of Elite College Admissions",
-        img: "https://via.placeholder.com/100",
-        author: "Anonymous",
-        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
-        url: "."
-      },
-      {
-        id: 12, //"495445"
-        title: "London branch of the Apple Store",
-        img: "https://via.placeholder.com/100",
-        author: "Anonymous",
-        date: "15-08-2020", //I'm not sure what format date will be sent hence using String for now
-        url: "."
-      },
-    ]
+  constructor(){
+    super()
+    this.state = {articles : []}
   }
+  
+  componentDidMount(){
+  var client = contentful.createClient({
+    space: '84ay66u6qghp',
+    accessToken: 'd442023af610d84c254c3753d8a70f867727cfa98a28e33ae379f8c006ffc6c7' 
+  })
 
+  client.getEntries({content_type : 'post'}).then((response)=>{
+    this.setState({articles : response.items})
+    console.log(response.items);
+  })
+}
   render() {
+   
+    // const title = article.fields.title
+    // const author = article.fields.author.fields.name
+    // const publishedAt = article.fields.publishedDate
+    
     return (
       <div className="blog-page-container">
         <div className="blog-container blog-background">
           <h1 className="blog-h1">Campus Stories </h1>
         </div>
         <div className="blog-list-container">
-          {this.state.blogs.map(blog => {
-            return (
-              <BlogListCard
-                key={blog.id}
-                img={blog.img}
-                title={blog.title}
-                author={blog.author}
-                date={blog.date}
-                url={`/bsr125dev/${blog.id}`}
-              />
-            );
-          })}
+            {this.state.articles.map((article, i) => 
+            <BlogListCard id={i} key={i} 
+                          title={article.fields.title} 
+                          author={article.fields.author.fields.name} 
+                          date={article.fields.publishedDate}
+                          image={article.fields.featureImage.fields.file.url} 
+             />
+            )}
         </div>
       </div>
     );

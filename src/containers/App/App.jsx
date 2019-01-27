@@ -19,6 +19,8 @@ import CampusStar from '../../components/CampusStar/CampusStar';
 import SubscriptionForm from '../../components/SubscriptionForm/SubscriptionForm';
 import Content from '../../components/BlogArticle/BlogArticle';
 import Team from '../../components/Team/Team';
+import PlacementStory from '../PlacementStory/PlacementStory';
+import NewArrival from '../NewArrival/NewArrival';
 
 class App extends Component {
 
@@ -27,7 +29,8 @@ class App extends Component {
       ["Coding Resources", "/coding-resources",],
       ["Hackathons & Competitions", "/hackathons",],
       ["Open Source Programs", "/open-source",],
-      ["Startup Programs", "/startup-programs",],
+      // ["Startup Programs", "/startup-programs",],
+      ["Campus Placement", "/campus-placement",],
       ["Student Benefits", "/student-benefits",],
       ["Conferences", "/conferences",],
       ["Meetups", "/meetups",],
@@ -134,8 +137,8 @@ class App extends Component {
                 <Route path="/meetups" exact render={() => (
                   <EventsPage page="2" />
                 )} />
-                <Route path="/top-charts" exact render={() => (
-                  <TopCharts />
+                <Route path="/latest" exact render={() => (
+                  <NewArrival page="2" />
                 )} />
                 <Route path="/roadmaps" exact render={() => (
                   <TopCharts />
@@ -149,13 +152,15 @@ class App extends Component {
                 <Route path="/campus-connect" exact render={() => (
                   <CampusStar />
                 )} />
-                <Route path="/bsr125dev" exact render={() => (
+                <Route path="/blog" exact render={() => (
                   <BlogList />
                 )} />
                 <Route path="/team" exact render={() => (
                   <Team />
                 )} />
-				<Route path="/bsr125dev/:id" exact component={Content}/>
+                 <Route path="/campus-placement" exact component={PlacementStory} />
+                 
+		      		<Route path="/blog/:id" exact component={Content}/>
                 <Route path="/dashboard" exact render={() => {
                   if (this.state.isVerified) {
                     return <Dashboard />;
