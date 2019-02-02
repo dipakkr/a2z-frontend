@@ -59,8 +59,8 @@ class Landing extends React.Component {
                 <div ref={this.myRef}>
                     <SectionTwo />
                 </div>
-                {/* <hr />
-                <SectionThree /> */}
+                <hr />
+                <SectionThree />
                 {notMobile &&
                     <hr />
                 }

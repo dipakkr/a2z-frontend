@@ -3,10 +3,9 @@
 	background: #3c0404b5;
 	padding: 5px;
 	border-radius: 3px;
-	width: 90%;
+	width: 75%;
 	box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.2);
 	margin: 30px;
-    float: none;
     user-select: text;
 	color: white;
 	transition: all 0.2s;

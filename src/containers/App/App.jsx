@@ -20,7 +20,7 @@ import SubscriptionForm from '../../components/SubscriptionForm/SubscriptionForm
 import Team from '../../components/Team/Team';
 import PlacementStory from '../PlacementStory/PlacementStory';
 import NewArrival from '../NewArrival/NewArrival';
-import BlogArticle from '../../components/BlogArticle/BlogArticle';
+import BlogArticle from '../../containers/BlogArticle/BlogArticle';
 
 class App extends Component {
 

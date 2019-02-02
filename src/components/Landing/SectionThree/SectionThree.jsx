@@ -1,5 +1,7 @@
 import React from 'react';
 import './SectionThree.css';
+import c1 from './../../../assets/images/bitsdroid.png'
+import c2 from './../../../assets/images/9l.png'
 
 const SectionThree = (props) => {
 
@@ -7,10 +9,10 @@ const SectionThree = (props) => {
     <div className="padding-container">
       <div className="featured"><h3>Featured</h3></div>
       <div className="features">
-        <div>Company 1</div>
-        <div>Company 2</div>
-        <div>Company 3</div>
-        <div>Company 4</div>
+        <div><img className="company" src={c1} alt="Bitsdroid"/> </div>
+        
+        <div><img className="company" src={c2} alt="9Learners"/> </div>
+
       </div>
     </div>
   );
