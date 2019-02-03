@@ -92,12 +92,12 @@ self.__precacheManifest = [
     "url": "/a2z-frontend/static/media/RageItalic.6f7b12de.woff"
   },
   {
-    "revision": "c8af58dc175104db94c702efddc9abfb",
-    "url": "/a2z-frontend/static/media/RageItalic.c8af58dc.eot"
-  },
-  {
     "revision": "8d6ca60ffb3af211550bd638e5d28241",
     "url": "/a2z-frontend/static/media/RageItalic.8d6ca60f.ttf"
+  },
+  {
+    "revision": "c8af58dc175104db94c702efddc9abfb",
+    "url": "/a2z-frontend/static/media/RageItalic.c8af58dc.eot"
   },
   {
     "revision": "7e9730c34adb94d015314b8b893ec09d",
