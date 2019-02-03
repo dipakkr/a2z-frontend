@@ -1,13 +1,13 @@
 import React from 'react';
 import './SectionFour.css';
-import Carousel from '../../Carousel/Carousel';
+import Gallery from '../../GalleryCarousel/Gallery';
 
 const SectionFour = (props) => {
 
   return (
     <div className="padding-container">
-      <div className="user-thoughts"><h3>User Thoughts</h3></div>
-      <Carousel />
+      <div className="user-thoughts"><h3>Gallery</h3></div>
+      <Gallery />
     </div>
   );
 }

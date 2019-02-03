@@ -31,3 +31,33 @@
   width: 25%;
   display: inline-block;
 }
+
+h2{
+    color: #e43213;
+}
+
+.features h2:hover{
+   transform: scale(1.8);
+}
+
+@media only screen and (max-width: 960px) {
+    .padding-container{
+      padding-bottom: 10%;
+    }
+    }
+    
+    @media only screen and (max-width: 480px) {
+    
+      .featured{
+        width: 45%;
+        height: 10vw;
+      }
+
+      .features h2{
+          padding: 10px;
+      }
+    
+      .padding-container{
+        padding-bottom: 25%;
+      }
+    }

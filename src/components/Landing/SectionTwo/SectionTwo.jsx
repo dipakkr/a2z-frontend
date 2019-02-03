@@ -17,7 +17,7 @@ const SectionTwo = (props) => {
             <img src={user} alt="user" className="image" />
           </div>
           <div className="text-img-separator"></div>
-          <h2 className="title">12,000 Users</h2>
+          <h2 className="title">14,000 Users</h2>
           <div className="text">
             <p>
               Number of people are making way
