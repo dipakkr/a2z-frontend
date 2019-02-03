@@ -40,7 +40,7 @@ class App extends Component {
     navIsOpen: false,
     navLinks: [
       ["Home", "/home"],
-      ["Roadmaps", "/roadmaps"],
+      // ["Roadmaps", "/roadmaps"],
       ["Connect With Us", "/contact"],
       ["Campus Connect", "/campus-connect"],
       ["About Us", "/about"],
@@ -155,12 +155,13 @@ class App extends Component {
                 <Route path="/blog" exact render={() => (
                   <BlogList />
                 )} />
-                <Route path="/team" exact render={() => (
-                  <Team />
-                )} />
-                 <Route path="/campus-placement" exact component={PlacementStory} />
+                <Route path="/team" exact component={Team}/>
+                
+                <Route path="/campus-placement" exact component={PlacementStory} />
+
+                <Route path="/top-charts" exact component={TopCharts} />
                  
-		      		<Route path="/blog/:slug" exact component={BlogArticle}/>
+		      		  <Route path="/blog/:slug" exact component={BlogArticle}/>
                 <Route path="/dashboard" exact render={() => {
                   if (this.state.isVerified) {
                     return <Dashboard />;

@@ -58,8 +58,8 @@ export default class Home extends React.Component {
                 color: "#257281"
             },
             {
-                title: "Placement Stories",
-                link: "/campus-placement",
+                title: "Trending",
+                link: "/top-charts",
                 png: laptop,
                 color: "#45bd59"
             },
