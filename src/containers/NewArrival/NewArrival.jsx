@@ -14,7 +14,7 @@ export default class NewArrival extends React.Component {
 
     componentDidMount() {
         window.scrollTo(0, 0);
-        const conferences = fetch("http://api.frontbench.xyz/conferences");
+        const conferences = fetch("https://api.frontbench.xyz/conferences");
         const meetups = fetch("https://api.frontbench.xyz/meetups");
 
         Promise
