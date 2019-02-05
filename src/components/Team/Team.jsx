@@ -109,7 +109,7 @@ const Team=props=>(
 		Meet our family
 	</h1>
 	<section className={'people_container'}>
-		<h1 className={'sub_heading'}>Campus Stars</h1>
+		<h1 className={'sub_heading'}>Campus Team</h1>
 		
 		<div className={'person'}>
 			<img src={ abhishek} alt={'face'}></img>
@@ -351,6 +351,52 @@ const Team=props=>(
 			</div>
 		</div>
 
+
+	</section>
+
+	<section className={'people_container'}>
+
+	<h1 className={'sub_heading'}>Content Team</h1>
+
+	<div className={'person'}>
+			<img src={ vipin} alt={'face'}></img>
+			<div className={'person_name'}>
+			Vipin Joshi
+			</div>
+			<div className={'person_detail'}>
+			Delhi
+			</div>
+		</div>
+
+		<div className={'person'}>
+			<img src={ vipin} alt={'face'}></img>
+			<div className={'person_name'}>
+			Vipin Joshi
+			</div>
+			<div className={'person_detail'}>
+			Delhi
+			</div>
+		</div>
+
+		<div className={'person'}>
+			<img src={ vipin} alt={'face'}></img>
+			<div className={'person_name'}>
+			Vipin Joshi
+			</div>
+			<div className={'person_detail'}>
+			Delhi
+			</div>
+		</div>
+
+		<div className={'person'}>
+			<img src={ vipin} alt={'face'}></img>
+			<div className={'person_name'}>
+			Vipin Joshi
+			</div>
+			<div className={'person_detail'}>
+			Delhi
+			</div>
+		</div>
 
 	</section>
 	

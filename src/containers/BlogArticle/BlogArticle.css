@@ -3,8 +3,9 @@ h1.blog-heading{
 	vertical-align: middle;
 	padding: 2em 0.5em;
 	margin: 0 auto 0.5em auto;
-	background: #ddd;
-	font-size: 290%;
+	background: #4664a1;
+	font-size: 180%;
+	color: azure;
 	font-weight: 400;
 	text-transform: capitalize;
 	max-height: 30vh;
@@ -76,12 +77,43 @@ p.text:first-of-type::first-letter{
 .blog-content{
 	font-size: 12pt;
 	background: #f3f3f3;
-	margin: 1em auto;
+	/* margin-left: 4em;
+	margin-top: 4em;
+	margin-bottom: 4em; */
+	margin: 4em auto;
 	padding: 3em;
 	width: 50vw;
 	border-radius: 10px;
-	font-family: sans-serif
+	font-family: Arial, Helvetica, sans-serif;
 }
+
+#disqus_thread{
+	margin-top: 4em;
+	max-width: 50%;
+	margin: 0 auto;
+	margin-bottom: 2em;
+}
+
+.blog-content-2{
+	font-size: 12pt;
+	background: #f3f3f3;
+	margin-right: 4em;
+	margin-top: 4em;
+	margin-bottom: 4em;
+	padding: 3em;
+	width: 30vw;
+	float: right;
+	border-radius: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.addthis_inline_share_toolbox{
+	float: right;
+	background: #123123;
+	padding: 5px;
+	margin-top: -40px;
+}
+
 @media only screen and (max-width: 890px){
 	span.blog-author,div.post-heading>time,span.blog-shares{
 		display: inline-block;
@@ -104,4 +136,9 @@ p.text:first-of-type::first-letter{
 		width: 87vw;
 		border-radius: 10px;
 	}
+	#disqus_thread{
+		max-width: 100%;
+		padding: 15px;
+	}
+	
 }

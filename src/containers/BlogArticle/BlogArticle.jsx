@@ -40,7 +40,6 @@ class BlogArticle extends React.Component {
 
         return(
             <>
-             
                 <h1 className={'blog-heading'}>
                     {this.state.article.fields.title} {/*`content to be fetched from server with this blog id */}
                 </h1>
@@ -57,7 +56,7 @@ class BlogArticle extends React.Component {
                         posted on&nbsp;<span>{this.state.article.fields.publishedDate}</span>
                             </time>
                         </li>
-                        <li>
+                        <li >
                             {/* <span className={'blog-shares'}>
                     
                                 <a href="https://www.facebook.com/sharer/sharer.php?u=#url"><i className={'fab fa-facebook-square'}></i></a>
@@ -65,14 +64,16 @@ class BlogArticle extends React.Component {
                                 <a href={`https://twitter.com/share?url=${window.location}`}><i className={'fab fa-twitter'}></i></a>
                             </span> */}
 
-                          
-
+                            <div class="addthis_inline_share_toolbox"> </div>      
                         </li>
                     </ul>
-
-                    <div class="addthis_inline_share_toolbox"></div>
                 </div>
-                <div className={'blog-content'} id='content' dangerouslySetInnerHTML={this.getParsedMarkdown(this.state.article.fields.content)}/>
+
+                <div className={'blog-content'} id='content' dangerouslySetInnerHTML={this.getParsedMarkdown(this.state.article.fields.content)}/> 
+
+                {/* <div className={'blog-content-2'} id='content' dangerouslySetInnerHTML={this.getParsedMarkdown(this.state.article.fields.content)}/>  */}
+
+                <div id="disqus_thread"></div>
                 
             </>
         )
