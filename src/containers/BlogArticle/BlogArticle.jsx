@@ -7,7 +7,10 @@ import Loader from '../../components/Loader/Loader'
 class BlogArticle extends React.Component { 
     constructor(){
         super()
-        this.state = {article : null}
+        this.state = {
+            article : null,
+            loading : true
+        }
     }
     componentDidMount(){
 
@@ -62,10 +65,12 @@ class BlogArticle extends React.Component {
                                 <a href={`https://twitter.com/share?url=${window.location}`}><i className={'fab fa-twitter'}></i></a>
                             </span> */}
 
-                            <div class="addthis_inline_share_toolbox"></div>
+                          
 
                         </li>
                     </ul>
+
+                    <div class="addthis_inline_share_toolbox"></div>
                 </div>
                 <div className={'blog-content'} id='content' dangerouslySetInnerHTML={this.getParsedMarkdown(this.state.article.fields.content)}/>
                 

@@ -57,7 +57,7 @@
     div#sectionOne-container:after {
         content: ' ';
         position: absolute;
-        background: linear-gradient(49deg,#3f434b 28%,#363a42 0%,#363a42 68.5%,#3f434b 0%);
+        background: linear-gradient(49deg,#4664a1 28%,#4664a1 0%,#4664a1 68.5%,#4664a1 0%);
         height: 58vw;
         width: 100%;
         top: 0;

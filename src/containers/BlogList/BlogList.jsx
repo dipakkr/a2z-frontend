@@ -8,7 +8,7 @@ export default class BlogList extends React.Component {
 
   constructor(){
     super()
-    this.state = {articles : []}
+    this.state = {articles : [], loading:true}
   }
   
   componentDidMount(){
@@ -29,9 +29,11 @@ export default class BlogList extends React.Component {
           <h1 className="blog-h1">Campus Stories </h1>
         </div>
 
+      
+        <div className="blog-list-container">
+
         {this.state.loading ? <Loader message=" " /> : null}
 
-        <div className="blog-list-container">
             {this.state.articles.map((article, i) => 
             <BlogListCard id={i} key={i} 
                           title={article.fields.title} 
