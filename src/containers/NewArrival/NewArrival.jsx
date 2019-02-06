@@ -51,7 +51,7 @@ export default class NewArrival extends React.Component {
         return (
             <>
                 {this.state.loading ? <Loader /> : null}
-                <h2 className="section-heading">Explore Latest Opportunities</h2>
+                <h1 className="section-heading">Latest Opportunities</h1>
                 {view}
             </>
         );

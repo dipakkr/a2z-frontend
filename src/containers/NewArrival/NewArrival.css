@@ -2,12 +2,15 @@
 	width: 100%;
 	right: 0%;
 	margin: 10px auto;
+	font-size: 16px;
 	position: relative;
 }
 
 #new-arrival {
+	margin: 40px;
 	display: flex;
 	flex-wrap: wrap;
+	margin: 25px;
 }
 
 #new-arrival hr {
@@ -15,7 +18,8 @@
 }
 
 .section-heading{
-	margin: 15px;
+	margin-left: 2em;
+	margin-top: 1em;
 	padding: 15px;
 }
 
@@ -29,9 +33,15 @@
 	.newarrival-container {
 		width: 100%;
 	}
-	
+
 	#new-arrival {
-		margin-bottom: 10%;
+		margin: 0 auto;
 		width: 100%;
 	}
+	.section-heading{
+		margin-left: 0px;
+		text-align: left;
+		padding: 15px;
+	}
+	
 }

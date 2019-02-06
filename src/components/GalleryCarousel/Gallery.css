@@ -18,7 +18,7 @@
     -webkit-transition: background-image .3s ease-in-out;
     /* transition: background-image .3s ease-in-out; */
     transform: translateX(calc(- 20px));
-    transition: transform ease-out 0.45s;
+    transition: transform ease-out ;
 }
 
 .slide-arrow {
@@ -52,7 +52,7 @@
 }
 
 .slide-content img:hover{
-    transform: scale(1.2);
+ transform : scale(1.1);
 	box-shadow: 2px 8px 30px rgba(0, 0, 0, 0.25);
   }
   

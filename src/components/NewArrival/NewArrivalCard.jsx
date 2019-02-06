@@ -6,11 +6,10 @@ import starButton from './../../assets/images/icons/star.png'
 const NewArrivalCard = (props) => {
     return (
             <div className="newarrival-card">
-                <div className="item-header-container">
-                    <h3 className="item-title">{props.title}</h3>
-                    <img id="item-share" src={shareButton} alt="share"/>
+               
+                <h2 className="item-title">{props.title}</h2>
+                    {/* <img className="item-share" src={shareButton} alt="share"/> */}
                     {/* <img id="item-star" src={starButton} alt="star"/> */}
-                </div>
                
                 <hr/>
                 <span><span className="des-sp">Description :</span> {props.area}</span>
