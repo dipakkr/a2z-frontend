@@ -1,8 +1,8 @@
 import React from 'react';
 import './SectionOne.css';
 import back from '../../../assets/images/back.png';
-//import blackLeft from '../../../assets/images/svg1-small.svg';
-//import blackRight from '../../../assets/images/Svg2-large.svg';
+// import blackLeft from '../../../assets/images/landing_left.svg';
+// import blackRight from '../../../assets/images/landing_right.svg';
 import { Link } from 'react-router-dom';
 
 const SectionOne = (props) => {
@@ -18,8 +18,8 @@ const SectionOne = (props) => {
         <div><Link to="/home">Get Started</Link></div>
       </div>
       <img src={back} alt="" className="background-svg-1" onLoad={() => props.stopLoading()} />
-      {/*<img src={blackLeft} alt="" className="background-svg-10" onLoad={() => props.stopLoading()} />
-      <img src={blackRight} alt="" className="background-svg-20" onLoad={() => props.stopLoading()} />*/}
+      {/* <img src={blackLeft} alt="" className="background-svg-10" onLoad={() => props.stopLoading()} />
+      <img src={blackRight} alt="" className="background-svg-20" onLoad={() => props.stopLoading()} /> */}
       {/* {isDesktop &&
         <div className="scroll-div">
           <button className="scroll-btn" title="Scroll Down"><i className="down"></i></button>
