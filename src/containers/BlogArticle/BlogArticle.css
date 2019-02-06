@@ -22,7 +22,7 @@ h1.blog-heading{
 	box-shadow: 1px 3px 5px 1px #00000045;
 	border-radius: 10px;
 }
-span.blog-author{
+.blog-author{
 	float: left;
 	margin-left: 1em;
 	color: #979797;

@@ -1,0 +1,123 @@
+
+.author-individual a {
+    text-decoration: none;
+    color: #262626;
+}
+  
+.author-individual a:hover {
+    color: #678;
+}
+  
+.author-individual{
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    background-color:#f1f1f1;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2px;
+    min-height: 120px;
+    box-shadow: 2px 7px 16px rgba(0, 0, 0, 0.16); 
+    width : 55%;
+    margin-bottom: 2%;
+    position: relative;
+}
+  
+.author-individual:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.4);
+}
+  
+.author-data{
+    min-width: 60%;
+    word-wrap: whitespace;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+}
+  
+.author-title{
+    text-align: left;
+    padding-top:2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+  
+.author{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #4e4040;
+    text-align: left;
+}
+  
+.author-img{
+    float: initial;
+    padding: 15px;
+    width: 150px;
+    height: 150px;
+}
+  
+.author-des{
+    display: flex;
+    justify-content: inherit;
+    margin-top: 1em;
+    bottom: 0%;
+}
+
+.fab{
+    padding: 10px;
+}
+  
+.author-tag{
+    background: #fff;
+    padding: 3px;
+    font-size: 0.9em;
+    letter-spacing: 0.05em;
+    border-radius: 3px;
+    border:#262626 solid 1.5px;
+}
+  
+.author-tag:hover{
+    background: #fbe47b;
+}
+  
+  
+@media only screen and (max-width: 480px) {
+    .author-individual{
+        width: 95%;
+        margin-bottom: 5%;
+    }
+  
+    .author-tag{
+        left: 2%;
+        background: #eff1ec;
+        padding: 2px;
+        font-size: 12px;
+        border-radius: 4px;
+        border:#262626 solid 1.5px;
+    }
+  
+    .author-img{
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+    }
+    
+    .author-des{
+        margin-top: 0px;
+    }
+  
+    .author-data{
+        padding: 4%;
+    }
+  
+    .author-individual{
+        margin-top: 4%;
+    }
+  }
+  
+  @media only screen and (min-width: 481px) and (max-width: 1024px) {
+      .author-individual{
+          width: 70%;
+        }
+  }

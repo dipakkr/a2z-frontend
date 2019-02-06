@@ -35,7 +35,7 @@ export default class NewArrival extends React.Component {
         const newArrivals = <div id="new-arrival">
             {this.state.newArrivals.map((el, i) => {
                 return (
-                    <NewArrivalCard key={i} title={el.title} link={el.url} area={el.location} />
+                    <NewArrivalCard key={i} title={el.title} link={el.url} area={el.location} description={el.description}/>
                 );
             })}
         </div>

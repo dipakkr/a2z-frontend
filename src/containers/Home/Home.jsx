@@ -28,6 +28,12 @@ export default class Home extends React.Component {
                 color: "#06addb"
             },
             {
+                title: "Internship",
+                link: "/internships",
+                png: laptop,
+                color: "#45bd59"
+            },
+            {
                 title: "Hackathons & Competitions",
                 link: "/hackathons",
                 png: event,
@@ -56,12 +62,6 @@ export default class Home extends React.Component {
                 link: "/meetups",
                 png: group,
                 color: "#257281"
-            },
-            {
-                title: "Trending",
-                link: "/top-charts",
-                png: laptop,
-                color: "#45bd59"
             },
         ],
         loading: true

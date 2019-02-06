@@ -2,7 +2,7 @@ import React from 'react';
 import './SectionTwo.css';
 import campus from '../../../assets/images/university.svg';
 import event from '../../../assets/images/events.svg';
-import user from '../../../assets/images/User.svg';
+import user from '../../../assets/images/user.svg';
 import coding from '../../../assets/images/coding.svg';
 import newsletter from '../../../assets/images/newsletter.svg';
 import startup from '../../../assets/images/startup.svg';

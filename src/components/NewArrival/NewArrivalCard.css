@@ -1,11 +1,11 @@
 .newarrival-card {
-	max-width: 40%;
+	min-width: 35%;
 	background: #ffff;
 	box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.2);
 	align-content: center;
     user-select: text;
 	margin-left: 10em;
-	border-radius: 10px;
+	border-radius: 5px;
 	margin-top: 5em;
 	transition: all 0.4s;
 }
@@ -15,10 +15,26 @@
 	box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
+.item-content{
+	display: flex;
+	justify-content: space-between;
+}
+
+#item-des{
+	margin-left: 2em;
+	padding: 2px;
+}
+
+#item-res{
+	margin-right: 5em;
+}
+
 .item-title{
 	color: #fff;
 	background : #559fe9;
 	padding: 15px;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 }
 .item-share{
@@ -71,5 +87,11 @@ a {
 		width: 75%;
 		float: none;
 	}
-
+	#item-des{
+		margin-left: 1em;
+	}
+	
+	#item-res{
+		margin-right: 2em;
+	}
 }

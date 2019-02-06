@@ -3,6 +3,7 @@ import './BlogArticle.css'
 import client from '../../service/client'
 import marked from 'marked'
 import Loader from '../../components/Loader/Loader'
+import Author from '../../components/Author/Author';
 
 class BlogArticle extends React.Component { 
     constructor(){
@@ -74,7 +75,7 @@ class BlogArticle extends React.Component {
 
                 {/* <div className={'blog-content-2'} id='content' dangerouslySetInnerHTML={this.getParsedMarkdown(this.state.article.fields.content)}/>  */}
 
-             
+                <Author/>
 
                 <div id="disqus_thread"></div>
                 
