@@ -1,7 +1,7 @@
 import React from 'react';
 import './Logo.css';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo_new.svg'
 import white from '../../assets/images/logo-white.png'
 
 const Logo = (props) => {

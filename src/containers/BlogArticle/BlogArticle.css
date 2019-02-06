@@ -107,13 +107,6 @@ p.text:first-of-type::first-letter{
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.addthis_inline_share_toolbox{
-	float: right;
-	background: #123123;
-	padding: 5px;
-	margin-top: -40px;
-}
-
 @media only screen and (max-width: 890px){
 	span.blog-author,div.post-heading>time,span.blog-shares{
 		display: inline-block;

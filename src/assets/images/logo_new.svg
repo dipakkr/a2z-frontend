@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="429.954" height="253.328" viewBox="0 0 429.954 253.328">
+  <defs>
+    <filter id="Rectangle_244" x="0" y="0" width="150.849" height="150.848" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_245" x="98.945" y="102.48" width="150.849" height="150.848" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Logo" transform="translate(-7838 -5146)">
+    <text id="ront" transform="translate(7976.005 5244.299)" fill="#fff" font-size="84" font-family="neo-latina, neo latina"><tspan x="0" y="0">ront</tspan></text>
+    <text id="ench" transform="translate(8074.954 5346.152)" fill="#fff" font-size="84" font-family="neo-latina, neo latina"><tspan x="0" y="0">ench</tspan></text>
+    <g transform="matrix(1, 0, 0, 1, 7838, 5146)" filter="url(#Rectangle_244)">
+      <rect id="Rectangle_244-2" data-name="Rectangle 244" width="114.848" height="114.848" transform="translate(15 14)" fill="#6161cf"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 7838, 5146)" filter="url(#Rectangle_245)">
+      <rect id="Rectangle_245-2" data-name="Rectangle 245" width="114.848" height="114.848" transform="translate(113.95 116.48)" fill="#6161cf"/>
+    </g>
+    <text id="F" transform="translate(7877.06 5244.4)" fill="#fff" font-size="95" font-family="neo-latina, neo latina"><tspan x="0" y="0">F</tspan></text>
+    <text id="B" transform="translate(7974.241 5347.881)" fill="#fff" font-size="96" font-family="neo-latina, neo latina"><tspan x="0" y="0">B</tspan></text>
+  </g>
+</svg>

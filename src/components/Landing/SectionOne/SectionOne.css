@@ -57,7 +57,7 @@
     div#sectionOne-container:after {
         content: ' ';
         position: absolute;
-        background: linear-gradient(49deg,#4664a1 28%,#4664a1 0%,#4664a1 68.5%,#4664a1 0%);
+        background: linear-gradient(49deg,#295BA7 28%,#295BA7 0%,#295BA7 68.5%,#295BA7 0%);
         height: 58vw;
         width: 100%;
         top: 0;
@@ -78,7 +78,7 @@
     div#sectionOne-container:after {
         content: ' ';
         position: absolute;
-        background: #353A43;
+        background: #295BA7;
         height: 69vw;
         width: 100%;
         top: 0;
