@@ -1,56 +1,64 @@
-.meetups-card {
-	min-width: 350px;
-	background: #3c0404b5;
-	padding: 5px;
-	border-radius: 3px;
-	width: 75%;
+.newarrival-card {
+	min-width: 40%;
+	background: #f3f3f3;
 	box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.2);
-	margin: 30px;
+	align-content: center;
     user-select: text;
 	color: white;
+	margin : 10px;
 	transition: all 0.2s;
 }
 
-.meetups-card:hover {
+.newarrival-card:hover {
 	transform: scale(1.05);
 	box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-.meetups-card h2 {
+.item-header-container{
+	background : #55a9fd;
+	display: flex;
+	max-width: 100%;
+}
+
+.item-title{
 	color: #fff;
-	text-align: center;
-	padding: 15px;
-	background: #3c0404b5;   
+	text-align: center;   
+}
+.item-share{
+	float: right;
+	margin-right: 0%;
+}
+.item-star{
+	float: right;
 }
 
 .des-url{
+	background : #8d8cd3;
 	color: #fff;
 	text-align: center;
 	padding: 15px;
-	background: #3c040441;
-    text-decoration: none;   
 }
 .des-url:hover {
-	background: rgb(93, 62, 62);
+	background: #27314d;
 	color: #000;
 }
 
-.meetups-card hr {
+.newarrival-card hr {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	margin-bottom: 0;
 }
 
-.meetups-card .des-sp {
+.newarrival-card .des-sp {
 	display: inline-block;
     font-weight: bold;
-	color: rgba(255, 255, 255, 0.733);
+	color: #000;
 }
 
 a {
 	text-decoration: none;
 }
 
-.meetups-card span {
+.newarrival-card span {
 	display: block;
     font-weight: 600;
     font-family: sans-serif;
@@ -59,11 +67,11 @@ a {
 }
 
 @media only screen and (max-width: 480px) {
-	.meetups-card {
+	.newarrival-card {
+		margin: 10px auto;
 		min-width: 0;
-		margin: 20px auto;
 		width: 75%;
 		float: none;
-		padding: 10px;
 	}
+
 }

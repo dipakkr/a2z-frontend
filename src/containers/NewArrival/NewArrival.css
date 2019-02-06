@@ -1,41 +1,36 @@
-.events-page-container {
+.newarrival-container {
 	width: 100%;
-	margin: 0 auto;
-	margin-top: 3vh;
-	display:flow-root;
-	flex-direction: column;
+	right: 0%;
+	margin: 10px auto;
 	position: relative;
-	min-height: 70vh;
 }
 
-#meetups {
-	margin-bottom: 10%;
-	width: 50%;
+#new-arrival {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-#meetups hr {
+#new-arrival hr {
 	margin-bottom: 20px;
 }
 
-h1{
-	padding: 10px;
+.section-heading{
+	margin: 15px;
+	padding: 15px;
 }
 
 @media only screen and (max-width: 768px) {
-	.events-page-container h1 {
+	.newarrival-container h1 {
 		font-size: 1.5em;
 	}
 }
 
 @media only screen and (max-width: 480px) {
-	.events-page-container {
+	.newarrival-container {
 		width: 100%;
 	}
-
-	.events-page-container h1 {
-		padding-left: 25px;
-	}
-	#meetups {
+	
+	#new-arrival {
 		margin-bottom: 10%;
 		width: 100%;
 	}
