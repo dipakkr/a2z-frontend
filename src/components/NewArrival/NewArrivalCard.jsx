@@ -1,7 +1,7 @@
 import React from 'react';
 import './NewArrivalCard.css';
-import shareButton from './../../assets/images/icons/share.png'
-import starButton from './../../assets/images/icons/star.png'
+// import shareButton from './../../assets/images/icons/share.png'
+// import starButton from './../../assets/images/icons/star.png'
 
 const NewArrivalCard = (props) => {
     return (

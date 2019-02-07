@@ -77,10 +77,11 @@ p.text:first-of-type::first-letter{
 .blog-content{
 	font-size: 12pt;
 	background: #f3f3f3;
-	/* margin-left: 4em;
+	margin-left: 4em;
 	margin-top: 4em;
-	margin-bottom: 4em; */
-	margin: 4em auto;
+	margin-bottom: 1em;
+	/* margin: 4em auto;
+	margin-bottom: 1em; */
 	padding: 3em;
 	width: 50vw;
 	border-radius: 10px;
@@ -99,7 +100,7 @@ p.text:first-of-type::first-letter{
 	background: #f3f3f3;
 	margin-right: 4em;
 	margin-top: 4em;
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 	padding: 3em;
 	width: 30vw;
 	float: right;
