@@ -15,7 +15,7 @@
     background-color:#f1f1f1;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2%;
+    margin-top: 3%;
     border-radius: 2px;
     min-height: 120px;
     box-shadow: 2px 7px 16px rgba(0, 0, 0, 0.16); 
@@ -39,7 +39,8 @@
 
 .blog-title{
     text-align: left;
-    padding-top:2%;
+    word-wrap: normal;
+    font-size: 17px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
 }
@@ -87,27 +88,32 @@
 
 @media only screen and (max-width: 480px) {
     .blog-individual{
-      width: 95%;
-      margin-bottom: 5%;
+      min-width: 100%;
+      min-height: 100%;
+      margin-bottom: 10px;
+    }
+
+    .blog-title{
+      font-size: 14px;
     }
 
     .blog-tag{
       left: 2%;
       background: #eff1ec;
       padding: 2px;
-      font-size: 12px;
-      border-radius: 4px;
-      border:#262626 solid 1.5px;
+      font-size: 10px;
+      border-radius: 2px;
+      border:#262626 solid 1px;
     }
 
     .blog-des{
-      margin-top: 12%;
+      margin-top: 5%;
       margin-left: 0;
     }
 
     .blog-img{
-      width: 100px;
-      height: 100px;
+      width: 90px;
+      height: 90px;
     }
 
     .blog-data{
@@ -119,7 +125,7 @@
     }
 
     .blog-date{
-     font-size: 0.8em;
+     font-size: 0.7em;
     }
     
 }

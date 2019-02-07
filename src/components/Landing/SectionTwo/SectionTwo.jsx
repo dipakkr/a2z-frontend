@@ -2,7 +2,7 @@ import React from 'react';
 import './SectionTwo.css';
 import campus from '../../../assets/images/university.svg';
 import event from '../../../assets/images/events.svg';
-import user from '../../../assets/images/user.svg';
+import users from '../../../assets/images/users.svg';
 import coding from '../../../assets/images/coding.svg';
 import newsletter from '../../../assets/images/newsletter.svg';
 import startup from '../../../assets/images/startup.svg';
@@ -14,7 +14,7 @@ const SectionTwo = (props) => {
       <div className="row-container">
         <div className="left">
           <div className="landing-page-section-2-image-container">
-            <img src={user} alt="user" className="image" />
+            <img src={users} alt="user" className="image" />
           </div>
           <div className="text-img-separator"></div>
           <h2 className="title">14,000 Users</h2>
