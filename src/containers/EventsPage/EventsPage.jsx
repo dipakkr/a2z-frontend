@@ -35,7 +35,7 @@ export default class EventsPage extends React.Component {
     render() {
 
         const conferences = <div id="conferences">
-            <h1>Conferences</h1>
+          
           
             {this.state.conferences.map((conf, i) => (
                 <ConferencesCard
@@ -50,7 +50,7 @@ export default class EventsPage extends React.Component {
         </div>
 
         const meetups = <div id="meetups">
-            <h1>Developer Clubs and Meetups</h1>
+            
             <hr />
             {this.state.meetups.map((el, i) => {
                 return (
@@ -63,12 +63,14 @@ export default class EventsPage extends React.Component {
 
         if (this.props.page === "1") {
             view = <div className="events-page-container">
+              <h1 className="section-heading">Conferences</h1>
                 {conferences}
             </div>
         }
 
         if (this.props.page === "2") {
             view = <div className="events-page-container">
+            <h1 className="section-heading">Developer Clubs and Meetups</h1>
                 {meetups}
             </div>
         }

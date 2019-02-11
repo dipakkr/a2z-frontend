@@ -1,107 +1,97 @@
-.conferences-card {
-	min-width: 350px;
-	min-height: 250px;
-	border-radius: 10px;
-	box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.5);
-	width: 45%;
-	margin-top: 50px;
-	margin-right: 5%;
-	position: relative;
-	text-align: right;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	padding-right: 35px;
-	box-sizing: border-box;
-	float: left;
-}
-
-.conferences-card:hover {
-	box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.7);
-	cursor: pointer;
-}
-
-.conferences-card:hover>.conferences-card-cover {
-	width: 50%;
-}
-
-.conferences-card p {
-	margin: 13px 0;
-	font-weight: 600;
-	color: rgba(0, 0, 0, 0.5);
-}
-
-.conferences-card span {
-	font-weight: bold;
-	color: #262626;
-}
-
-.conferences-card-cover {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background-color: #8465ac;
-	border-radius: inherit;
-	display: flex;
-	align-items: center;
-	text-align: left;
-	padding-left: 35px;
-	color: #fff;
-	box-sizing: border-box;
+.newarrival-card {
+	min-width: 35%;
+	background: #ffff;
+	box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.2);
+	align-content: center;
+    user-select: text;
+	margin-left: 10em;
+	border-radius: 5px;
+	margin-top: 5em;
 	transition: all 0.4s;
 }
 
-#reveal {
-	width: 0;
-	height: 0;
-	border-top: 12px solid transparent;
-	border-bottom: 12px solid transparent;
-	border-right: 12px solid #fff;
-	transform: rotate(180deg);
-	display: inline-block;
-	margin-top: 3px;
+.newarrival-card:hover {
+	transform: scale(1.03);
+	box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-.conferences-card-cover h2 {
-	text-shadow: 1px 2px 12px rgba(0, 0, 0, 0.5);
+.item-content{
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
-	width: 90%;
-	word-break: break-word;
 }
 
-@media only screen and (max-width: 768px) {
-	#reveal {
-		display: none;
-	}
+#item-des{
+	margin-left: 2em;
+	padding: 2px;
+}
 
-	.conferences-card {
-		padding-right: 20px;
-		min-height: 200px;
-		min-width: 330px;
-		margin: 20px auto;
+#item-res{
+	margin-right: 5em;
+}
+
+.item-title{
+	color: #fff;
+	background : #559fe9;
+	padding: 15px;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+.item-share{
+	float: right;
+	position: initial;
+}
+.item-star{
+	float: right;
+}
+
+.des-url{
+	background : #8d8cd3;
+	color: #fff;
+	text-align: center;
+	padding: 15px;
+}
+.des-url:hover {
+	background: #27314d;
+	color: #000;
+}
+
+.newarrival-card hr {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	margin-bottom: 0;
+}
+
+.newarrival-card .des-sp {
+	display: inline-block;
+	color: #000;
+	font-size: 12px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.newarrival-card span {
+	display: block;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 4px;
+}
+
+@media only screen and (max-width: 480px) {
+	.newarrival-card {
+		margin: 10px auto;
+		min-width: 0;
+		max-width: 100%;
+		width: 75%;
 		float: none;
 	}
-
-	.conferences-card:hover>.conferences-card-cover {
-		transform: none;
+	#item-des{
+		margin-left: 1em;
 	}
-
-	.conferences-card h2 {
-		font-size: 16px;
-		text-shadow: 1px 2px 7px rgba(0, 0, 0, 0.5);
-	}
-
-	.conferences-card p {
-		font-size: 12px;
-		margin: 9px 0;
-	}
-
-	.conferences-card-cover {
-		width: 40%;
-		padding-left: 15px;
+	
+	#item-res{
+		margin-right: 2em;
 	}
 }

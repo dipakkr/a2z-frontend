@@ -3,13 +3,24 @@ import './Meetups.css';
 
 const Meetups = (props) => {
     return (
-        <a href={props.link} target="_blank" rel="noopener noreferrer">
-            <div className="meetups-card">
-                <h3>{props.title}</h3>
-                <hr />
-                <span><span className="des-sp">Area:</span> {props.area}</span>
+       
+        <div className="meetup-card">
+               
+                <h2 className="item-title">{props.title}</h2>
+                    {/* <img className="item-share" src={shareButton} alt="share"/> */}
+                    {/* <img id="item-star" src={starButton} alt="star"/> */}
+               
+                <hr/>
+                <div className="item-content">
+                    <span id="item-des"> Type :  </span>
+                    <span id="item-res">{props.area}</span>
+                </div>
+             
+                <a href={props.link} target="_blank" rel="noopener noreferrer">
+                    <span className="des-url"> <a href={props.url}> Visit</a> </span>
+                </a>
+            
             </div>
-        </a>
     );
 }
 

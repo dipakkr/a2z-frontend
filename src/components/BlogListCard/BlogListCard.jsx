@@ -12,8 +12,8 @@ const BlogListCard = (props) => {
               </a>
               <span className="author"> {props.author} </span>
               <div className="blog-des">
-                  <span className="blog-tag">{'Startup'}</span> 
-                  <span className="blog-date">{'Feb 12, 2019'}</span>
+                  <span className="blog-tag">{props.tag}</span> 
+                  <span className="blog-date">{props.date}</span>
               </div>
           </div>
     </div>

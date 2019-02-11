@@ -1,5 +1,5 @@
 .events-page-container {
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
 	margin-top: 7vh;
 	display: flex;
@@ -11,6 +11,14 @@
 #conferences,
 #meetups {
 	margin-bottom: 10%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.section-heading{
+	margin-left: 2em;
+	margin-top: 1em;
+	padding: 15px;
 }
 
 #meetups hr {
@@ -30,5 +38,11 @@
 
 	.events-page-container h1 {
 		padding-left: 25px;
+	}
+
+	.section-heading{
+		margin-left: 0px;
+		text-align: left;
+		padding: 15px;
 	}
 }
