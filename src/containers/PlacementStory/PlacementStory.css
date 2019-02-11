@@ -1,9 +1,9 @@
-#home-page-container {
+#placement-page-container {
     padding: 5vh 0 8vh 0;
     text-align: center;
 }
 
-.heading {
+.placement-heading {
     margin-bottom: 5px;
     color: var(--black);
     font-size: 2em;
@@ -18,11 +18,10 @@
 
 @media only screen and (min-width: 2000px) {
 
-    .heading {
+    .placement-heading {
         margin-bottom: 5px;
         color: var(--black);
         font-size: 3vw;
-        background: #323232;
     }
 
     .sub-heading {
@@ -32,11 +31,11 @@
 
 @media only screen and (max-width: 768px) {
 
-    #home-page-container {
+    #placement-page-container {
         padding: 10vh 0; 
     }
 
-    .heading {
+    .placement-heading {
         margin-bottom: 5px;
         color: var(--black);
         font-size: 4vw;
@@ -48,7 +47,7 @@
 }
 
 @media only screen and (max-width: 480px) {
-    .heading {
+    .placement-heading {
         margin-bottom: 5px;
         color: var(--black);
         font-size: 6vw;
@@ -60,7 +59,7 @@
 }
 
 @media only screen and (orientation: portrait) and (max-width: 1024px) and (min-width: 812px) {
-    #home-page-container {
+    #placement-page-container {
         min-height: 52vh;
         margin: 0;
     }

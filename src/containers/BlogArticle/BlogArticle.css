@@ -12,6 +12,7 @@ h1.blog-heading{
 	text-overflow: ellipsis;
 	overflow-y: scroll;
 }
+
 .post-heading{
 	padding: 1.5em 0.25em;
 	width: fit-content;
@@ -22,6 +23,7 @@ h1.blog-heading{
 	box-shadow: 1px 3px 5px 1px #00000045;
 	border-radius: 10px;
 }
+
 .blog-author{
 	float: left;
 	padding: 2px;
@@ -75,17 +77,28 @@ p.text:first-of-type::first-letter{
 	font-size: 250%;
 	font-family: monospace;
 }
-.blog-content{
+.blog-content {
 	font-size: 14pt;
 	line-height: 1.4em;
 	background: #fbf9f9;
-	margin: 4em auto;
+	margin: 2em auto;
 	margin-bottom: 0.5em;
 	padding: 3em;
 	width: 50vw;
 	border: #c3c3c3 0.5px solid;
 	border-radius: 10px;
 	font-family: Arial, Helvetica, sans-serif;
+}
+
+.blog-content h2{
+	color: #e43213;
+}
+
+.blog-content img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
 }
 
 #disqus_thread{
@@ -95,7 +108,7 @@ p.text:first-of-type::first-letter{
 	margin-bottom: 2em;
 }
 
-.blog-content-2{
+/* .blog-content-2{
 	font-size: 12pt;
 	background: #f3f3f3;
 	margin-right: 4em;
@@ -106,7 +119,7 @@ p.text:first-of-type::first-letter{
 	float: right;
 	border-radius: 10px;
 	font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 @media only screen and (max-width: 890px){
 	span.blog-author,div.post-heading>time,span.blog-shares{
@@ -125,7 +138,6 @@ p.text:first-of-type::first-letter{
 	.blog-content{
 		font-size: 12pt;
 		line-height: 1.2em;
-		background: #f3f3f3;
 		margin: 1em auto;
 		padding: 1em;
 		width: 87vw;
@@ -134,6 +146,10 @@ p.text:first-of-type::first-letter{
 	#disqus_thread{
 		max-width: 100%;
 		padding: 15px;
+	}
+	.post-heading{
+		padding: 0.5em;
+		
 	}
 	
 }

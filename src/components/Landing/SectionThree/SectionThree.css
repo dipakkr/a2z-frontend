@@ -32,10 +32,6 @@
   display: inline-block;
 }
 
-h2{
-    color: #e43213;
-}
-
 .features h2:hover{
    transform: scale(1.8);
 }

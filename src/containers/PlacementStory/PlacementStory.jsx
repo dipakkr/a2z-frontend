@@ -30,13 +30,13 @@ export default class PlacementStory extends React.Component {
                 title: "Congnizant",
                 link: "/campus-placement/cognizant",
                 png: laptop,
-                color: "#f67676"
+                color: "#467c00"
             },
             {
                 title: "Capgemini",
                 link: "/campus-placement/capgemini",
                 png: laptop,
-                color: "#f67676"
+                color: "#726a00"
             },
         ],
         loading: true
@@ -52,8 +52,8 @@ export default class PlacementStory extends React.Component {
         return (
             <>
                 {this.state.loading ? <Loader message=" " /> : null}
-                <div id="home-page-container">
-                    <h1 className="heading">Placement Stories</h1>
+                <div id="placement-page-container">
+                    <h1 className="placement-heading">Placement Stories</h1>
                     <Cards cards={this.state.cards} />
                 </div>
             </>

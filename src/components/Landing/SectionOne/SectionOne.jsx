@@ -15,7 +15,7 @@ const SectionOne = (props) => {
       <div id="special-container">
         <h1>Resources for Students</h1>
         <p>Explore the ultimate collection</p>
-        <div><Link to="/home">Get Started</Link></div>
+        <div><Link to="/home">Explore</Link></div>
       </div>
       <img src={back} alt="" className="background-svg-1" onLoad={() => props.stopLoading()} />
       {/* <img src={blackLeft} alt="" className="background-svg-10" onLoad={() => props.stopLoading()} />

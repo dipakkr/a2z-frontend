@@ -68,11 +68,11 @@
 
 .blog-tag{
   background: #fff;
-  padding: 3px;
+  padding: 4px;
   font-size: 0.9em;
   letter-spacing: 0.05em;
   border-radius: 3px;
-  border:#262626 solid 1.5px;
+  border:#262626 solid 0.5px;
 }
 
 .blog-tag:hover{
