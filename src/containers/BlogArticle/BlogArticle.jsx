@@ -3,7 +3,9 @@ import './BlogArticle.css'
 import client from '../../service/client'
 import marked from 'marked'
 import Loader from '../../components/Loader/Loader'
-import Author from '../../components/Author/Author';
+import Author from '../../components/Author/Author'
+import {Helmet} from "react-helmet";
+
 
 class BlogArticle extends React.Component { 
     constructor(){
@@ -41,6 +43,12 @@ class BlogArticle extends React.Component {
 
         return(
             <>
+
+                <Helmet>
+                    <title> {this.state.article.fields.title}</title>
+                    <meta property="og:description" content={this.state.article.fields.description} />
+                </Helmet>
+
                 <h1 className={'blog-heading'}>
                     {this.state.article.fields.title} {/*`content to be fetched from server with this blog id */}
                 </h1>
