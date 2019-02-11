@@ -40,7 +40,8 @@ export default class BlogList extends React.Component {
                           author={article.fields.author.fields.name} 
                           date={article.fields.publishedDate}
                           image={article.fields.featureImage.fields.file.url}
-                          slug={article.fields.slug} 
+                          slug={article.fields.slug}
+                          tag={article.fields.tag} 
              />
             )}
         </div>

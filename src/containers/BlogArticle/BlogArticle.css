@@ -75,7 +75,8 @@ p.text:first-of-type::first-letter{
 	font-family: monospace;
 }
 .blog-content{
-	font-size: 12pt;
+	font-size: 14pt;
+	line-height: 1.4em;
 	background: #f3f3f3;
 	margin-left: 4em;
 	margin-top: 4em;
@@ -124,6 +125,7 @@ p.text:first-of-type::first-letter{
 	}
 	.blog-content{
 		font-size: 12pt;
+		line-height: 1.3em;
 		background: #f3f3f3;
 		margin: 1em auto;
 		padding: 1em;
