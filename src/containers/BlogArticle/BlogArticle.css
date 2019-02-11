@@ -78,9 +78,9 @@ p.text:first-of-type::first-letter{
 .blog-content{
 	font-size: 14pt;
 	line-height: 1.4em;
-	background: #f3f3f3;
+	background: #fbf9f9;
 	margin: 4em auto;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 	padding: 3em;
 	width: 50vw;
 	border: #c3c3c3 0.5px solid;

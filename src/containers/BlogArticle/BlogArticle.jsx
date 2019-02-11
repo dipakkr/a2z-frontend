@@ -45,8 +45,10 @@ class BlogArticle extends React.Component {
             <>
 
                 <Helmet>
-                    <title> {this.state.article.fields.title}</title>
-                    <meta property="og:description" content={this.state.article.fields.description} />
+                        <title>  {this.state.article.fields.title}   </title>
+                        <meta name="description"        content={this.state.article.fields.description} />
+                        <meta property="og:title"       content={this.state.article.fields.title} />
+                        <meta property="og:description" content={this.state.article.fields.description} />
                 </Helmet>
 
                 <h1 className={'blog-heading'}>

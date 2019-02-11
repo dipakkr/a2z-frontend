@@ -3,7 +3,6 @@ import './CompanyWiseList.css'
 import BlogListCard from '../../components/BlogListCard/BlogListCard'
 import client from '../../service/client'
 import Loader from '../../components/Loader/Loader'
-import MessageDialog from '../../components/MessageDialog/Message'
 
 export default class CompanyWiseList extends React.Component {
 

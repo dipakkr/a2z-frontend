@@ -29,6 +29,8 @@ const Author = (props) =>{
         
         <div className="author-data">
 
+        <h2> Author </h2>
+
             <a href={props.url} >
               <p className="author-title">{'Deepak Kumar'}</p>
             </a>
