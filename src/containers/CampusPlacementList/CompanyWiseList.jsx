@@ -39,8 +39,6 @@ export default class CompanyWiseList extends React.Component {
 
         {this.state.loading ? <Loader message=" " /> : null}
 
-       
-
         {this.state.articles.map((article, i) => 
             
             <BlogListCard id={i} key={i} 
@@ -50,7 +48,7 @@ export default class CompanyWiseList extends React.Component {
                           image={article.fields.featureImage.fields.file.url}
                           slug={article.fields.slug}
                           tag={article.fields.tag} 
-             /> ? <MessageDialog/> : i=0 
+             />
             )}
         </div>
       </div>
