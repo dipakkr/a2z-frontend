@@ -1,0 +1,36 @@
+.fblog-page-container {
+    width: 100%;
+    min-height: 55vh;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.fblog-container {
+    height: 25vh;
+    width: 100%;
+    min-height: 90%;
+    text-align: center;
+    display: table;
+}
+
+.fblog-background{
+  background: #262626;
+  box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.fblog-h1{
+    margin:0;
+    padding:0;
+    vertical-align:middle;
+    display:table-cell; 
+}
+
+.fblog-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4vh 5vw;
+    padding-bottom: 10vh;
+}

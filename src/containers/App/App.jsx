@@ -21,6 +21,7 @@ import Team from '../../components/Team/Team';
 import PlacementStory from '../PlacementStory/PlacementStory';
 import NewArrival from '../NewArrival/NewArrival';
 import BlogArticle from '../../containers/BlogArticle/BlogArticle';
+import CompanyWiseList from '../../containers/CampusPlacementList/CompanyWiseList';
 
 class App extends Component {
 
@@ -160,6 +161,8 @@ class App extends Component {
                 <Route path="/team" exact component={Team}/>
                 
                 <Route path="/campus-placement" exact component={PlacementStory} />
+
+                <Route path="/campus-placement/:slug" exact component={CompanyWiseList} />
 
                 <Route path="/top-charts" exact component={TopCharts} />
                  

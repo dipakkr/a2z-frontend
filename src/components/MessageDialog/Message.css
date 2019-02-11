@@ -1,0 +1,33 @@
+.message {
+    min-height: 55vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-content {
+    padding: 4vh 4vw;
+    box-sizing: border-box;
+    background: #676262;
+    box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.16);
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.message-content h2 {
+    margin-bottom: 20px;
+    color: #f67676;
+}
+
+.message-content a {
+    color: #99cffe;
+}
+
+@media only screen and (max-width: 1023px) {
+    .lost {
+        min-height: 75vh;
+    }
+}

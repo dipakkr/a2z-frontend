@@ -28,9 +28,9 @@ footer {
 #left-footer a {
     color: white;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 300;
     display: block;
-    font-family: monospace;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 2px;
 }
 
@@ -71,7 +71,7 @@ footer {
 
 @media only screen and (max-width: 480px) {
     #left-footer, #right-footer {
-        text-align: center;
+        text-align: left;
         min-width: 100%;
     }
 
