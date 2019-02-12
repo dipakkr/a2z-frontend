@@ -85,7 +85,7 @@ class BlogArticle extends React.Component {
 
                 {/* <div className={'blog-content-2'} id='content' dangerouslySetInnerHTML={this.getParsedMarkdown(this.state.article.fields.content)}/>  */}
 
-                <Author/>
+                <Author name={this.state.article.fields.author.fields.name} bio={this.state.article.fields.author.fields.bio} image={this.state.article.fields.author.fields.avatar.fields.file.url} />
 
                 <div id="disqus_thread"></div>
                 
