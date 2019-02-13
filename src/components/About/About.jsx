@@ -6,7 +6,9 @@ const About = (props) => {
         <div className="about-page-container">
             <div className="about-container">
                  
-                 <div class="about-container blog-background"> <h1>About Us </h1></div>
+                 <div class="about-container about-background"> 
+                        <h1 className="about-h1">About Us </h1>
+                </div>
                  
                  <p className="about-p">
                 

@@ -6,7 +6,7 @@
 }
 
 .blog-container {
-    height: 25vh;
+    height: 21vh;
     width: 100%;
     min-height: 90%;
     text-align: center;
@@ -22,7 +22,7 @@
 
 .blog-h1{
     margin:0;
-    padding:0;
+    background: #303030;
     vertical-align:middle;
     display:table-cell; 
 }

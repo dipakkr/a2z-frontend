@@ -3,17 +3,6 @@
     min-height: 55vh;
     text-align: center;
     box-sizing: border-box;
-    padding: 5vh 0 10vh 0;
-}
-
-.about-container h1 {
-    background: #303030;
-	color: #fff;
-	padding: 1em 0;
-	vertical-align: middle;
-	text-align: center;
-    font-size: 250%;
-    margin: -20px;
 }
 
 .about-page-container span {
@@ -22,35 +11,46 @@
     margin-top: -30px;
 }
 
+
+.about-background{
+    background: #262626;
+    box-shadow: inset 0px 0px 30px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+
 .about-container .about-p {
     max-width: 850px;
     margin: 0 auto;
     margin-top: 32px;
+    margin-bottom: 4em;
     font-weight: 300;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
     color: #020202;
 }
+
+.about-h1{
+    margin:0;
+    background: #303030;
+    vertical-align:middle;
+    padding: 40px;
+    
+}
+
+
 .about-p-title{
     color: #077de0;
     font-weight: 600;
 }
-.blog-h1 {
-    background: #4664a1;
-    vertical-align: middle;
-}
+
 .list-grp{
     margin-left: 30px;
 }
 
 
 @media only screen and (max-width: 880px) {
-    .about-container h1 {
-        font-size: 1.2em;
-        padding: 1.4em;
-        max-width: 90%;
-    }
-
+  
     .about-container span {
         margin-top: 0;
     }
