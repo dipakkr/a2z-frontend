@@ -20,9 +20,7 @@ const SectionTwo = (props) => {
           <h2 className="title">14,000 Users</h2>
           <div className="text">
             <p>
-              Number of people are making way
-              towards their chosen dream, be the
-              part of growing community.
+            You can call them Users. For us, they are our family members. 
             </p>
           </div>
         </div>
@@ -34,7 +32,7 @@ const SectionTwo = (props) => {
           <h2 className="title"> 50+ Campus </h2>
           <div className="text">
             <p>
-             Collaborated with colleges across India to help students.
+              50+ is just a number. We are reaching a million heart directly. 
            </p>
           </div>
         </div>
@@ -46,7 +44,7 @@ const SectionTwo = (props) => {
           <h2 className="title">500+ opportunities </h2>
           <div className="text">
             <p>
-           Number of available opportunities to help students in the journey of becoming their best version.
+              All these make our community more empowered. They grab it both hands. 
             </p>
           </div>
         </div>
@@ -60,9 +58,7 @@ const SectionTwo = (props) => {
           <h2 className="title"> Curated Resources </h2>
           <div className="text">
             <p>
-              Access unlimited resources on
-              your technologies.  Learn from the best and 
-              give the best.
+             We hate Ctrl+c and Ctrl+v. For us, quality matters and not clicks, click baits and analytics. 
             </p>
           </div>
         </div>
@@ -74,8 +70,9 @@ const SectionTwo = (props) => {
           <h2 className="title"> Learning Roadmaps </h2>
           <div className="text">
             <p>
-            Curated Learning Roadmaps to help you get started in your technology.
-            </p>
+              Experience meets novice at Frontbench. Why spend a hefty sum to learn? We give you the best 
+              roadmap and even at times suggest The Road Less Taken.
+              </p>
           </div>
         </div>
         <div className="right">
@@ -85,8 +82,8 @@ const SectionTwo = (props) => {
           <h2 className="title"> Newsletter </h2>
           <div className="text">
             <p>
-             Subscribe for curated newsletter weekly and stay updated with latest 
-             developments and opportunities in your domain. 
+              We are a bit old fashioned. We love dropping curated postcards with 
+              all you want to know. Events, Internships, Hackathons and what not.
             </p>
           </div>
         </div>
