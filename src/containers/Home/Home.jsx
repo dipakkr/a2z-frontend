@@ -19,6 +19,12 @@ export default class Home extends React.Component {
                 title: "New Arrival",
                 link: "/latest",
                 png: chart,
+                color: "#45bd59"
+            },
+            {
+                title: "Campus Placement",
+                link: "/campus-placement",
+                png: laptop,
                 color: "#dd2727b6"
             },
             {
@@ -28,16 +34,10 @@ export default class Home extends React.Component {
                 color: "#06addb"
             },
             {
-                title: "Campus Placement",
-                link: "/campus-placement",
-                png: laptop,
-                color: "#45bd59"
-            },
-            {
                 title: "Hackathons & Competitions",
                 link: "/hackathons",
                 png: event,
-                color: "#f67676"
+                color: "#6f6f7a"
             },
             {
                 title: "Conferences",
