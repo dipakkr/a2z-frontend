@@ -30,7 +30,7 @@
 .campus-star-page-container form {
     margin-top: 7vh;
     text-align: left;
-    color: red;
+    border: 4px;
     font-weight: bold;
 }
 
@@ -49,10 +49,10 @@
     box-sizing: border-box;
     padding: 10px 15px;
     min-width: 450px;
-    border: 2px solid #678;
+    border: 1px solid #000;
     font-family: inherit;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 400;
     color: #262626;
     border-radius: 2px;
 }
