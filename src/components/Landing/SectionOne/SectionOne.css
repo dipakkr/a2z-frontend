@@ -95,7 +95,7 @@
     div#sectionOne-container:after {
         content: ' ';
         position: absolute;
-        background: #295BA7;
+        background: #303030;
         height: 69vw;
         width: 100%;
         top: 0;

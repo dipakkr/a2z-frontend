@@ -7,9 +7,9 @@
 }
 
 .about-container h1 {
-    background: #4664a1;
+    background: #303030;
 	color: #fff;
-	padding: 1.5em 0;
+	padding: 1em 0;
 	vertical-align: middle;
 	text-align: center;
     font-size: 250%;
@@ -47,15 +47,16 @@
 @media only screen and (max-width: 880px) {
     .about-container h1 {
         font-size: 1.2em;
+        padding: 1.4em;
         max-width: 90%;
-        margin: 0 auto;
     }
 
     .about-container span {
         margin-top: 0;
     }
 
-    .about-p {
-        max-width: 80%;
+    .about-container .about-p {
+        max-width: 90%;
+        font-weight: 350;
     }
 }

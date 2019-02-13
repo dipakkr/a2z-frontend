@@ -96,6 +96,10 @@
       font-size: 14px;
     }
 
+    .author{
+      font-size: 12px;
+    }
+
     .blog-tag{
       left: 2%;
       background: #eff1ec;

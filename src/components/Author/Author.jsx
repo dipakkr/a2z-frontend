@@ -12,9 +12,9 @@ const Author = (props) =>{
                 <a href={props.url} >
                     <p className="author-title">{props.name}</p>
                 </a>
-                <span className="author">{props.bio} </span>
+                <span className="author-bio">{props.bio} </span>
         
-                <div className="author-des">
+                <div className="author-social">
                             <a href={`https://linkedin.com/dipakkr`}><i className={'fab fa-facebook-square'}></i></a>
                             <a href={`https://linkedin.com/dipakkr`}><i className={'fab fa-linkedin'}></i></a>
                             <a href={`https://twitter.com/>`}><i className={'fab fa-twitter'}></i></a>

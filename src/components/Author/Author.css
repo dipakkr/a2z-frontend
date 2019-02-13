@@ -43,7 +43,7 @@
     font-weight: bold;
 }
   
-.author{
+.author-bio{
     font-size: 12pt;
     margin-top: 10px;
     color: #4e4040;
@@ -58,7 +58,7 @@
     height: 150px;
 }
   
-.author-des{
+.author-social{
     display: flex;
     justify-content: inherit;
     margin-top: 1em;
@@ -105,7 +105,7 @@
         margin-top: 10px;
     }
     
-    .author-des{
+    .author-social{
         margin-top: 0px;
     }
   
