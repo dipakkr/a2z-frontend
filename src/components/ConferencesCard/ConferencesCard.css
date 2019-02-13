@@ -1,4 +1,4 @@
-.newarrival-card {
+.conference-card {
 	min-width: 35%;
 	background: #ffff;
 	box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.2);
@@ -8,36 +8,37 @@
 	border-radius: 5px;
 	margin-top: 5em;
 	transition: all 0.4s;
+	border: #a7a7a7 1px solid;
 }
 
-.newarrival-card:hover {
+.conference-card:hover {
 	transform: scale(1.03);
 	box-shadow: 2px 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-.item-content{
+.conference-item-content{
 	display: flex;
 	justify-content: space-between;
 }
 
-#item-des{
+#conference-item-des{
 	margin-left: 2em;
 	padding: 2px;
 }
 
-#item-res{
+#conference-item-res{
 	margin-right: 5em;
 }
 
-.item-title{
+.conference-item-title{
 	color: #fff;
-	background : #559fe9;
+	background : #10569c;
 	padding: 15px;
 	font-size: 18px;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 }
-.item-share{
+.conference-item-share{
 	float: right;
 	position: initial;
 }
@@ -45,23 +46,23 @@
 	float: right;
 }
 
-.des-url{
+.conference-des-url{
 	background : #8d8cd3;
+	border: #626262a6 1px solid;
 	color: #fff;
 	text-align: center;
 	padding: 15px;
 }
-.des-url:hover {
+.conference-des-url:hover {
 	background: #27314d;
-	color: #000;
 }
 
-.newarrival-card hr {
+.conference-card hr {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	margin-bottom: 0;
 }
 
-.newarrival-card .des-sp {
+.conference-card .des-sp {
 	display: inline-block;
 	color: #000;
 	font-size: 12px;
@@ -71,27 +72,27 @@ a {
 	text-decoration: none;
 }
 
-.newarrival-card span {
+.conference-card span {
 	display: block;
-    font-weight: 600;
+    font-weight: 400;
     font-family: sans-serif;
     text-decoration: none;
-    margin: 4px;
+    margin: 6px;
 }
 
 @media only screen and (max-width: 480px) {
-	.newarrival-card {
+	.conference-card {
 		margin: 10px auto;
 		min-width: 0;
 		max-width: 100%;
 		width: 75%;
 		float: none;
 	}
-	#item-des{
+	#conference-item-des{
 		margin-left: 1em;
 	}
 	
-	#item-res{
+	#conference-item-res{
 		margin-right: 2em;
 	}
 }

@@ -11,7 +11,8 @@
     transition: all 0.2s;
     background: #fff;
     cursor: pointer;
-    float: left;;
+    float: left;
+    border: #d8d7d7 1px solid;
 }
 
 .hackathons-card:hover {

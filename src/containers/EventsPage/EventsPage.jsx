@@ -54,7 +54,7 @@ export default class EventsPage extends React.Component {
             <hr />
             {this.state.meetups.map((el, i) => {
                 return (
-                    <Meetups key={i} title={el.title} link={el.url} area={el.location} />
+                    <Meetups key={i} title={el.title} link={el.url} area={el.location} des={'NA'}/>
                 );
             })}
         </div>
