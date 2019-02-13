@@ -8,7 +8,7 @@ const BlogListCard = (props) => {
           <img className="blog-img" src={props.image} alt="blog" />
           <div className="blog-data">
               <a href={props.url} >
-                <p className="blog-title"><Link to={`blog/${props.slug}`}>{props.title}</Link></p>
+                <p className="blog-title"><Link to={props.slug}>{props.title}</Link></p>
               </a>
               <span className="author"> {props.author} </span>
               <div className="blog-des">

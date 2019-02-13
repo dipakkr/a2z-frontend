@@ -164,6 +164,8 @@ class App extends Component {
 
                 <Route path="/campus-placement/:slug" exact component={CompanyWiseList} />
 
+                <Route path="/campus-placement/:slug/:slug" exact component={BlogArticle} />
+
                 <Route path="/top-charts" exact component={TopCharts} />
                  
 		      		  <Route path="/blog/:slug" exact component={BlogArticle}/>

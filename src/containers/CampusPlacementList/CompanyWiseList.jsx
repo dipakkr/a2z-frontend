@@ -45,7 +45,7 @@ export default class CompanyWiseList extends React.Component {
                           author={article.fields.author.fields.name} 
                           date={article.fields.publishedDate}
                           image={article.fields.featureImage.fields.file.url}
-                          slug={article.fields.slug}
+                          slug={`/campus-placement/${article.fields.company}/${article.fields.slug}`}
                           tag={article.fields.tag} 
              />
             )}
