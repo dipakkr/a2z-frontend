@@ -15,9 +15,9 @@ const Author = (props) =>{
                 <span className="author-bio">{props.bio} </span>
         
                 <div className="author-social">
-                            <a href={`https://linkedin.com/dipakkr`}><i className={'fab fa-facebook-square'}></i></a>
-                            <a href={`https://linkedin.com/dipakkr`}><i className={'fab fa-linkedin'}></i></a>
-                            <a href={`https://twitter.com/>`}><i className={'fab fa-twitter'}></i></a>
+                            <a href={props.facebook}><i className={'fab fa-facebook-square'}></i></a>
+                            <a href={props.linkedin}><i className={'fab fa-linkedin'}></i></a>
+                            <a href={props.twitter}><i className={'fab fa-twitter'}></i></a>
                 </div>
             </div>
     </div>

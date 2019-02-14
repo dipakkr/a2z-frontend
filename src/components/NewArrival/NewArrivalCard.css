@@ -6,7 +6,7 @@
     user-select: text;
 	margin-left: 10em;
 	border-radius: 5px;
-	margin-top: 5em;
+	margin-top: 3em;
 	border: #a7a7a7 1px solid;
 	transition: all 0.4s;
 }
@@ -32,7 +32,7 @@
 
 .item-title{
 	color: #fff;
-	background : #10569c;
+	background : #0262ad;
 	padding: 15px;
 	font-size: 18px;
 	font-family: Arial, Helvetica, sans-serif;

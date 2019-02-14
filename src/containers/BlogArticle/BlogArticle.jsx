@@ -85,7 +85,14 @@ class BlogArticle extends React.Component {
 
                 {/* <div className={'blog-content-2'} id='content' dangerouslySetInnerHTML={this.getParsedMarkdown(this.state.article.fields.content)}/>  */}
 
-                <Author name={this.state.article.fields.author.fields.name} bio={this.state.article.fields.author.fields.bio} image={this.state.article.fields.author.fields.avatar.fields.file.url} />
+                <Author 
+                    name={this.state.article.fields.author.fields.name} 
+                    bio={this.state.article.fields.author.fields.bio} 
+                    image={this.state.article.fields.author.fields.avatar.fields.file.url}
+                    facebook={this.state.article.fields.author.fields.facebook}
+                    linkedin={this.state.article.fields.author.fields.linkedIn}
+                    twitter={this.state.article.fields.author.fields.twitter} 
+                />
 
                 <div id="disqus_thread"></div>
                 

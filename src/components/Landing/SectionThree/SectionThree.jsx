@@ -10,9 +10,9 @@ const SectionThree = (props) => {
       <div className="featured"><h3>Featured</h3></div>
       <div className="features">
                 
-        <div>  <h2><a href="http://bit.ly/2ECaYIS" target="__" > Bitsdroid</a></h2> </div>
+        <div className="feature-item">  <a href="http://bit.ly/2ECaYIS" target="__" > Bitsdroid</a> </div>
 
-        <div>  <h2><a href="http://bit.ly/2RArhMY" target="__"> 9Learners </a></h2> </div>
+        <div className="feature-item">  <a href="http://bit.ly/2RArhMY" target="__"> 9Learners </a> </div>
 
       </div>
     </div>

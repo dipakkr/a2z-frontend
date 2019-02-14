@@ -23,6 +23,7 @@
 .expanded-resource-card img {
     height: 15px;
     margin-right: 10px;
+    border: #000 1px solid;
     vertical-align: middle;
 }
 

@@ -24,16 +24,25 @@
     width: 70%;
     height: 4vw;
     margin: 0 auto;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.feature-item{
+    font-size: 20pt;
+    font-style: initial;
+    font-weight: 600;
+}
+
+.feature-item :hover{
+    margin: 10px;
+    transform: scale(1.8);
 }
 
 .features div{
   width: 25%;
   display: inline-block;
-}
-
-.features h2:hover{
-   transform: scale(1.8);
 }
 
 @media only screen and (max-width: 960px) {
@@ -49,10 +58,18 @@
         height: 10vw;
       }
 
-      .features h2{
-          padding: 10px;
-      }
-    
+      .features{
+        display: flex;
+        margin: 2em;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .feature-item{
+      margin-top: 3em;
+  }
+  
+
       .padding-container{
         padding-bottom: 25%;
       }
