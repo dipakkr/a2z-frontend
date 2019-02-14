@@ -13,20 +13,24 @@ const NewArrivalCard = (props) => {
                
                 <hr/>
                 <div className="item-content">
-                    <span id="item-des"> Description :  </span>
-                    <span id="item-res">{props.area}</span>
+                    <span id="item-des"> Type :  </span>
+                    <span id="item-res">{props.type}</span>
                 </div>
                 <div className="item-content">
                     <span id="item-des"> Date :  </span>
-                    <span id="item-res">{props.area}</span>
+                    <span id="item-res">{props.date}</span>
                 </div>
                 <div className="item-content">
                     <span id="item-des"> Place :   </span>
-                    <span id="item-res">{props.area}</span>
+                    <span id="item-res">{props.place}</span>
                 </div>
                 <div className="item-content">
-                    <span id="item-des"> Description :  </span>
-                    <span id="item-res">{props.area}</span>
+                    <span id="item-des"> Scholarship :  </span>
+                    <span id="item-res">{props.scholarship}</span>
+                </div>
+                <div className="item-content">
+                    <span id="item-des"> Review :  </span>
+                    <span id="item-res">{props.review}</span>
                 </div>
            
                 <a href={props.link} target="_blank" rel="noopener noreferrer">
