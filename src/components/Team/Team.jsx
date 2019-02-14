@@ -30,79 +30,7 @@ import sakshi from '../../assets/images/team/sakshi.jpg'
 import shubham from '../../assets/images/team/shubham.jpeg'
 import vipin from '../../assets/images/team/vipin.jpeg'
 
-/*const Team = (props) => {
-    return (
-        <div className="about-page-container">
-            <div className="about-container">
 
-                 <div class="blog-container blog-background"><h1 class="blog-h1">Our Team </h1></div>
-
-
-            </div>
-            <div className="row">
-        <div className="column">
-          <div className="card">
-            <img src={ image} alt={'face'} alt="Jane" style={{width: '100%'}} />
-            <div className="container">
-              <h2>Jane Doe</h2>
-              <p className="title">CEO &amp; Founder</p>
-
-            </div>
-          </div>
-        </div>
-        <div className="column">
-          <div className="card">
-            <img src={ image} alt={'face'} alt="Mike" style={{width: '100%'}} />
-            <div className="container">
-              <h2>Mike Ross</h2>
-              <p className="title">Art Director</p>
-
-            </div>
-          </div>
-        </div>
-        <div className="column">
-          <div className="card">
-            <img src={ image} alt={'face'} alt="John" style={{width: '100%'}} />
-            <div className="container">
-              <h2>John Doe</h2>
-              <p className="title">Designer</p>
-
-            </div>
-          </div>
-        </div>
-        <div className="column">
-          <div className="card">
-            <img src={ image} alt={'face'} alt="Jane" style={{width: '100%'}} />
-            <div className="container">
-              <h2>Jane Doe</h2>
-              <p className="title">CEO &amp; Founder</p>
-
-            </div>
-          </div>
-        </div>
-
-        <div className="column">
-          <div className="card">
-            <img src={ image} alt={'face'} alt="Jane" style={{width: '100%'}} />
-            <div className="container">
-              <h2>Jane Doe</h2>
-              <p className="title">CEO &amp; Founder</p>
-
-            </div>
-          </div>
-        </div>
-
-
-
-
-
-
-      </div>
-
-        </div>
-    );
-}
-*/
 const Team=props=>(
 	<>
 	<h1 className={'team_heading'}>
@@ -351,52 +279,6 @@ const Team=props=>(
 			</div>
 		</div>
 
-
-	</section>
-
-	<section className={'people_container'}>
-
-	<h1 className={'sub_heading'}>Content Team</h1>
-
-	<div className={'person'}>
-			<img src={ vipin} alt={'face'}></img>
-			<div className={'person_name'}>
-			Vipin Joshi
-			</div>
-			<div className={'person_detail'}>
-			Delhi
-			</div>
-		</div>
-
-		<div className={'person'}>
-			<img src={ vipin} alt={'face'}></img>
-			<div className={'person_name'}>
-			Vipin Joshi
-			</div>
-			<div className={'person_detail'}>
-			Delhi
-			</div>
-		</div>
-
-		<div className={'person'}>
-			<img src={ vipin} alt={'face'}></img>
-			<div className={'person_name'}>
-			Vipin Joshi
-			</div>
-			<div className={'person_detail'}>
-			Delhi
-			</div>
-		</div>
-
-		<div className={'person'}>
-			<img src={ vipin} alt={'face'}></img>
-			<div className={'person_name'}>
-			Vipin Joshi
-			</div>
-			<div className={'person_detail'}>
-			Delhi
-			</div>
-		</div>
 
 	</section>
 	

@@ -24,7 +24,7 @@ export default class PlacementStory extends React.Component {
                 title: "Wipro",
                 link: "/campus-placement/wipro",
                 png: laptop,
-                color: "#f67676"
+                color: "#a05121f0"
             },
             {
                 title: "Congnizant",
@@ -37,6 +37,12 @@ export default class PlacementStory extends React.Component {
                 link: "/campus-placement/capgemini",
                 png: laptop,
                 color: "#726a00"
+            },
+            {
+                title: "Yodlee",
+                link: "/campus-placement/yodlee",
+                png: laptop,
+                color: "#36b793"
             },
         ],
         loading: true

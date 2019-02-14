@@ -25,7 +25,7 @@
 }
 
 .hackathons-card p {
-    font-size: 0.6em;
+    font-size: 0.8em;
     color: var(--theme);
     padding: 5px 0 0 15px;
     font-weight: 500;
@@ -72,7 +72,7 @@
     padding: 5px 10px;
     background: #262626;
     font-family: inherit;
-    font-size: 0.6em;
+    font-size: 0.8em;
     transition: all 0.2s;
     box-sizing: border-box;
 }
@@ -90,7 +90,7 @@
     }
 
     .hackathons-card p {
-        font-size: 1vw;
+        font-size: 1.2vw;
         padding: .8vh 0 0 2.5vh;
     }
 

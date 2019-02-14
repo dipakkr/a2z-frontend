@@ -14,6 +14,8 @@ const CardLink = (props) => {
                 className="card-link-button">
                 <span><img src={props.png} alt=""/></span>
                 {props.title}
+                {/* <span className="card-tag"><p>{props.tag}</p> </span> */}
+                
             </Link>
         </div>
     );

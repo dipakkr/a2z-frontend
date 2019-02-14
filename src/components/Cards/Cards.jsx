@@ -12,7 +12,8 @@ const Cards = (props) => {
                         title={card.title}
                         href={card.link}
                         png={card.png}
-                        color={card.color} />
+                        color={card.color}
+                        tag={card.tag} />
                 );
             })}
         </div>

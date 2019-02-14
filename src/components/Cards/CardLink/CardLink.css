@@ -22,7 +22,12 @@
 	width: 100%;
 	height: 100%;
 }
-
+/* .card-tag{
+	background: #000000e7;
+	float:right;
+	font-size: 8pt;
+	font-weight: 400;
+} */
 
 .card-link img {
 	width: 10%;

@@ -19,13 +19,15 @@ export default class Home extends React.Component {
                 title: "New Arrival",
                 link: "/latest",
                 png: chart,
-                color: "#45bd59"
+                color: "#26735b",
+                tag:"trending"
             },
             {
                 title: "Campus Placement",
                 link: "/campus-placement",
                 png: laptop,
-                color: "#dd2727b6"
+                color: "#dd2727b6",
+                tag:"trending"
             },
             {
                 title: "Coding Resources",
