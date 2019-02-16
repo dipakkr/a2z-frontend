@@ -32,7 +32,7 @@ const SectionTwo = (props) => {
           <h2 className="title"> 50+ Campus </h2>
           <div className="text">
             <p>
-              50+ is just a number. We are reaching a million heart directly. 
+              50+ is just a number. We are reaching a million hearts directly. 
            </p>
           </div>
         </div>
@@ -44,7 +44,7 @@ const SectionTwo = (props) => {
           <h2 className="title">500+ opportunities </h2>
           <div className="text">
             <p>
-              All these make our community more empowered. They grab it both hands. 
+              All these make our community more empowered. They grab it with both hands. 
             </p>
           </div>
         </div>

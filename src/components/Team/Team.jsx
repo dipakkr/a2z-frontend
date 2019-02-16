@@ -8,7 +8,7 @@ import amal from '../../assets/images/team/amal.jpg'
 import anu from '../../assets/images/team/anu.jpg'
 import arpit from '../../assets/images/team/arpit.jpg'
 import avantika from '../../assets/images/team/avan.jpeg'
-import ayon from '../../assets/images/team/arpit.jpg'
+import ayon from '../../assets/images/team/ayon.jpg'
 
 import bahvesh from '../../assets/images/team/bhavesh.jpg'
 import bunny from '../../assets/images/team/bunny.jpg'
