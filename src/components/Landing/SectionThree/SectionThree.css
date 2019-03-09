@@ -3,7 +3,7 @@
   padding-bottom: 5%;
 }
 
-.featured{
+.featured-title{
     color: white;
     width: 23%;
     height:4vw;
@@ -12,7 +12,7 @@
     text-align: center;
 }
 
-.featured h3{
+.featured-title h3{
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -21,28 +21,54 @@
 
 .features{
     padding-top: 8%;
-    width: 70%;
-    height: 4vw;
+    width: 100%;
     margin: 0 auto;
-    display: flex;
+    display: flex ;
     flex-wrap: wrap;
     justify-content: space-around;
 
 }
-.feature-item{
-    font-size: 20pt;
+
+.feature-item-card{
     font-style: initial;
-    font-weight: 600;
+    vertical-align: middle;
+    font-weight: 400;
+    height: fit-content;
+    border-radius: 2px;
+    padding: 2px;
+    border: #888e9e 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.feature-item :hover{
-    margin: 10px;
-    transform: scale(1.8);
+.feature-url{
+   font-style: initial;
+    vertical-align: middle;
+    font-weight: 400;
+    height: fit-content;
+    border-radius: 5px;
+    padding: 2px;
+    border: #9c9c9c 1px solid;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.feature-item-card img{
+  width: 100%;
+}
+
+.feature-heading-container{
+  text-align: center;
+  padding: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+   
+}
+
+.feature-item-card:hover{
+   transform: scale(1.02);
 }
 
 .features div{
   width: 25%;
-  display: inline-block;
 }
 
 @media only screen and (max-width: 960px) {
@@ -53,15 +79,25 @@
     
     @media only screen and (max-width: 480px) {
     
-      .featured{
+      .featured-title{
         width: 45%;
         height: 10vw;
       }
 
+      .features div{
+        width: 75%;
+      }
+
+      .feature-item-card{
+        margin-top: 20px;
+      }
+      
+
       .features{
         display: flex;
         margin: 2em;
-        flex-direction: column;
+       
+        justify-content: center;
         margin: 0 auto;
     }
 
