@@ -4,20 +4,20 @@ self.__precacheManifest = [
     "url": "/a2z-frontend/static/media/7.63f80ebc.jpeg"
   },
   {
-    "revision": "b8739f4c140681360170",
-    "url": "/a2z-frontend/static/css/main.e12d93b5.chunk.css"
+    "revision": "f83b5e47cfd617b74de9",
+    "url": "/a2z-frontend/static/css/main.c3e8ee5c.chunk.css"
   },
   {
-    "revision": "6deadbba0a8b4f30e708",
-    "url": "/a2z-frontend/static/js/1.6deadbba.chunk.js"
+    "revision": "226487707903ce3a8d16",
+    "url": "/a2z-frontend/static/js/1.22648770.chunk.js"
   },
   {
     "revision": "25ee61c926988cb6f8b5",
     "url": "/a2z-frontend/static/js/runtime~main.25ee61c9.js"
   },
   {
-    "revision": "280e34f58a1c3658647731fcbcf09357",
-    "url": "/a2z-frontend/static/media/arpit.280e34f5.jpg"
+    "revision": "4dcb7f1d5b4560577d41d88d90781f15",
+    "url": "/a2z-frontend/static/media/fb.4dcb7f1d.jpg"
   },
   {
     "revision": "b98ebec6c354ea99b108a7be5f6abc58",
@@ -76,6 +76,10 @@ self.__precacheManifest = [
     "url": "/a2z-frontend/static/media/startup.48fe6ae1.svg"
   },
   {
+    "revision": "242b5b61c5673330655d53c09893817e",
+    "url": "/a2z-frontend/static/media/feedingt.242b5b61.jpg"
+  },
+  {
     "revision": "10b58898e4b2e12f8061cbe96f050990",
     "url": "/a2z-frontend/static/media/0.10b58898.jpeg"
   },
@@ -104,8 +108,8 @@ self.__precacheManifest = [
     "url": "/a2z-frontend/static/media/6.93680f25.jpeg"
   },
   {
-    "revision": "b8739f4c140681360170",
-    "url": "/a2z-frontend/static/js/main.b8739f4c.chunk.js"
+    "revision": "f83b5e47cfd617b74de9",
+    "url": "/a2z-frontend/static/js/main.f83b5e47.chunk.js"
   },
   {
     "revision": "b76dc2f33ead932f722a9b4cefa3e443",
@@ -130,6 +134,14 @@ self.__precacheManifest = [
   {
     "revision": "2558bd0bbc0a86bd2133c77f5184c985",
     "url": "/a2z-frontend/static/media/amal.2558bd0b.jpg"
+  },
+  {
+    "revision": "280e34f58a1c3658647731fcbcf09357",
+    "url": "/a2z-frontend/static/media/arpit.280e34f5.jpg"
+  },
+  {
+    "revision": "d4310cbccf90046deec102a80d3812ef",
+    "url": "/a2z-frontend/static/media/ayon.d4310cbc.jpg"
   },
   {
     "revision": "24c2043f8c4e1dfc598e60ee17f8f0af",
@@ -204,7 +216,7 @@ self.__precacheManifest = [
     "url": "/a2z-frontend/static/media/RageItalic.8d6ca60f.ttf"
   },
   {
-    "revision": "2dd3d42b23c5afdc35ff846686f13942",
+    "revision": "3e94fb5fea630435b4d32f4889668011",
     "url": "/a2z-frontend/index.html"
   }
 ];
