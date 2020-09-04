@@ -7,7 +7,7 @@
     "contentful": "^7.1.0",
     "firebase": "^5.5.8",
     "jss": "^9.8.7",
-    "marked": "^0.6.0",
+    "marked": "^1.1.1",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
     "react-helmet": "^5.2.0",
